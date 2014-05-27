@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+<script>
+	$(document).ready(function() {
+    $('#selectall').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+</script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+    <div style="margin-left: 180px; margin-top: 50px;">
+
+               <table width="1081" border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <td height="71" colspan="7" style="text-align: center;"><strong>Floor Master:</strong></td>
+                    </tr>
+                    <tr>
+                        
+                        <td colspan="2"><div align="right"></div></td>
+                        <td width="96">&nbsp;</td>
+                        <td width="103">Legal Entity :</td>
+                        <td width="128"><select name="select3" style="width:80px">
+                          <option selected="selected">Select</option>
+                          <option>Legal Entity 1</option>
+                          <option>Legal Entity 2</option>
+                        </select></td>
+                        <td width="151">&nbsp;</td>
+                        <td width="149">&nbsp;</td>
+                        <td width="142">&nbsp;</td>
+                        <td width="133">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="52">&nbsp;</td>
+                        <td width="107"><label>Select State : </label></td>
+                        <td>Select City : </td>
+                        <td>Select Site: </td>
+                        <td>Select Building: </td>
+                        <td><div align="left"> Floor Code :</div></td>
+                        <td><div align="left">Floor Name: </div></td>
+                        <td>Bond Register</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><select name="select" style="width:80px">
+                                <option selected="selected">Select</option>
+                                <option>State Name 1</option>
+                                <option>State Name 2</option>
+                                <option>State Name 3</option>
+                            </select></td>
+                        <td><select name="select2" style="width:80px">
+                                <option selected="selected">Select</option>
+                                <option>City Name 1</option>
+                                <option>City Name 2</option>
+                                <option>City Name 3</option>
+                            </select></td>
+                        <td><select name="select4" style="width:80px">
+                                <option selected="selected">Select</option>
+                                <option>Site Name 1</option>
+                                <option>Site Name 2</option>
+                                <option>Site Name 3</option>
+                            </select></td>
+                        <td><select name="select5" style="width:80px">
+                                <option selected="selected">Select</option>
+                                <option>Building Name 1</option>
+                                <option>Building Name 2</option>
+                                <option>Building Name 3</option>
+                            </select></td>
+                        <td><div align="left">
+                                <input type="text" name="textfield" />
+                            </div></td>
+                        <td><div align="left">
+                                <input type="text" name="textfield2" />
+                            </div></td>
+                        <td><select name="select4" style="width:100px">
+                                <option selected="selected">Select</option>
+                                <option>UnitNo-BR1</option>
+                                <option>UnitNo-BR2</option>
+                                <option>UnitNo-BR3</option>
+                            </select></td>
+                        <td><input type="submit" name="Submit" value="Add" /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><u></u></td>
+                        <td style="background-color: activecaption;"><strong>State Name </strong></td>
+                        <td style="background-color: activecaption;"><strong>City Name </strong></td>
+                        <td style="background-color: activecaption;"><strong>Site Name </strong></td>
+                        <td style="background-color: activecaption;"><strong>Building Name </strong></td>
+                        <td style="background-color: activecaption;"><strong>Floor Code </strong></td>
+                        <td style="background-color: activecaption;"><strong>Floor Name </strong></td>
+                        <td style="background-color: activecaption;"><strong>Bond Register Name                          </strong></td>
+                        <td style="background-color: activecaption;"><strong>
+                        <input type="checkbox" name="checkbox4" value="checkbox" id="selectall"/>
+                        Select All                          </strong></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>State Name 1 </td>
+                        <td>City Name 1 </td>
+                        <td>Site Name 1 </td>
+                        <td>Building Name 1 </td>
+                        <td>Floor - 001 </td>
+                        <td><input type="text" name="textfield3" value="Floor Name 1"/></td>
+                        <td>UnitNo-BR1 </td>
+                        <td><input type="checkbox" name="checkbox" value="checkbox" class="checkbox1"/></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>State Name 1 </td>
+                        <td>City Name 1 </td>
+                        <td>Site Name 1 </td>
+                        <td>Building Name 1 </td>
+                        <td>Floor - 002</td>
+                        <td><input type="text" name="textfield32" value="Floor Name 2"/></td>
+                        <td>UnitNo-BR2 </td>
+                        <td><input type="checkbox" name="checkbox2" value="checkbox" class="checkbox1" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>State Name 3 </td>
+                        <td>City Name 3 </td>
+                        <td>Site Name 3 </td>
+                        <td>Building Name 3 </td>
+                        <td>Floor - 003</td>
+                        <td><input type="text" name="textfield33" value="Floor Name 3"/></td>
+                        <td>UnitNo-BR3 </td>
+                        <td><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"  /></td>
+                    </tr>
+      </table>
+               <table width="1327" border="0" class="classtd1">
+                 <tr>
+                   <td colspan="9" style="height: 20px;"></td>
+                 </tr>
+                 <tr>
+                   <td width="264"><div align="right">
+                       <input name="submit2" type="submit" style="width: 100px;"  value="Back"/>
+                   </div></td>
+                   <td width="100"><input name="reset2" type="reset" style="width: 100px;" value="Update"/></td>
+                   <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Delete"/></td>
+                   <td width="100" align="left"><input name="reset3" type="reset" style="width: 100px;" value="Enable"/></td>
+                   <td width="100" align="left"><input name="reset4" type="reset" style="width: 100px;" value="Disable"/></td>
+                   <td width="632" align="right"><div align="left">
+                     <input name="reset" type="reset" style="width: 100px;" value="Cancel"/>
+                   </div></td>
+                   <td width="1" align="right">&nbsp;</td>
+                 </tr>
+               </table>
+            <p>&nbsp;</p>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1. Select Legal Entity, State, City and Site from drop down.</p>
+                <p>2. Can update the values using update button.</p>
+                <p>3. Can delete an entry using delete button.<br />
+                </p>
+            </div>
+    </body>
+</html>

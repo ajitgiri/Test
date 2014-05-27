@@ -1,0 +1,161 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tag Master</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+            </div>
+        </div>
+
+        <div id="cBody">
+            <div style="margin-left: 340px; margin-top: 50px;">
+                <table  border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;" align="center">TAG Master</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;" align="center" height="20px;"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="" align="left" height="20px;">
+                            Asset With Serial No.
+                        </td>
+                        <td style="" align="left" height="20px;">
+                            Asset Without Serial No.
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Barcode Based on:</td>
+                        <td style="" align="left" height="20px;">
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="INDA">Serial No.</option>
+                                <option value="USA">Asset Tag</option>
+                                <option value="UK">ERP Asset No.</option>
+                            </select>
+                        </td>
+                        <td style="" align="left" height="20px;" >
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="USA">Asset Tag</option>
+                                <option value="UK">ERP Asset No.</option>
+                            </select>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;" align="left" height="20px;">  </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea rows="15" cols="20">Logo   
+Owner
+Legal Entity
+PO No.               
+Serial No.
+GRN No.
+Asset Tag
+Barcode
+Asset Description
+ERP Asset No.
+Bond No.
+Bond date
+                            </textarea>
+                        </td> 
+                        <td align="center">
+                            <input type="submit" name="textfield22" value="    ADD   >>   "/><br/><br/>
+                            <input type="Submit" name="textfield22" value="<< Remove"/>
+                        </td>
+                        <td>
+                            <textarea rows="15" cols="20">Logo   
+Owner
+Legal Entity
+PO No.               
+Serial No.
+GRN No.
+Asset Tag
+Barcode
+Asset Description
+
+                            </textarea>
+                        </td>
+                        <td>
+                            <input type="submit" name="textfield22" value="Move Up      "/><br/><br/>
+                            <input type="Submit" name="textfield22" value="Move Down "/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><input style="width: 100px;" type="submit" name="Submit2" value=" Back "/></td>
+                        <td colspan="2">
+                            <input style="width: 100px;" type="submit" name="Submit2" value="Cancel" />
+                            <input style="width: 100px;" type="submit" name="Submit22" value="Update" />
+                        </td>
+                        <td align="center"></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1:'Enterprise Setup'<br>
+                    2:'Enterprise Setup'
+
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

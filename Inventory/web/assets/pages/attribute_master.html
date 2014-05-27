@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+
+
+
+
+
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+
+                $("#go_id1").click(function()
+                {
+                    $("#div_id1").show();
+                });
+                $("#add_id1").click(function()
+                {
+                    $("#div_id2").show();
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+        <div id="cBody"> 
+            <div style="margin-left: 100px; margin-top: 50px;">
+
+                <table width="660" border="0" cellspacing="2" cellpadding="0">
+                    <tr>
+                        <td colspan="4"><div align="center"><strong>Attribute Master </strong></div></td>
+                        <td width="66">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="175">&nbsp;</td>
+                        <td width="213">&nbsp;</td>
+                        <td width="119">&nbsp;</td>
+                        <td width="75">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="24">&nbsp;</td>
+                        <td>Select  Major Category: </td>
+                        <td><label></label></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><label>
+                                <select name="select" style="width:200px">
+                                    <option selected="selected">Select</option>
+                                    <option>Computer Equipments</option>
+                                    <option>Office Equipments</option>
+                                    <option>Furnitures</option>
+                                </select>
+                            </label></td>
+                        <td><label></label></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="31">&nbsp;</td>
+                        <td>Select Minor Category: </td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><select name="select2" style="width:200px">
+                                <option selected="selected">Select</option>
+                                <option>Desktop</option>
+                                <option>Laptop</option>
+                                <option>Projector</option>
+                            </select></td>
+                        <td><input type="submit" name="Submit3" value="GO" id="go_id1"/></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr></table>
+                <div id="div_id1">
+                    <table>
+                        <tr>
+                            <td width="155">Type : </td>
+                            <td width="150">Attribute Name : </td>
+                            <td width="149">Attribute  Unit :  </td>
+                            <td width="149">Attribute Value: </td>
+                            <td width="45">&nbsp;</td>
+                            <td width="166">&nbsp;</td>
+                            <td width="68">&nbsp;</td>
+                            <td width="127"><div align="left">Mandatory</div></td>
+                            <td width="127">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><select name="select3" style="width:150px">
+                                    <option selected="selected">Select</option>
+                                    <option>Date</option>
+                                    <option>Alpha Numeric</option>
+                                    <option>Upload</option>
+                                    <option>Dropdown</option>
+                                    <option>Checkbox</option>
+                                </select></td>
+                            <td><label>
+                                    <input type="text" name="textfield" />
+                                </label></td>
+                            <td><input type="text" name="textfield24" /></td>
+                            <td><input type="text" name="textfield2" /></td>
+                            <td><label>
+                                    <input type="submit" name="Submit" value="Add" id="add_id1"/>
+                                </label></td>
+                            <td rowspan="2"><label>
+                                    <textarea style="resize:none;" name="textarea" rows="5" size="40">Attribute Value 1
+Attribute Value 2
+Attribute Value 3</textarea>
+                                </label></td>
+                            <td><input type="submit" name="Submit2" value="Remove" id="Submit"/></td>
+                            <td><select name="select2"  style="width: 100px !important; min-width: 100px; max-width: 100px;">
+                                    <option selected="selected" value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select></td>
+                            <td><input type="submit" name="Submit222" value="Update" id="Submit22"/></td>
+                        </tr>
+                        <tr>
+                            <td height="75">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><input type="submit" name="Submit22" value="Deselect" id="Submit2"/></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr></table>
+                </div>
+                <div id="div_id2">
+                    <table width="802">
+                        <tr>
+                            <td width="140" style="background-color: activecaption;"><u>Type</u></td>
+                            <td width="152" style="background-color: activecaption;"><u>Attribute Name</u></td>
+                            <td width="151" style="background-color: activecaption;"><u>Attribute Unit</u></td>
+                            <td width="151" style="background-color: activecaption;"><u>Attribute Value </u></td>
+                            <td width="80" style="background-color: activecaption;"><u>Mandatory</u></td>
+                            <td width="241" style="background-color: activecaption;"><u>
+                                    <label>
+                                        <input type="checkbox" name="checkbox" value="checkbox" id="selectall"/>
+                                    </label>
+                                    Select All </u></td>
+                        </tr>
+                        <tr>
+                            <td>Alpha Numeric</td>
+                            <td><input name="textfield3" type="text" value="Attribute Name 1" /></td>
+                            <td><input name="textfield22" type="text" value="Attribute Unit 1" /></td>
+                            <td><input name="textfield22" type="text" value="Attribute value 1" /></td>
+                            <td><select name="select5">
+                                    <option>Select</option>
+                                    <option>Yes</option>
+                                    <option selected="selected">No</option>
+                                </select></td>
+                            <td><u>
+                                    <input type="checkbox" name="checkbox2" value="checkbox" class="checkbox1"/>
+                                </u></td>
+                        </tr>
+                        <tr>
+                            <td>Upload</td>
+                            <td><input name="textfield4" type="text" value="Attribute Name 2" /></td>
+                            <td><input name="textfield23" type="text" value="Attribute Unit 2" /></td>
+                            <td><input name="textfield23" type="text" value="Attribute value 2" /></td>
+                            <td><select name="select6">
+                                    <option>Select</option>
+                                    <option selected="selected">Yes</option>
+                                    <option>No</option>
+                                </select></td>
+                            <td><u>
+                                    <input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"/>
+                                </u></td>
+                        </tr>
+                        <tr>
+                            <td>Dropdown </td>
+                            <td><input name="textfield42" type="text" value="Attribute Name 3" /></td>
+                            <td><input name="textfield232" type="text" value="Attribute Unit 3" /></td>
+                            <td><textarea style="resize:none;" name="textarea2" rows="2" size="40">Attribute Value 1
+Attribute Value 2
+Attribute Value 3</textarea></td>
+                            <td><select name="select4">
+                                    <option>Select</option>
+                                    <option selected="selected">Yes</option>
+                                    <option>No</option>
+                                </select></td>
+                            <td><u>
+                                    <input type="checkbox" name="checkbox32" value="checkbox" class="checkbox1"/>
+                                </u></td>
+                        </tr>
+                    </table>
+                    <table border="0" class="classtd1">
+                        <tr>
+                            <td colspan="9" style="height: 20px;"></td>
+                        </tr>
+                        <tr>
+                            <td width="204"><div align="right">
+                                    <input name="submit2" type="submit" style="width: 100px;"  value="Back"/>
+                                </div></td>
+                            <td width="100"><input name="reset2" type="reset" style="width: 100px;" value="Update"/></td>
+                            <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Delete"/></td>
+                            <td width="100" align="left"><input name="reset3" type="reset" style="width: 100px;" value="Enable"/></td>
+                            <td width="100" align="left"><input name="reset4" type="reset" style="width: 100px;" value="Disable"/></td>
+                            <td width="100" align="right"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                            <td width="100" align="right">&nbsp;</td>
+                        </tr>
+                    </table>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1. Can update the values using update button.</p>
+                <p>2. Can delete an entry using delete button.</p>
+                <p>3. Under Type : Dropdown will allow single selection and checkbox will allow multiple selection. <br />
+                </p>
+            </div>
+    </body>
+</html>

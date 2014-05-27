@@ -1,0 +1,108 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>approve_sw_installation_request_page 1</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+         <script type="text/javascript">
+            $(function() {
+                $(".datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+		<script>
+            $(document).ready(function() {
+			    $('.table_class').hide();
+				
+				$("#Submit_id1").click(function () {                    
+                    window.open("grn2_master.html", "PopupWindow", "width=600,height=600,scrollbars=yes,resizable=yes");
+                });
+		
+            });
+		</script>
+      <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+      </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+			
+			
+			$("#next_id1").click(function(){
+				$("#table_id1").show();
+				});
+
+		});
+    </script>
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+<div style="margin-left: 300px; margin-top: 50px;">
+    <div>
+          <table width="500" border="0" cellspacing="2" cellpadding="0">
+            <tr>
+              <td colspan="2" align="center"><div align="right"><strong></strong></div></td>
+            <tr>
+              <td width="93">&nbsp;</td>
+              <td width="187">&nbsp;</td>
+              <td width="120">&nbsp;</td>
+              <td width="90">&nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="4">Material request generated with request id MD-ID-001 and a mail has been sent to the requester. </td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+    </div>
+</div>
+	<div style="margin-left:150px"></div>
+    </div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

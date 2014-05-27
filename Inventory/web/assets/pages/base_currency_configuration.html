@@ -1,0 +1,223 @@
+<html>
+    <title>Base Currency Configuration</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+    <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+    <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="../js/jscript.js"></script>
+    <script type="text/javascript" src="../js/EventScript.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+    <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#selectall').click(function(event) {  //on click 
+                if (this.checked) { // check select status
+                    $('.checkbox1').each(function() { //loop through each checkbox
+                        this.checked = true;  //select all checkboxes with class "checkbox1"               
+                    });
+                } else {
+                    $('.checkbox1').each(function() { //loop through each checkbox
+                        this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                    });
+                }
+            });
+
+        });
+    </script>
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody"> 
+        <div style="margin-left: 380px; margin-top: 80px;">
+            <table border="0">
+
+                <tr>
+                    <td colspan="5" style="font-weight: bold;">
+                        <div align="center">Base Currency Configuration                    </div></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="height: 20;">                    </td>
+                </tr>
+
+                <tr>
+                    <td>Select Legal Entity</td>
+                    <td>Currency Name </td>
+                    <td>Currency Symbol</td>
+                    <td>Date Format</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><select name="select5" style="width:152px">
+                            <option selected>Select</option>
+                            <option>Legal Entity 1</option>
+                            <option>Legal Entity 2</option>
+                        </select></td>
+                    <td>
+                        <select style="width:100px">
+                            <option value="" selected>Select</option>
+                            <option value="1">INR</option>
+                            <option value="2">DOLLAR</option>
+                            <option value="2">EURO</option>
+                        </select>                    </td>
+                    <td>
+                        <div class="input-append">
+                            <input type="text" class="input-medium search-query" name="s" placeholder="Search" value="">
+                        </div>                   
+                    </td>
+                    <td>
+                         <select style="width:100px">
+                            <option value="" selected>Select</option>
+                            <option value="1">DD-MM-YYYY</option>
+                            <option value="2">MM-DD-YYYY</option>
+                            <option value="2">DD-MMM-YYYY</option>
+                            <option value="2">YYYY-MM-DD</option>
+                        </select>    
+                    </td>
+                    <td>
+                        <input type="submit" value="ADD" /></td>
+                </tr>
+            </table>
+            <div  id="geoReportTableDiv" style="margin-top: 20px;">
+                <table >
+                    <tr>
+                        <td width="106" style="background-color: activecaption;">Legal Entity</td>
+                        <td width="124" style="background-color: activecaption;">Currency Name</td>
+                        <td width="124" style="background-color: activecaption;">Currency Symbol</td>
+                        <td width="124" style="background-color: activecaption;">Date Format</td>
+                        <td width="96" style="background-color: activecaption;"><input type="checkbox" name="checkbox4" value="checkbox" id="selectall">
+                            Select All </td>
+                    </tr>
+                    <tr>
+                        <td>Legal Entity 1</td>
+                        <td><select name="select2" style="width:100px">
+                                <option value="">Select</option>
+                                <option value="1" selected>INR</option>
+                                <option value="2">DOLLAR</option>
+                                <option value="2">EURO</option>
+                            </select>
+                        </td>
+                        <td><label>
+                                ?
+                            </label>
+                        </td>
+                        <td>
+                            <select style="width:100px">
+                            <option value="" selected>Select</option>
+                            <option value="1">DD-MM-YYYY</option>
+                            <option value="2" selected="selected">MM-DD-YYYY</option>
+                            <option value="2">DD-MMM-YYYY</option>
+                            <option value="2">YYYY-MM-DD</option>
+                        </select> 
+                        </td>
+                        <td><input type="checkbox" class="checkbox1" ></td>
+                    </tr>
+                    <tr>
+                        <td>Legal Entity 2</td>
+                        <td><p>
+                                <select name="select3" style="width:100px">
+                                    <option value="">Select</option>
+                                    <option value="1">INR</option>
+                                    <option value="2" selected>DOLLAR</option>
+                                    <option value="2">EURO</option>
+                                </select>
+                            </p>                           </td>
+                        <td>$</td>
+                         <td>
+                            <select style="width:100px">
+                            <option value="" selected>Select</option>
+                            <option value="1">DD-MM-YYYY</option>
+                            <option value="2">MM-DD-YYYY</option>
+                            <option value="2" selected="selected">DD-MMM-YYYY</option>
+                            <option value="2">YYYY-MM-DD</option>
+                        </select> 
+                        </td>
+                        <td><input type="checkbox" class="checkbox1"></td>
+                    </tr>
+                    <tr>
+                        <td>Legal Entity 3 </td>
+                        <td><select name="select4" style="width:100px">
+                                <option value="">Select</option>
+                                <option value="1">INR</option>
+                                <option value="2">DOLLAR</option>
+                                <option value="2" selected>EURO</option>
+                            </select></td>
+                        <td>!</td>
+                         <td>
+                            <select style="width:100px">
+                            <option value="" selected>Select</option>
+                            <option value="1">DD-MM-YYYY</option>
+                            <option value="2">MM-DD-YYYY</option>
+                            <option value="2">DD-MMM-YYYY</option>
+                            <option value="2" selected="selected">YYYY-MM-DD</option>
+                        </select> 
+                        </td>
+                        <td><input name="checkbox" type="checkbox" class="checkbox1"></td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+        <div align="center">
+            <table width="588" border="0">
+                <tr>
+                    <td height="17" colspan="9" style="height: 20px;"></td>
+                </tr>
+                <tr>
+                    <td width="182"  align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="100"  align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                    <td width="100" align="left"><input name="submit2" type="submit" style="width: 100px;"  value="Delete"/></td>
+                    <td width="100" align="right"><input name="submit3" type="submit" style="width: 100px;"  value="Cancel"/></td>
+                    <td width="84" align="right">&nbsp;</td>
+                </tr>
+            </table></div>
+
+    </div>
+    <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+                </p>
+                <p>
+                   1. In this page Currency type is mapping to the particular LE. 
+               </p>
+            </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<html>
+    <title>Currency Master</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+    <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+    <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="../js/jscript.js"></script>
+    <script type="text/javascript" src="../js/EventScript.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+    <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+
+            $('#selectAll').click(function(event) {  //on click 
+                if (this.checked) { // check select status
+                    $('.checkbox1').each(function() { //loop through each checkbox
+                        this.checked = true;  //select all checkboxes with class "checkbox1"               
+                    });
+                } else {
+                    $('.checkbox1').each(function() { //loop through each checkbox
+                        this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody"> 
+        <div style="margin-left: 340px; margin-top: 50px;">
+            <table border="0">
+                <tr>
+                    <td colspan="3" style="font-weight: bold;text-align: center;">
+                        Currency Master
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Currency Code</td>
+                    <td>Currency Name</td>
+                    <td>Currency Symbol</td>
+                </tr>
+                <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td>
+                        <input type="button" value="Add"/>
+                    </td>
+                </tr>
+            </table>
+            <table border="0">
+                <tr>
+                    <td colspan="4" style="height: 30px;"></td>
+                </tr>
+                <tr>
+                    <td width="150" style="background-color: activecaption;" ><strong>Currency Code</strong></td>
+                    <td width="144" style="background-color: activecaption;"><strong>Currency Name </strong></td>
+                    <td width="157" style="background-color: activecaption;"><strong>Currency Symbol </strong></td>
+                    <td width="112" align="center" style="background-color: activecaption;"><div align="left"><strong>
+                                <input type="checkbox" id="selectAll">
+                                Select All</strong></div></td>
+                </tr>
+                <tr>
+                    <td>CUR-01</td>
+                    <td><input type="text" value="INR"/></td>
+                    <td><input type="text" value="?"/></td>
+                    <td align="center"><div align="left">
+                            <input type="checkbox" class="checkbox1"> 
+                        </div></td>
+                </tr>
+                <tr>
+                    <td>CUR-02</td>
+                    <td><input type="text" value="DOLLAR"/></td>
+                    <td><input type="text" value="$"/></td>
+                    <td align="center"><div align="left">
+                            <input type="checkbox" class="checkbox1"> 
+                        </div></td>
+                </tr>
+                <tr>
+                    <td>CUR-03</td>
+                    <td><input type="text" value="EURO"/></td>
+                    <td><input type="text" value="!"/></td>
+                    <td align="center"><div align="left">
+                            <input type="checkbox" class="checkbox1"> 
+                        </div></td>
+                </tr>
+            </table>
+            <table width="626" style="margin-top:100px">  
+                <tr >
+                    <td width="100" align="right"><input name="submit2" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="100" align="center"><input name="reset" type="reset" style="width: 100px;" value="Update"/>                    </td>
+                    <td width="106" align="center"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                    <td width="100" align="left"><input name="submit" type="submit" style="width: 100px;"  value="Enable"/></td>
+                    <td width="102" align="left"><input name="submit" type="submit" style="width: 100px;"  value="Disable"/></td>
+                    <td width="216" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="height:20px;"></td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+        </div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+
+            </p>
+            <p>
+                1. This is the page Where Different Counties Currency type are Configured.</p>
+            <p>2. Which will be used in the base_currency_configuration page to identifies and configure the currency type to the particular LE  <br />
+            </p>
+        </div>
+    </div>
+</body>
+</html>

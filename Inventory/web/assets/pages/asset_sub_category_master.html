@@ -1,0 +1,160 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Asset Sub Category Master</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+      <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody"> 
+        <div style="margin-left: 340px; margin-top: 50px;">
+            <table>
+                <tr>
+                    <td colspan="5" style="font-weight: bold;">
+                        Asset Sub Category
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td >Major Category</td>
+                    <td >Minor Category</td>
+                    <td >Sub Category Code</td>
+                    <td >Sub Category Name</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <select style="width: 150px;">
+                            <option value="0" selected="selected">---Select---</option>
+                            <option value="IND">Computer Equipments</option>
+                            <option value="USA">Office Equipments</option>
+                            <option value="UK">Furniture</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select style="width: 180px;">
+                            <option value="0" selected="selected">---Select---</option>
+                            <option value="INDA">Asset Minor Category Name 1</option>
+                            <option value="USA">Asset Minor Category Name 2</option>
+                            <option value="UK">Asset Minor Category Name 3</option>
+                            <option value="AUS">Asset Minor Category Name 4</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name=""/></td>
+                    <td><input type="text" name=""/></td>
+                    <td><input type="submit" value="ADD" /> </td>
+                </tr>
+
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+
+                <tr>
+                    <td>Major Category Code<hr/> </td>
+                    <td>Minor Category Code<hr/>  </td>
+                    <td>Sub Category Code<hr/></td>
+                    <td>Sub Category Name<hr/></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>MAJ-CAT-001</td>
+                    <td>MIN-CAT-001</td>
+                    <td>SUB-CAT-001</td>
+                    <td><input type="text" value="Asset Sub Cat. Name1 "/> </td>
+                    <td><input type="checkbox" name="hg"/> </td>
+                </tr>
+                <tr>
+                    <td>MAJ-CAT-002</td>
+                    <td>MIN-CAT-002</td>
+                     <td>SUB-CAT-002</td>
+                    <td><input type="text" value="Asset Sub Cat. Name2 "/> </td>
+                    <td><input type="checkbox" name="hg"/> </td>
+                </tr>
+                <tr>
+                    <td>MAJ-CAT-003</td>
+                    <td>MIN-CAT-003</td>
+                     <td>SUB-CAT-003</td>
+                    <td><input type="text" value="Asset Sub Cat. Name3 "/> </td>
+                    <td><input type="checkbox" name="hg"/> </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td style="float: right;"><input type="submit" value="Update" style="width: 100px;"/></td>
+                    <td><input type="submit" value="Delete" style="width: 100px;"/></td>
+                    <td> </td>
+                </tr>
+            </table>
+        </div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+
+            </p>
+            <p>
+                1:'Enterprise Setup'<br>
+                2:'Enterprise Setup'
+
+            </p>
+        </div>
+    </body>

@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Allocation page1</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+
+        <script type="text/javascript" src="../js/validation.js"></script>
+
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+        <script type="text/javascript">
+            $(function() {
+                $(".datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+
+
+
+        <script>
+            $(document).ready(function() {
+
+                $(".table_class1").hide();
+                $("#submit_id1").click(function() {
+                    window.open("grn2_master.html", "PopupWindow", "width=600,height=600,scrollbars=yes,resizable=yes");
+                });
+                $("#submit_id2").click(function() {
+                    window.close();
+                });
+
+            });
+        </script>
+
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+                $("#next_id1").click(function() {
+                    $("#table_id1").show();
+                });
+                $("#go_id1").click(function() {
+                    $("#table_id2").show();
+                    $("#table_id3").show();
+                });
+            });
+        </script>
+
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div style="margin-left: 100px; margin-top: 70px;">
+                <div style="margin-left: 160px;">
+                <table width="537" border="0" cellspacing="2" cellpadding="0">
+                    <tr>
+                        <td height="57" colspan="4"><div align="center"><strong>Allocatio</strong><strong>n</strong></div></td>
+                    </tr>
+                    <tr>
+                        <td width="239"><u>From Stores to Support Function :</u> </td>
+                        <td width="142">&nbsp;</td>
+                        <td width="53">&nbsp;</td>
+                        <td width="93">&nbsp;</td>
+                    </tr>
+                </table>
+                </div>
+<div style="margin-left: 180px;">
+                <table width="654" border="0">
+                    <tr>
+                        <td width="92">&nbsp;</td>
+                        <td width="143">Select Legal Entity : </td>
+                        <td width="156"><label>
+                                <select name="select" style="width:127px">
+                                    <option selected="selected">Select</option>
+                                    <option>Legal Entity 1</option>
+                                    <option>Legal Entity 2</option>
+                                </select>
+                            </label></td>
+                        <td width="235">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>GRN Date Range : </td>
+                        <td><label>
+                                <input type="text" name="textfield2" style="width:127px" class="datepicker1"/>
+                            </label></td>
+                        <td>To
+                            <input type="text" name="textfield22" style="width:127px" class="datepicker1"/></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><label></label></td>
+                        <td><input type="submit" name="Submit" value="Next" id="next_id1"/></td>
+                    </tr>
+                </table>
+</div>
+                <table id="table_id1" class="table_class1" width="654" border="0">
+                    <tr>
+                        <td width="111">&nbsp;</td>
+                        <td width="125">&nbsp;</td>
+                        <td width="155">&nbsp;</td>
+                        <td width="209">&nbsp;</td>
+                        <td width="20">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Select Vendor : </td>
+                        <td><select name="select2" style="width:150px">
+                                <option selected="selected">Select</option>
+                                <option>Vendor 1</option>
+                                <option>Vendor 2</option>
+                            </select></td>
+                        <td><input name="text" type="text" style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;width: 100px;" value=" Search "/></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Select GRN : </td>
+                        <td><select name="select3" style="width:150px">
+                                <option selected="selected">Select</option>
+                                <option>GRN-001</option>
+                                <option>GRN-002</option>
+                                <option>GRN-003</option>
+                            </select></td>
+                        <td><input name="text2" type="text" style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;width: 100px;" value=" Search "/></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><input type="submit" name="Submit2" value="GO" id="go_id1"/></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <table id="table_id2" class="table_class1" width="1127" border="0">
+                    <tr>
+                        <td width="37">&nbsp;</td>
+                        <td width="146">&nbsp;</td>
+                        <td width="96">&nbsp;</td>
+                        <td width="141">&nbsp;</td>
+                        <td width="114">&nbsp;</td>
+                        <td width="90">&nbsp;</td>
+                        <td width="102">&nbsp;</td>
+                        <td width="102">&nbsp;</td>
+                        <td width="84">&nbsp;</td>
+                        <td width="59">&nbsp;</td>
+                        <td width="110">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: activecaption;">S.No.</td>
+                        <td style="font-weight: bold; background-color: activecaption;">Material Description </td>
+                        <td style="font-weight: bold; background-color: activecaption;">Sub Category </td>
+                        <td style="font-weight: bold; background-color: activecaption;">Minor Category </td>
+                        <td style="font-weight: bold; background-color: activecaption;">Major Category </td>
+                        <td style="font-weight: bold; background-color: activecaption;">Bond Type </td>
+                        <td style="font-weight: bold; background-color: activecaption;">Unit No. </td>
+                        <td style="font-weight: bold; background-color: activecaption;">Bond Register </td>
+                        <td style="font-weight: bold; background-color: activecaption;">Owner BU </td>
+                        <td style="font-weight: bold; background-color: activecaption;">Quantity</td>
+                        <td style="font-weight: bold; background-color: activecaption;">Select  </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="allocation_item_page2.html">Desktop</a></td>
+                        <td>Desktop</td>
+                        <td>Computer Equipments </td>
+                        <td>IT Hardware </td>
+                        <td>STP</td>
+                        <td>Unit 1 </td>
+                        <td>BR-No-001</td>
+                        <td>BU-1</td>
+                        <td>10</td>
+                        <td><label>
+                                <input type="checkbox" name="checkbox" value="checkbox" />
+                            </label></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="allocation_item_page2.html">Laptop</a></td>
+                        <td>Laptop</td>
+                        <td>Computer Equipments </td>
+                        <td>IT Hardware </td>
+                        <td>SEZ</td>
+                        <td>Unit 2 </td>
+                        <td>BR-No-002</td>
+                        <td>BU-2</td>
+                        <td>5</td>
+                        <td><input type="checkbox" name="checkbox2" value="checkbox" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <table id="table_id3" class="table_class1" width="703" border="0">
+                    <tr>
+                        <td width="111">&nbsp;</td>
+                        <td width="127">Assigned To Support Function </td>
+                        <td width="429"><select name="select4" style="width:150px">
+                                <option selected="selected">Select</option>
+                                <option>emp-001(Ram Kumar)</option>
+                                <option>emp-002(Mohan Kumar)</option>
+                            </select></td>
+                        <td width="18">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Assigned Date </td>
+                        <td><label>
+                                <input type="text" name="textfield" class="datepicker1"/>
+                            </label></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><label></label></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><input type="submit" name="Submit3" value="Submit" /></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+
+    </body>
+</html>

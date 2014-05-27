@@ -1,0 +1,260 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>PRINT MRN</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+        </script>
+        
+		
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+		
+		
+		
+        <script>
+            $(document).ready(function() {
+			    $('#div_id0').hide();
+				$('#div_id1').hide();
+                
+
+            });
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+		
+		 <script>
+            $(function() {
+                $("#go_id1").click(function()
+                {
+                    $("#div_id0").show();
+                }); 
+				
+				 $("#click_id1").click(function()
+                {
+                    $("#div_id1").show();
+					 $("#div_id0").hide();
+					 $("#div_id3").hide();
+                });   
+            });
+        </script>
+		
+
+</head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div style="margin-left: 340px; margin-top: 50px;">
+                <table width="483"  border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;" align="center">Print MRN </td>
+                    </tr>
+			  </table></div>
+			  <div id="div_id3"style="margin-left: 340px; margin-top: 5px;">
+					<table width="372">
+                    <tr>
+                      <td colspan="2" align="center" >If you want to print click GO !!  </td>
+                      <td width="10" ><label>
+                        <input type="submit" name="Submit" value="GO" id="go_id1" style="width:60px">
+                      </label></td>
+                      <td width="78"><label></label></td>
+                </tr></table>
+			  </div>
+					<div id="div_id0" style="margin-left: 340px; margin-top: 5px;">
+					<table width="483" border="0">
+                    <!--  <tr>
+                        <td width="114">&nbsp;</td>
+                        <td width="109">&nbsp;</td>
+                        <td width="133">&nbsp;</td>
+                        <td width="71">&nbsp;</td>
+                        <td width="34">&nbsp;</td>
+                      </tr>-->
+                      <tr>
+                        <td height="28" width="145" style="font-weight: bold; background-color: activecaption;"><strong>MRN No. </strong></td>
+                        <td height="28" width="145" style="font-weight: bold; background-color: activecaption;"><strong>MRN Date </strong></td>
+                        <td height="28" width="145" style="font-weight: bold; background-color: activecaption;"><strong>Vendor</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td id="click_id1"><a href="#">MRN_No_1</a></td>
+                        <td>24/04/2014</td>
+                        <td>Vendor1</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">MRN_No_2</a></td>
+                        <td>28/04/2014</td>
+                        <td>Vendor2</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+              </table></div>
+					<div id="div_id1" style="margin-left: 340px; margin-top: 5px;">
+					<table>
+                    <tr>
+                        <td width="144" > MRN No : </td>
+                      <td width="150">MRN_No_1</td>
+                        <td width="134" > MRN  Date : </td>
+
+                        <td width="150">24/05/2014</td>
+                    </tr>
+                   
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td > Invoice No. : </td>
+                        <td>101</td>
+                        <td > Invoice Date : </td>
+                        <td><span style="width: 150px;">
+                          09/01/2014
+                        </span></td>
+                    </tr>
+                    <tr>
+                        <td > PO No. : </td>
+                        <td>
+                            202</td>
+							<td>PO Date :</td>
+                        <td style="width: 150px;">12/01/2013</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td >Delivery Note No : </td>
+                        <td>501</td>
+                        <td >Delivery Note Date  : </td>
+                        <td>30/04/2014</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-row"><label>City :</label></td>
+
+                    <td>City Name1</td>
+                        <td class="form-row"><label>&nbsp;Site :</label></td>
+                    <td>site1</td>
+                    </tr>
+                    <tr>
+                        <td >Vendor : </td>
+                        <td><label>
+                          Vendor1
+                        </label></td>
+                        <td >Remark : </td>
+                        <td width="150"><span style="height:20px;">
+                          Sample Remark !!!!!!!
+                        </span></td>
+                    </tr>
+                    <tr>
+                        <td >Requester : </td>
+                        <td>Rajib Kumar</td>
+                        <td >Buyer : </td>
+                        <td>Manoj Kumar</td>
+                    </tr>
+                    <tr>                    </tr>
+                   <!-- <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>-->
+                </table>
+				<table width="590" >
+				<tr>
+                            <td colspan="2" style="font-weight: bold;">                  </td>
+                  </tr>
+
+                <tr>
+                    <td width="145" style="font-weight: bold; background-color: activecaption;">Material Description</td>
+                    <td width="136" style="font-weight: bold; background-color: activecaption;">Packaging Type </td>
+                    <td width="161" style="font-weight: bold; background-color: activecaption;">Packaging Quantity</td>
+                </tr>
+                <tr>
+                    <td>Laptop,Projector !!</td>
+                    <td align="center">Box</td>
+                    <td align="center">300</td>
+		       </tr>
+				 <tr>
+                    <td>Switches,Projector !!</td>
+                    <td align="center">Box</td>
+                    <td align="center">200</td>
+				  <tr><td height="33">&nbsp;</td>
+				  </tr>
+            </table>
+        
+                <table width="429"  border="0" cellpadding="0" cellspacing="3">
+                    <tr >
+                        <td width="196" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                       <!-- <td width="80" align="center"><input name="reset3" type="reset" style="width: 100px;" value="Cancel MRN"/></td>-->
+                        <td width="100" align="center"><input name="reset2" type="reset" style="width: 100px;" value="Print"/></td>
+                        <td width="121" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+
+            <p>
+                <b>Note:- </b>
+            </p>
+            <p>
+                1:'Unit Type, Unit Number, Bond Register } These are ALL optional'<br>
+             
+
+            </p>
+        </div>
+
+    </body>
+</html>

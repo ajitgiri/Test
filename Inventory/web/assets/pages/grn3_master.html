@@ -1,0 +1,303 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grn Master 2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+		<script>
+            $(document).ready(function() {
+			    
+				$(".td_class3").hide();
+				$("#submit_id1").click(function () {                    
+                    window.open("grn2_master.html", "PopupWindow", "width=600,height=600,scrollbars=yes,resizable=yes");
+                });
+				$("#submit_id2").click(function () {                    
+                    window.close();
+                });
+		
+            });
+		</script>
+
+      <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            
+			$("#unit_table").hide();
+        
+                $("#sel").change(function() {
+                    var value1 = $("#sel").val();
+                    var vl1 = "new";
+                    var vl2 = "employee1";
+                    if (value1 == vl1) {
+                        $("#unit_table").hide();
+                    }
+                    if (value1 == vl2) {
+                        $("#unit_table").show();
+                    }
+                });
+				
+				$("#sel3").change(function() {
+                    var value1 = $("#sel3").val();
+                    var vl1 = "org wide asset";
+                    var vl2 = "org level specific";
+					var vl3 = "select";
+                    if (value1 == vl1) {
+                        $(".td_class3").hide();
+                    }
+                    if (value1 == vl2) {
+                        $(".td_class3").show();
+                    }
+					if (value1 == vl3) {
+                        $(".td_class3").hide();
+                    }
+                });
+				
+				});
+    </script>
+<script type="text/javascript">
+            $(function() {
+                $("#datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker2").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+        <div style="margin-left: 340px; margin-top: 50px;"></td>
+                      </table>
+<table class="table_class" width="713" border="0" cellspacing="2" cellpadding="0" id="table_id7">
+                        <tr>
+                          <td colspan="2" align="center">&nbsp;</td>
+                        <tr>
+                          <td width="174" align="left">ERP Asset No. </td>
+                          <td width="171"><input type="text" name="textfield342" style="width:120px" id="textfield3"/></td>
+                          <td width="159">Ownership</td>
+                          <td width="199"><select name="select12" style="width:120px" id="sel3">
+                              <option selected="selected" value="select">Select</option>
+                              <option value="org wide asset">Org Wide Asset</option>
+                              <option value="org level specific">Org Level Specific</option>
+                          </select></td>
+                        </tr>
+                        <tr>
+                          <td align="left">&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td class="td_class3">Inventory Managed By </td>
+                          <td class="td_class3"><select name="select" style="width:120px">
+                            <option selected>SPOC</option>
+                            <option>Support Function</option>
+                            <option>Asset Manager</option>
+                            <option>Stores</option>
+                                                                              </select></td>
+                        </tr>
+                        <tr>
+                          <td align="left">Select BU : </td>
+                          <td><select name="select12" style="width:120px">
+                              <option selected="selected">Select</option>
+                              <option>BU1</option>
+                              <option>BU2</option>
+                              <option>BU3</option>
+                              <option>BU4</option>
+                          </select></td>
+                          <td>Select SBU :</td>
+                          <td><select name="select12" style="width:120px">
+                              <option selected="selected">Select</option>
+                              <option>SBU1</option>
+                              <option>SBU2</option>
+                              <option>SBU3</option>
+                              <option>SBU4</option>
+                          </select></td>
+                        </tr>
+                        <tr>
+                          <td>Select Cost Center: &nbsp;</td>
+                          <td><select name="select12" style="width:120px">
+                              <option selected="selected">Select</option>
+                              <option>CC Name1</option>
+                              <option>CC Name2</option>
+                              <option>CC Name3</option>
+                              <option>CC Name4</option>
+                          </select></td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>Assembly Asset :</td>
+                          <td><select name="select12" style="width:120px">
+                              <option selected="selected">Select</option>
+                              <option>Yes</option>
+                              <option>No</option>
+                          </select></td>
+                          <td>AUC No. </td>
+                          <td><input type="text" name="textfield342" style="width:120px" id="textfield34"/></td>
+                        </tr>
+                        <tr>
+                          <td>Currency : </td>
+                          <td><select name="select12" style="width:120px">
+                              <option selected="selected">Select</option>
+                              <option>Dollar</option>
+                              <option>Euro</option>
+                          </select></td>
+                          <td>Material Unit Value </td>
+                          <td><input type="text" name="textfield3422" style="width:120px" id="textfield342"/></td>
+                        </tr>
+                        <tr>
+                          <td>Exchange Rate : </td>
+                          <td><input type="text" name="textfield34222" style="width:120px" id="textfield3422"/></td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>Taggable :</td>
+                          <td><select name="select12" style="width:120px">
+                              <option selected="selected">Select</option>
+                              <option>Yes</option>
+                              <option>No</option>
+                          </select></td>
+                          <td>Trackable : </td>
+                          <td><select name="select12" style="width:120px">
+                              <option selected="selected">Select</option>
+                              <option>Yes</option>
+                              <option>No</option>
+                          </select></td>
+                        </tr>
+                        <tr>
+                          <td>Additional Charge1:</td>
+                          <td><input type="text" name="textfield3" style="width:120px" value="3000"/></td>
+                          <td>Additional Charge2:</td>
+                          <td><input type="text" name="textfield3" style="width:120px" value="432"/></td>
+                        </tr>
+                        <tr>
+                          <td>Additional Charge3:</td>
+                          <td><input type="text" name="textfield3" style="width:120px" value="432"/></td>
+                          <td>Grand Total : </td>
+                          <td><input type="text" name="textfield34223" style="width:120px" id="textfield34222"/></td>
+                        </tr>
+                        <tr>
+                          <td>Life in Months :</td>
+                          <td><input type="text" name="tname" value="30" style="width:120px" /></td>
+                          <td>Service Vendor : </td>
+                          <td><select name="select12" style="width:120px">
+                              <option selected="selected">Select</option>
+                              <option>Service Vendor1</option>
+                              <option>Service Vendor2</option>
+                              <option>Service Vendor3</option>
+                              <option>Service Vendor4</option>
+                          </select></td>
+                        </tr>
+                        <tr>
+                          <td>Asset Photograph : </td>
+                          <td><input type="file" name="pic2" id="pic2" accept="image/bmp" size="13px"/></td>
+                          <td>Associated Assets : </td>
+                          <td><input type="text" name="textfield34224" style="width:120px" id="textfield34223"/>
+                            <label>
+                            <input type="submit" name="Submit" value="Add Sl No." id="submit_id1">
+                          </label></td>
+                        </tr>
+                        <tr>
+                          <td>Lease Status : </td>
+                          <td><select name="select12" style="width:120px">
+                              <option selected="selected">Select</option>
+                              <option>Yes</option>
+                              <option>No</option>
+                          </select></td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>Lease Start Date : </td>
+                          <td><input type="text" name="textfield342222" style="width:120px" id="textfield342222"/></td>
+                          <td>Lease End Date : </td>
+                          <td><input type="text" name="textfield342222" style="width:120px" id="textfield342222"/></td>
+                        </tr>
+                        <tr>
+                          <td>Asset Specification :</td>
+                          <td><label>
+                            <textarea name="textarea3" rows="2" style="width:120px"></textarea>
+                          </label></td>
+                          <td>Remark :</td>
+                          <td><label>
+                            <textarea name="textarea3" rows="2" style="width:120px"></textarea>
+                          </label></td>
+                        </tr>
+                        <tr>
+                          <td>Capitalized : </td>
+                          <td><select name="select12" style="width:120px">
+                              <option selected="selected">Select</option>
+                              <option>Yes</option>
+                              <option>No</option>
+                          </select></td>
+                          <td>Capitalization in Books : </td>
+                          <td><label>
+                            <select name="select12" size="3" multiple style="width:120px;">
+                              <option selected>Select</option>
+                              <option>Company Act</option>
+                              <option>IT Act</option>
+                            </select>
+                          </label></td>
+                        </tr>
+                      </table>
+                      <p>&nbsp;</p>
+                      <table width="533">
+		  <tr>
+		  <td width="23">&nbsp;</td>
+		  <td width="207">&nbsp;</td>
+		  <td width="97">&nbsp;</td>
+		  <td width="186"><input name="submit2" type="submit" style="width: 100px;"  value="Submit" id="submit_id2"/></td>
+		  </tr>
+		  </table>
+</div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+                
+            </p>
+            <p><br />
+          </p>
+    </div>
+</body>
+</html>

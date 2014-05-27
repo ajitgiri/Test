@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+   <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+    <div style="margin-left: 340px; margin-top:50px">
+    <table width="554"  border="0" cellpadding="4" cellspacing="4">
+                <tr>
+                    <td width="560" height="61" colspan="2" style="font-weight: bold;">
+                  <div align="center">Entry Point</div></td>
+                </tr></table>
+				<table width="543">
+                <tr>
+                  <td width="195">PO Details : </td>
+                  <td width="336"><label>
+                    <input name="radiobutton" type="radio" value="radiobutton" />
+                  </label></td>
+                </tr>
+                <tr>
+                  <td>Goods Recieved at Security : </td>
+                    <td><input name="radiobutton" type="radio" value="radiobutton" /></td>
+                </tr>
+                <tr>
+                  <td>Goods Recieved at Store : </td>
+                    <td><input name="radiobutton" type="radio" value="radiobutton" /></td>
+                </tr>
+      </table>
+
+        <table border="0" class="classtd1">
+                  <tr>
+                    <td colspan="9" style="height: 20px;"></td>
+                  </tr>
+                  <tr>
+                    <td width="30"></td>
+                    <td width="109"></td>
+                    <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                    <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                    <td width="211" align="right">&nbsp;</td>
+                    <td width="89" align="right">&nbsp;</td>
+                  </tr>
+                </table>
+        <p>&nbsp;</p>
+        </div>
+    </body>
+</html>

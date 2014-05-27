@@ -1,0 +1,182 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exchange Rate type </title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+    <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+    <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="../js/jscript.js"></script>
+    <script type="text/javascript" src="../js/EventScript.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+
+                $('#selectAll').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+        <div style="margin-left: 340px; margin-top: 80px;">
+            <form>
+                <table border="0">
+
+                    <tr>
+                        <td colspan="5" style="font-weight: bold; text-align: center;">
+                            Exchange Rate Type                        </td>
+                    </tr>
+                    <tr>
+                        <td width="222" style="height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Select Legal Entity :</td>
+                        <td colspan="4"><label>
+                                <select name="select" style="width:152px">
+                                  <option selected>Select</option>
+                                  <option>Legal Entity 1</option>
+                                    <option>Legal Entity 2</option>
+                                </select>
+                            </label>
+                            <input type="button" value="Go" id="go_id1"/>                        </td>
+                        <td width="116"></td>
+                    </tr>
+                    <tr>
+                        <td  colspan="2" class="td_class_id1">
+                            No. of Types of Exchange Rate :                        </td>
+                      <td colspan="2" class="td_class_id1">
+                        <input type="text" id="nolevel" style="width:152px"/></td>
+                      <td width="160" class="td_class_id1"><input name="button" type="button" id="go_id2" value="Go"/></td>
+                    </tr>
+              </table>
+                <table id="table_id1" width="621" border="0">
+                  <tr>
+                    <td width="218" style="font-weight: bold; background-color: activecaption;">Exchange Rate Type</td>
+                    <td width="88" style="font-weight: bold; background-color: activecaption;">Compliance</td>
+                    <td width="92" style="font-weight: bold; background-color: activecaption;">Depreciation</td>
+                    <td width="205" style="font-weight: bold; background-color: activecaption;"><label>
+                      <input type="checkbox" name="checkbox" value="checkbox" id="selectall">
+                    </label>                    
+                    Select All </td>
+                  </tr>
+                  <tr>
+                    <td>Type 1 : 
+                      <label>
+                      <input type="text" name="textfield" style="width:150px">
+                    </label></td>
+                    <td><label> 
+                      <div align="center">
+                        <input name="radiobutton" type="radio" value="radiobutton">
+                        </label>
+                    </div></td>
+                    <td><div align="center">
+                      <input name="radiobutton1" type="radio" value="radiobutton">
+                    </div></td>
+                    <td><input type="checkbox" name="checkbox2" value="checkbox" class="checkbox1"></td>
+                  </tr>
+                  <tr>
+                    <td>Type 2 :
+                      <label>
+                      <input type="text" name="textfield2" style="width:150px">
+                    </label></td>
+                    <td><div align="center">
+                      <input name="radiobutton" type="radio" value="radiobutton">
+                    </div></td>
+                    <td><div align="center">
+                      <input name="radiobutton1" type="radio" value="radiobutton">
+                    </div></td>
+                    <td><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"></td>
+                  </tr>
+                  <tr>
+                    <td>Type 3 :
+                      <label>
+                      <input type="text" name="textfield3" style="width:150px">
+                    </label></td>
+                    <td><div align="center">
+                      <input name="radiobutton" type="radio" value="radiobutton">
+                    </div></td>
+                    <td><div align="center">
+                      <input name="radiobutton1" type="radio" value="radiobutton">
+                    </div></td>
+                    <td><input type="checkbox" name="checkbox4" value="checkbox" class="checkbox1"></td>
+                  </tr>
+                </table>
+				
+              
+              <p>&nbsp;</p>
+                <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </form>
+            <div id="tableArea">
+                <form>
+                </form>
+            </div>
+        </div>
+		<div align="center" style="margin-top:80px; margin-left:200px">
+		  <table width="640" border="0" class="classtd1">
+                  <tr>
+                    <td colspan="9" style="height: 20px;"></td>
+                  </tr>
+                  <tr>
+                    <td width="0"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="8"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                    <td width="27" align="right"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                    <td width="100" align="left"><input name="reset3" type="reset" style="width: 100px;" value="Cancel"/></td>
+                    <td width="100" align="left">&nbsp;</td>
+                    <td width="100" align="right">&nbsp;</td>
+                    <td width="100" align="right">&nbsp;</td>
+                  </tr>
+                </table></div>
+				
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Allocation page1</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        
+        <script type="text/javascript" src="../js/validation.js"></script>
+		
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+         <script type="text/javascript">
+            $(function() {
+                $(".datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+    <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+	
+	
+	
+	<script>
+            $(document).ready(function() {
+			    
+				$("#table_id2").hide();
+				
+		
+            });
+		</script>
+		
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+			$("#next_id1").click(function(){
+				window.open("acceptance_by_sf_page3.html");
+				});
+			$("#next_id0").click(function(){
+				$("#table_id2").show();
+				});
+        });
+    </script>
+	
+
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+<div style="margin-left: 150px; margin-top: 70px;">
+
+            <table width="537" border="0" cellspacing="2" cellpadding="0">
+                <tr>
+                    <td height="57" colspan="4"><div align="center"><strong>Acceptance</strong><strong></strong></div></td>
+                </tr>
+                <tr>
+                    <td width="239">&nbsp;</td>
+                    <td width="142">&nbsp;</td>
+                    <td width="53">&nbsp;</td>
+                    <td width="93">&nbsp;</td>
+                </tr>
+            </table>
+			
+			
+            <table width="654" border="0">
+              <tr>
+                <td width="92">&nbsp;</td>
+                <td width="143">Select Legal Entity </td>
+                <td width="156"><label>
+                  <select name="select" style="width:127px">
+                    <option selected="selected">Select</option>
+                    <option>Legal Entity 1</option>
+                    <option>Legal Entity 2</option>
+                  </select>
+                </label></td>
+                <td width="235">&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>City</td>
+                <td><select name="select2" style="width:127px">
+                  <option selected="selected">Select</option>
+                  <option>City 1</option>
+                  <option>City 2</option>
+                                </select></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Site</td>
+                <td><select name="select3" style="width:127px">
+                  <option selected="selected">Select</option>
+                  <option>Site 1</option>
+                  <option>Site 2</option>
+                                </select></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Major Category </td>
+                <td><select name="select5" style="width:127px">
+                  <option selected="selected">Select</option>
+                  <option>IT Hardware</option>
+                  <option>IT Software</option>
+                                </select></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Minor Category </td>
+                <td><select name="select6" style="width:127px">
+                  <option selected="selected">Select</option>
+                  <option>Computer Equipments</option>
+                  <option>Office Equipments</option>
+                                </select></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Sub Category </td>
+                <td><select name="select7" style="width:127px">
+                  <option selected="selected">Select</option>
+                  <option>Laptop</option>
+                  <option>Desktop</option>
+                                </select></td>
+                <td><input type="submit" name="Submit32" value="Next" id="next_id0"/></td>
+              </tr>
+            </table>
+            <table id="table_id2" class="table_class1" width="1089" border="0">
+              <tr>
+                <td width="37">&nbsp;</td>
+                <td width="146">&nbsp;</td>
+                <td width="96">&nbsp;</td>
+                <td width="141">&nbsp;</td>
+                <td width="114">&nbsp;</td>
+                <td width="90">&nbsp;</td>
+                <td width="102">&nbsp;</td>
+                <td width="102">&nbsp;</td>
+                <td width="84">&nbsp;</td>
+                <td width="73">&nbsp;</td>
+                <td width="58">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold; background-color: activecaption;">S.No.</td>
+                <td style="font-weight: bold; background-color: activecaption;">Material Description </td>
+                <td style="font-weight: bold; background-color: activecaption;">Sub Category </td>
+                <td style="font-weight: bold; background-color: activecaption;">Minor Category </td>
+                <td style="font-weight: bold; background-color: activecaption;">Major Category </td>
+                <td style="font-weight: bold; background-color: activecaption;">Bond Type </td>
+                <td style="font-weight: bold; background-color: activecaption;">Unit No. </td>
+                <td style="font-weight: bold; background-color: activecaption;">Bond Register </td>
+                <td style="font-weight: bold; background-color: activecaption;">Owner BU </td>
+                <td style="font-weight: bold; background-color: activecaption;">User BU </td>
+                <td style="font-weight: bold; background-color: activecaption;">Quantity</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><a href="acceptance_by_sf_page2.html">Desktop</a></td>
+                <td>Desktop</td>
+                <td>Computer Equipments </td>
+                <td>IT Hardware </td>
+                <td>STP</td>
+                <td>Unit 1 </td>
+                <td>BR-No-001</td>
+                <td>BU-1</td>
+                <td>BU-1</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><a href="allocation_item_page2.html">Laptop</a></td>
+                <td>Laptop</td>
+                <td>Computer Equipments </td>
+                <td>IT Hardware </td>
+                <td>SEZ</td>
+                <td>Unit 2 </td>
+                <td>BR-No-002</td>
+                <td>BU-2</td>
+                <td>BU-2</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+</div>
+        
+</body>
+</html>

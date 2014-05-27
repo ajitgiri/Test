@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>EnterPrise Mentor Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+                $("#tableForExistion").hide();
+                        $("#tableForNew").hide();
+                 $("#sel").change(function() {
+                    //  alert("Not-same");
+                    var value1 = $("#sel").val();
+                    var vl1 = "new";
+                    var vl2 = "vendor1";
+                    if (value1 == vl1) {
+                        $("#tableForExistion").hide();
+                        $("#tableForNew").show();
+                    }
+                    if (value1 == vl2) {
+                        $("#tableForNew").hide();
+                        $("#tableForExistion").show();
+                    }
+                });
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+        <div id="cBody">
+            <div   style="margin-left: 340px; margin-top: 70px;">
+
+                <table border="0">
+                    <tr>
+                        <td  style="font-weight: bold;text-align: center; width: 550px;">
+                            Vendor Master
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;height: 20px;">
+
+                        </td>
+                    </tr>
+                    <tr>
+                         <td class="form-row" ><label>Select Vendor &nbsp;&nbsp;&nbsp;</label>
+                            <select style="width: 150px;" id="sel">
+                                <option value="0" selected>Select</option>
+                                <option value="new">New</option>
+                                <option value="vendor1">Vendor1</option>
+                                <option value="V2">Vendor2</option>
+                                <option value="V3">Vendor3</option>
+                                <option value="V4">Vendor4</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;height: 20px;">
+
+                        </td>
+                    </tr>
+                </table>
+                <table width="588" id="tableForNew">
+                  <tr> </tr>
+                  <tr >
+                    <td class="form-row" style="width: 110px;"><label>Vendor Site </label></td>
+                    <td><select name="select" style="width: 150px;">
+                        <option value="0" selected>New</option>
+                        <option value="S1">Site Name1</option>
+                        <option value="S2">Site Name2</option>
+                        <option value="S3">Site Name3</option>
+                        <option value="S4">Site Name4</option>
+                                          </select>                    </td>
+                    <td class="form-row"  style="width: 120px;">Vendor Site Name  </td>
+                    <td><input name="name2" type="text"  /></td>
+                  </tr>
+                  <tr >
+                    <td class="form-row"><label>Vendor Code  </label></td>
+                    <td><input name="name2" type="text"  /></td>
+                    <td class="form-row"  style="width: 120px;"><label>Vendor Name  </label></td>
+                    <td><input name="name2" type="text"  /></td>
+                  </tr>
+                  <tr>
+                    <td class="form-row"><label>Address Line 1 </label></td>
+                    <td><input name="name2" type="text"  /></td>
+                    <td class="form-row">Address Line 2 </td>
+                    <td><input name="name2" type="text"  /></td>
+                  </tr>
+                  <tr>
+                    <td class="form-row"><label>Address Line 3 </label></td>
+                    <td><input name="name2" type="text"  /></td>
+                    <td class="form-row"><label>Address Line 4 </label></td>
+                    <td><input name="name2" type="text"  /></td>
+                  </tr>
+                  <tr>
+                    <td class="form-row">City</td>
+                    <td><input name="name2" type="text"  /></td>
+                    <td class="form-row">State</td>
+                    <td><input name="name22" type="text"  /></td>
+                  </tr>
+                  <tr>
+                    <td class="form-row">Country</td>
+                    <td><select name="select" style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="IND">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="AUS">Australia</option>
+                      </select>                    </td>
+                    <td class="form-row">PIN/ZIP Code </td>
+                    <td><input name="name2" type="text"  /></td>
+                  </tr>
+                  <tr>
+                    <td class="form-row">Mobile No. </td>
+                    <td><input name="name2" type="text"  /></td>
+                    <td class="form-row">Phone No. </td>
+                    <td><input name="name2" type="text"  /></td>
+                  </tr>
+                  <tr>
+                    <td class="form-row">Email Id </td>
+                    <td><input name="name2" type="text"  /></td>
+                  </tr>
+                  <tr>
+                    <td width="110" align="right"><input name="submit2" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="154" align="center"><input name="reset3" type="reset" style="width: 100px;" value="Update"/></td>
+                    <td width="240" align="left"><input name="reset33" type="reset" style="width: 100px;" value="Delete"/></td>
+                    <td width="144" align="right"><input name="reset32" type="reset" style="width: 100px;" value="Cancel"/></td>
+                  </tr>
+                </table>
+                <table id="tableForExistion">
+                    <tr>
+                        <td class="form-row" style="width: 110px;"><label>Vendor Site </label></td> 
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0">New</option>
+                                <option value="S1" selected>Site Name1</option>
+                                <option value="S2">Site Name2</option>
+                                <option value="S3">Site Name3</option>
+                                <option value="S4">Site Name4</option>
+                            </select>                        </td>
+                    </tr>
+                    <tr >
+
+                        <td class="form-row"><label>Vendor Code  &nbsp;</label></td><td> <input name="name" type="text" value="VC-001" /></td>
+                        <td class="form-row"  style="width: 120px;"><label>&nbsp;&nbsp;Vendor Name </label></td><td> <input name="name" type="text"  value="Ajit Kumar Giri" /></td>
+                    </tr>
+                    <tr>
+                        <td class="form-row"><label>Address Line 1 </label></td><td> <input name="name" type="text"  value="#123/64" /></td>
+
+                        <td class="form-row"><label>&nbsp;&nbsp;Address Line 2</label></td><td> <input name="name" type="text"  value="4th Crodd"/></td>
+                    </tr>
+                    <tr>
+                        <td class="form-row"><label>Address Line 3 </label></td><td> <input name="name" type="text" value="Shamana Layout" /></td>
+
+                        <td class="form-row"><label>&nbsp;&nbsp;Address Line 4 </label></td><td> <input name="name" type="text" value="Gottigere" /></td>
+                    </tr>
+
+                    <tr>
+                        <td class="form-row"><label>City &nbsp;</label></td><td> <input name="name" type="text"  value="Bangalore"/></td>
+
+                        <td class="form-row"><label>&nbsp;&nbsp;State</label></td>
+                        <td> 
+                            <input name="name" type="text" value="Karnataka" />                        </td>
+                    </tr>
+                    <tr>
+
+                        <td class="form-row"><label>Country &nbsp;</label></td>
+
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" >---Select---</option>
+                                <option value="IND">India</option>
+                                <option value="USA" selected="selected">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="AUS">Australia</option>
+                            </select>                        </td>
+                        <td class="form-row">&nbsp;&nbsp;PIN/ZIP Code</td>
+                        <td> <input name="name" type="text" value="560083" /></td>
+                        <td class="form-row"></td><td> </td>
+                    </tr>
+
+                    <tr>
+                        <td class="form-row">Mobile No. </td>
+                        <td> <input name="name" type="text"  value="9019474952"/></td>
+                        <td class="form-row"><label>&nbsp;&nbsp;Phone No. </label></td><td> <input name="name" type="text" value="011600450" /></td>
+                    </tr>
+                    <tr>
+                        <td class="form-row">Email Id </td>
+                        <td> <input name="name" type="text"  value="ajit.g@strikedart.com"/></td>
+                    </tr>
+
+                    <tr>
+                      <td align="right"><input name="submit2" type="submit" style="width: 100px;"  value="Back"/></td>
+                      <td align="center"><input name="reset3" type="reset" style="width: 100px;" value="Update"/></td>
+                      <td align="left"><input name="reset33" type="reset" style="width: 100px;" value="Delete"/></td>
+                      <td align="right"><input name="reset32" type="reset" style="width: 100px;" value="Cancel"/></td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1:'Enterprise Setup' <br>
+                    2:'Enterprise Setup' 
+
+                </p>
+            </div>
+    </body>
+</html>

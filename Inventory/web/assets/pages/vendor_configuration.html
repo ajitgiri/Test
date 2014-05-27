@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+
+
+
+
+
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+
+                $("#go_id1").click(function()
+                {
+                    $("#div_id1").show();
+                });
+                $("#add_id1").click(function()
+                {
+                    $("#div_id2").show();
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+        <div id="cBody"> 
+            <div style="margin-left: 10px; margin-top: 50px;">
+<div style="margin-left: 350px;">
+                <table width="" border="0" cellspacing="2" cellpadding="0">
+                    <tr>
+                        <td colspan="4"><div align="center"><strong>Dynamic Field Configuration </strong></div></td>
+                        <td width="66">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="175">&nbsp;</td>
+                        <td width="213">&nbsp;</td>
+                        <td width="119">&nbsp;</td>
+                        <td width="75">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr></table>
+					</div>
+                <div id="div_id1">
+                    <table width="1605" border="0">
+                        <tr>
+                            <td width="151">Type : </td>
+                            <td width="145">Attribute Name : </td>
+                            <td width="125">Attribute  Unit :  </td>
+							<td width="155">Notification Required :  </td>
+                            <td width="125">Attribute Value: </td>
+                            <td width="39">&nbsp;</td>
+                            <td width="162">&nbsp;</td>
+                            <td width="65">&nbsp;</td>
+                            <td width="107"><div align="left">Mandatory</div></td>
+                            <td width="205">PO Details</td>
+                            <td width="36">MRN</td>
+                            <td width="150">GRN</td>
+                        </tr>
+                        <tr>
+                            <td><select name="select3" style="width:150px">
+                                    <option selected="selected">Select</option>
+                                    <option>Upload</option>
+                                    <option>Date</option>
+                                    <option>Alpha Numeric</option>
+                                    <option>Dropdown</option>
+                                    <option>Checkbox</option>
+                                </select></td>
+                            <td><label>
+                                    <input type="text" name="textfield" />
+                                </label></td>
+                            <td><input type="text" name="textfield24" /></td>
+							<td><input type="radio" name="textfield2" />Yes
+							<input type="radio" name="textfield2" />No</td>
+                            <td><input type="text" name="textfield2" /></td>
+                            <td><label>
+                                    <input type="submit" name="Submit" value="Add" style="width:80px;" id="add_id1"/>
+                                </label></td>
+                            <td rowspan="2"><label>
+                                    <textarea style="resize:none;" name="textarea" rows="5" size="40">Attribute Value 1
+Attribute Value 2
+Attribute Value 3</textarea>
+                                </label></td>
+                            <td><input type="submit" name="Submit2" value="Remove" id="Submit"/></td>
+                            <td><select name="select2"  style="width: 100px !important; min-width: 100px; max-width: 100px;">
+                                    <option selected="selected" value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select></td>
+                          <td>
+                                <input type="radio" name="podtl"/>Common For Transaction<br>
+                            <input type="radio" name="podtl"/>Common For Line Item<br></td>
+                            <td>
+                                <input type="radio" name="podtl1"/><br>
+                            <input type="radio" name="podtl1"/><br></td>
+                          <td>
+                                <input type="radio" name="podtl2"/><br>
+                                <input type="radio" name="podtl2"/><br>
+                                <input type="radio" name="podtl"/>
+                                Individual Asset</td>
+                        </tr>
+                        <tr>
+                            <td height=height"75">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><input type="submit" name="Submit22" value="Deselect" id="Submit2"/></td>
+                            <td><input type="submit" name="Submit222" value="Update" id="Submit22"/></td>
+                  </tr></table>
+                </div>
+                <div id="div_id2">
+                    <table width="1600">
+                        <tr>
+                            <td width="140" style="background-color: activecaption;"><u>Type</u></td>
+                            <td width="152" style="background-color: activecaption;"><u>Attribute Name</u></td>
+                            <td width="151" style="background-color: activecaption;"><u>Attribute Unit</u></td>
+							<td width="151" style="background-color: activecaption;"><u>Notification Required</u></td>
+                            <td width="151" style="background-color: activecaption;"><u>Attribute Value </u></td>
+                            <td width="80" style="background-color: activecaption;"><u>Mandatory</u></td>
+							<td width="200" style="background-color: activecaption;"><u>PO Details</u></td>
+							<td width="100" style="background-color: activecaption;"><u>MRN</u></td>
+							<td width="200" style="background-color: activecaption;"><u>GRN</u></td>
+                            <td width="100" style="background-color: activecaption;"><u>
+                                    <label>
+                                        <input type="checkbox" name="checkbox" value="checkbox" id="selectall"/>
+                                    </label>
+                                    Select All </u></td>
+                        </tr>
+                        <tr>
+                            <td>Alpha Numeric</td>
+                            <td><input name="textfield3" type="text" value="Attribute Name 1" /></td>
+                            <td><input name="textfield22" type="text" value="Attribute Unit 1" /></td>
+                            <td><input name="textfield22" type="text" value="Attribute value 1" /></td>
+							<td></td>
+                            <td><select name="select5">
+                                    <option>Select</option>
+                                    <option>Yes</option>
+                                    <option selected="selected">No</option>
+                                </select></td>
+                            <td><input type="radio" name="podtl1"/>
+                              Common For Transaction<br />
+                              <input type="radio" name="podtl1"/>
+                            Common For Line Item</td>
+							<td><input type="radio" name="podtl1"/><br />
+								<input type="radio" name="podtl1" checked="checked"/>
+								</td>
+							<td><input type="radio" name="podtl1" checked="checked"/><br />
+								<input type="radio" name="podtl1"/><br />
+								<input type="radio" name="podtl1"/>
+                                Individual Asset
+								</td>
+							<td><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"/></td>
+                        </tr>
+                        <tr>
+                            <td>Upload</td>
+                            <td><input name="textfield4" type="text" value="Attribute Name 2" /></td>
+                            <td><input name="textfield23" type="text" value="Attribute Unit 2" /></td>
+                            <td><input name="textfield23" type="text" value="Attribute value 2" /></td>
+														<td></td>
+                            <td><select name="select6">
+                                    <option>Select</option>
+                                    <option selected="selected">Yes</option>
+                                    <option>No</option>
+                                </select></td>
+                            <td><input type="radio" name="podt2"/>
+                              Common For Transaction<br />
+                              <input type="radio" name="podt2"/>
+                            Common For Line Item</td>
+							<td><input type="radio" name="podt2"/><br />
+								<input type="radio" name="podt2" checked="checked"/>
+								</td>
+							<td><input type="radio" name="podt2" checked="checked"/><br />
+								<input type="radio" name="podt2"/><br />
+								<input type="radio" name="podt2"/>
+                                Individual Asset
+								</td>
+							<td><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"/></td>
+                        </tr>
+						 <tr>
+                            <td>Date</td>
+                            <td><input name="textfield4" type="text" value="Attribute Name 4" /></td>
+                            <td><input name="textfield23" type="text" value="Attribute Unit 3" /></td>
+                            <td><input name="textfield23" type="text" value="Attribute value 5" /></td>
+														<td>
+														<input type="radio" name="textfield2" />Yes
+							<input type="radio" name="textfield2" />No
+														</td>
+                            <td><select name="select6">
+                                    <option>Select</option>
+                                    <option selected="selected">Yes</option>
+                                    <option>No</option>
+                                </select></td>
+                            <td><input type="radio" name="podtl3"/>
+                              Common For Transaction<br />
+                              <input type="radio" name="podtl3"/>
+                            Common For Line Item</td>
+							<td><input type="radio" name="podtl3"/><br />
+								<input type="radio" name="podtl3" checked="checked"/>
+								</td>
+							<td><input type="radio" name="podtl3" checked="checked"/><br />
+								<input type="radio" name="podtl3"/><br />
+								<input type="radio" name="podtl3"/>
+                                Individual Asset
+								</td>
+							<td><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"/></td>
+                        </tr>
+                    </table>
+                    <table border="0" class="classtd1">
+                        <tr>
+                            <td colspan="9" style="height: 20px;"></td>
+                        </tr>
+                        <tr>
+                            <td width="204">&nbsp;</td>
+                            <td width="100">&nbsp;</td>
+                            <td><div align="right">
+                                    <input name="submit2" type="submit" style="width: 100px;"  value="Back"/>
+                                </div></td>
+                            <td><input name="reset2" type="reset" style="width: 100px;" value="Update"/></td>
+                            <td align="right"><input name="submit" type="submit" style="width: 100px;"  value="Delete"/></td>
+                            <td width="100" align="right"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                            <td width="100" align="right">&nbsp;</td>
+                        </tr>
+                    </table>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1. Can update the values using update button.</p>
+                <p>2. Can delete an entry using delete button.</p>
+                <p>3. Under Type : Dropdown will allow single selection and checkbox will allow multiple selection. <br />
+                </p>
+            </div>
+    </body>
+</html>

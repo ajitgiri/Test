@@ -1,0 +1,14 @@
+1: Right click on Importing project folder 
+2: Select:- 
+		-> TorsoiseSVn
+		-> Import
+3: Change the URL like :-
+		https://github.com/ajitgiri/Test/trunk/Inventory
+		
+		Test:- repositery i have created in GitHub
+		Inventory:- Project name on which i have right clicked and want to import 
+						to the central repositry from my local repository
+4: Give comment for further acknowledge
+        
+		
+		

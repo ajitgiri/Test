@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Store Configuration</title>
+        <!--Ajit Start-->
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#div_id1').hide();
+            });
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script>
+            $(function() {
+                $("#go_id1").click(function()
+                {
+                    $("#div_id1").show();
+                });
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <!--Ajit Start-->
+            <br><br><br><br>
+            <center>
+
+                <table>
+                    <tr>
+                        <td height="32" colspan="3"><div align="center"><strong>Stores Configuration </strong></div></td>
+                    </tr>
+                    <tr>
+                        <td>No. of Stores :</td>
+                        <td><input type="text" name="" maxlength="3" class="text-input required"/></td>
+                        <td><input type="submit" value="Go" id="go_id1"/> </td>
+                    </tr>
+                </table>
+                <br>
+                <div id="div_id1">
+                    <table width="674" >
+                        <tr>
+                            <td width="200" align="center" style="background-color: activecaption;">Stores</td>
+                            <td width="90" align="center" style="background-color: activecaption;">IT Hardware</td>
+                            <td width="93" align="center" style="background-color: activecaption;">IT Software</td>
+                            <td width="100" align="center" style="background-color: activecaption;">Non IT</td>
+                            <td width="167" align="center" style="background-color: activecaption;">Lab/Engineering</td>
+                        </tr>
+                        <tr>
+                            <td  align="center">Store 1 :
+                                <input type="text" name="ss" style="width:100px"/></td>
+                            <td  align="center"><input type="radio" name="sample" value="select"></td>
+                            <td  align="center"><input type="radio" name="sample1" value="select"></td>
+                            <td  align="center"><input type="radio" name="sample2" value="select"></td>
+                            <td  align="center"><input type="radio" name="sample3" value="select"></td>
+                        </tr>
+                        <tr>
+                            <td  align="center">Store 2 :
+                                <input type="text" name="ss" style="width:100px"/></td>
+                            <td  align="center"><input type="radio" name="sample" value="select"></td>
+                            <td  align="center"><input type="radio" name="sample1" value="select"></td>
+                            <td  align="center"><input type="radio" name="sample2" value="select"></td>
+                            <td  align="center"><input type="radio" name="sample3" value="select"></td>
+                        </tr>
+                        <tr>
+                            <td  align="center">Store 3 :
+                                <input type="text" name="ss" style="width:100px"/></td>
+                            <td  align="center"><input type="radio" name="sample" value="select"></td>
+                            <td  align="center"><input type="radio" name="sample1" value="select"></td>
+                            <td  align="center"><input type="radio" name="sample2" value="select"></td>
+                            <td  align="center"><input type="radio" name="sample3" value="select"></td>
+                        </tr>
+
+                    </table>
+                    <table border="0" class="classtd1">
+                        <tr>
+                            <td colspan="9" style="height: 20px;"></td>
+                        </tr>
+                        <tr>
+                            <td width="184"></td>
+                            <td width="86"></td>
+                            <td width="100" align="right"><input type="submit"  value="Back" style="width: 100px;"/></td>
+                            <td width="120" align="left"><input type="reset" value="Cancel" style="width: 100px;"/></td>
+                            <td width="100" align="left"><input type="reset" value="Update" style="width: 100px;"/></td>
+                            <td width="100" align="right"><input type="submit"  value="Delete" style="width: 100px;"/></td>
+                            <td width="100" align="right">&nbsp;</td>
+                        </tr>
+                    </table></div>
+                <p>&nbsp;</p>
+                <p><br>
+                    <br>
+                    <br>
+                </p>
+                <div style="color: blueviolet;">
+                    This Above table and no of rows will generate According<br>
+                    to the No Of Levels :: will entered by User.
+                </div>
+                <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                    <p>
+                        <b>Note:- </b>
+                    </p>
+                    <p>
+                        1. This is Exchange Rate Master Where Exchange Rate name is Registering. 
+                    </p>
+                </div>	
+            </center>
+                </body>
+
+
+                </html>

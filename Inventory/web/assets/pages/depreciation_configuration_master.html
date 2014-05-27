@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div style="margin-left: 200px; margin-top: 50px;">
+
+                <table width="3335" border="0" cellspacing="2" cellpadding="0">
+                    <tr>
+                        <td colspan="2"><strong>Depreciation Configuration Master </strong><strong> </strong></td>
+                        <td width="327">&nbsp;</td>
+                        <td width="59">&nbsp;</td>
+                        <td width="59">&nbsp;</td>
+                        <td width="175">&nbsp;</td>
+                        <td width="128">&nbsp;</td>
+                        <td width="128">&nbsp;</td>
+                        <td width="128">&nbsp;</td>
+                        <td width="133">&nbsp;</td>
+                        <td width="133">&nbsp;</td>
+                        <td width="128">&nbsp;</td>
+                        <td width="143">&nbsp;</td>
+                        <td width="344">&nbsp;</td>
+                        <td width="13">&nbsp;</td>
+                        <td width="981">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="291">&nbsp;</td>
+                        <td width="131">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Select Legal Entity  : </td>
+                        <td><select name="select3" style="width:120px">
+                                <option selected="selected">Select</option>
+                                <option>LE 1</option>
+                                <option>LE 2</option>
+                                <option>LE 3</option>
+                            </select></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="25"><label>Select Depreciation Process : </label></td>
+                        <td><select name="select" style="width:120px">
+                                <option selected="selected">Select</option>
+                                <option>New</option>
+                                <option>IT Act</option>
+                                <option>Company Act</option>
+                            </select></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Applicable Financial Year : </td>
+
+                        <td><select name="select4" style="width:120px">
+                                <option selected="selected">Select</option>
+                                <option>Financial Year 1</option>
+                                <option>Financial Year 2</option>
+                                <option>Financial Year 3</option>
+                            </select></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><label></label></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Method of Depreciation : </td>
+                        <td><select name="select6" style="width:120px">
+                                <option selected="selected">Select</option>
+                                <option>SLM</option>
+                                <option>DBM/WDV</option>
+                            </select></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Depreciation Based On : </td>
+                        <td><select name="select7" style="width:120px">
+                                <option selected="selected">Select</option>
+                                <option>Life in Month</option>
+                                <option>Rate in %</option>
+                            </select></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="24">Capitalization Date for Non-assembly Assets : </td>
+                        <td><select name="select8" style="width:120px">
+                                <option selected="selected">Manual</option>
+                                <option id="automatic">Automatic</option>
+                            </select></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <div id=div123>
+                    <table width="1918" border="0" cellspacing="2" cellpadding="0">
+                        <tr>
+                            <td width="414">&nbsp;</td>
+                            <td width="55"><u>Bonded</u></td>
+                            <td width="1441"><u>Non Bonded</u></td>
+                        </tr>
+                        <tr>
+                            <td>Date of goods receipt at security (MRN Date) </td>
+                            <td><label>
+                                    <input name="radiobutton" type="radio" value="radiobutton" />
+                                </label></td>
+                            <td><input name="radiobutton" type="radio" value="radiobutton" /></td>
+                        </tr>
+                        <tr>
+                            <td>Date of goods receipt at stores (GRN Date) </td>
+                            <td><input name="radiobutton" type="radio" value="radiobutton" /></td>
+                            <td><input name="radiobutton" type="radio" value="radiobutton" /></td>
+                        </tr>
+                        <tr>
+                            <td>Date of bonding (for Bonded Assets) </td>
+                            <td><input name="radiobutton" type="radio" value="radiobutton" /></td>
+                            <td><input name="radiobutton" type="radio" value="radiobutton" /></td>
+                        </tr>
+                        <tr>
+                            <td>Installation Date </td>
+                            <td><input name="radiobutton" type="radio" value="radiobutton" /></td>
+                            <td><input name="radiobutton" type="radio" value="radiobutton" /></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id=div2>
+                    <table width="572" border="0" cellspacing="2" cellpadding="0">
+                        <tr>
+                            <td width="286">Additional Charges to be Considered for Capitalization : </td>
+                            <td width="280"><label>
+                                   <select multiple value="0" selected="selected">
+                                        <option>--All--</option>
+                                        <option>Net Asset Value</option>
+                                        <option>Duties</option>
+                                        <option>Octroi</option>
+                                        <option>Sales Tax (VAT)</option>
+                                        <option>Service Taxes</option>
+                                    </select>
+                                </label></td>
+                        </tr>
+                    </table>
+                    <table width="1930" border="0" cellspacing="2" cellpadding="0">
+                        <tr>
+                            <td width="230">Write Off Value : </td>
+                            <td width="1400"><label>
+                                    <input type="text" name="textfield" style="width:180px"/>
+                                </label></td>
+                            <td width="138">&nbsp;</td>
+                            <td width="140">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Stop Depreciation at : </td>
+                            <td><label>
+                                    <select name="select5" style="width:50px">
+                                        <option selected="selected">%</option>
+                                        <option>Fixed</option>
+                                    </select> 
+                                    <input type="text" name="textfield2" style="width:30px"/>
+                                    %    or 
+                                    <input type="text" name="textfield22" style="width:35px"/>
+                                </label></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>No. of days to be Considered : </td>
+                            <td><label>
+                                    <select name="select9" style="width:180px">
+                                        <option selected="selected">select</option>
+                                        <option>Actual No. of days</option>
+                                        <option>Equal for all months</option>
+                                    </select>
+                                </label></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Start Date of Capitalization : </td>
+                            <td><select name="select10" style="width:180px">
+                                    <option selected="selected">select</option>
+                                    <option>Actual Date</option>
+                                    <option>First Date of the Month</option>
+                                    <option>First Date of the Next Month</option>
+                                    <option>100% if 1st half &amp; 50% if 2nd half</option>
+                                </select></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><label>
+                                    <input type="submit" name="Submit" value="Update" style="width:100px"/>
+                                </label></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p></div>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1. When select automatic under &quot;Capitalization Date for Non-assembly Assets&quot; then bonded unbonded thing will feature. <br />
+                </p>
+            </div>
+    </body>
+</html>

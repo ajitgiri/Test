@@ -1,0 +1,113 @@
+/* body{
+background-image:url('bg.jpg');
+}
+*/
+/* reset */
+
+.menu,
+.menu ul,
+.menu li,
+.menu a{
+margin:0;
+padding:0;
+border:none;
+outline:none;
+}
+
+/* position */
+
+ul.menu{
+margin: 10px auto 0 auto;
+}
+
+.menu{
+width:100%;  /* come back to check */
+height:30px;
+background:blue;
+position:relative;
+border-radius: 5px; /* To make corner rownded */ 
+-webkit-border-radius: 5px; 
+-moz-border-radius: 5px; 
+}
+
+.menu li{
+list-style:none;
+float:left;
+display :block;
+position : relative;
+padding:0 3px 0 3px;
+}
+
+/* Links */
+
+.menu ul li a{
+display : block;
+text-decoration :none;
+font-weight : bold;
+color : #FFF;
+font-size : 13px;
+padding : 0 10px;
+margin : 5px 0;
+line-height : 20px;
+border-bottom:none;
+border-right:1px solid #353359;
+}
+.menu li:first-child a{ border-left : none;}
+.menu li:last-child a{ border-right : none;}
+.menu li:hover > a{ color : yellow;}
+
+/* Sub Menu */
+
+.menu ul{
+position :absolute;
+background : blue ;
+border-radius: 5px; /* To make corner rownded */ 
+-webkit-border-radius: 5px; 
+-moz-border-radius: 5px; 
+/* CSS3 Properties */
+ background :Linear-gradient (top , red 0%, red 100%);
+ background :-moz-linear-gradient (top , red 0%, red 100%);
+ background :-webkit-linear-gradient (top , red 0%, red 100%);
+}
+
+.menu li:hover >ul {
+display:block;
+}
+.menu ul li a{
+margin : 0;
+padding : -2px 10px;
+color:white;
+font-size:14px;
+font-weight:bold;
+}
+
+.menu ul li:last-child a{ border : none ;}
+.menu ul ul li a{border-right:none;border-bottom : 1px solid #353359;}
+.menu ul ul ul li a{border-right:none;border-bottom : 1px solid #353359;}
+.menu ul ul
+{
+display:none;
+position:absolute;
+}
+.menu ul ul li a
+{
+width: 165px;
+font-weight:bold;
+}
+.menu ul ul ul
+{
+display:none;
+position:absolute;
+left:175px;
+margin-top:-15px;
+}
+.menu ul ul ul ul
+{
+display:none;
+left:175px;
+position:absolute;
+}
+
+.menu ul li ul li a.present1{
+    background-image: url('../images/menu_level2_item_parent.gif');
+}

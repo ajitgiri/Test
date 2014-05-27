@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Home</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+           <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+        });
+    </script>
+	 <script>
+	$(document).ready(function() {
+    $('#selectall').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+</script>
+
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+<div style="margin-left: 200px; margin-top: 50px;">
+
+<table  border="0" cellspacing="2" cellpadding="0">
+  <tr>
+    <td colspan="5"  align="center"><strong>UOM Master  </strong><strong></strong></td>
+  </tr>
+  <tr>
+    <td colspan="5"  align="center"></td>
+  </tr>
+  <tr>
+    <td colspan="5"  align="center"></td>
+  </tr>
+  <tr>
+    <td colspan="5"  align="center"></td>
+  </tr>
+  <tr>
+    <td width="148" rowspan="2" align="right"> </td>
+    <td width="152" align="left">UOM Code </td>
+    <td width="150" align="left">UOM Name </td>
+    <td><label></label></td>
+  </tr>
+  <tr>
+    <td align="left"><input type="text" name="textfield22" /></td>
+    <td width="150" align="left"><input type="text" name="textfield225" /></td>
+    <td><input type="submit" name="Submit" value="Add" /></td>
+  </tr>
+  <tr>
+                            <td colspan="5" style="height:10px;"></td>
+    </tr>
+						 <tr>
+                            <td colspan="5" style="height:10px;"></td>
+                        </tr>
+						<tr>
+                            <td colspan="5" style="height:10px;"></td>
+                        </tr>
+						 <tr>
+                            <td colspan="5" style="height:10px;"></td>
+                        </tr>
+  <tr>
+    <td width="148" align="right"></td>
+	<td width="152" style="background-color: activecaption;">UOM Code</td>
+	<td width="150" style="background-color: activecaption;">UOM Name</td>
+	<td width="150" style="background-color: activecaption;"><input type="checkbox" name="checkbox4" value="checkbox" id="selectall">Select All</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>UOM - 001 </td>
+    <td><input name="textfield222" type="text" value="UOM Name 1" /></td>
+    <td><label>
+      <input type="checkbox" name="checkbox" value="checkbox" class="checkbox1" />
+    </label></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>UOM - 002 </td>
+    <td><input name="textfield223" type="text" value="UOM Name 2" /></td>
+    <td><input type="checkbox" name="checkbox2" value="checkbox" class="checkbox1" /></td>
+  </tr>
+  <tr>
+    <td height="24">&nbsp;</td>
+    <td>UOM - 003 </td>
+    <td><input name="textfield224" type="text" value="UOM Name 3" /></td>
+    <td><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"/></td>
+  </tr>
+     <tr>
+                            <td colspan="5" style="height:10px;"></td>
+    </tr>
+						 <tr>
+                            <td colspan="5" style="height:10px;"></td>
+                        </tr>
+  </table>
+						 <table style="margin-top:100px">  
+                    <tr >
+                    <td width="148" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="100" align="center"><input name="reset" type="reset" style="width: 100px;" value="Update"/>                    </td>
+                    <td width="100" align="center"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+					<td width="100" align="left"><input name="submit2" type="submit" style="width: 100px;"  value="Enable"/></td>
+					<td width="100" align="left"><input name="submit" type="submit" style="width: 100px;"  value="Disable"/></td>
+                     <td width="302" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                  </tr>
+                    <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>
+</table>
+</div>
+         <!--  <div id="div_id2">
+                           <table  border="1" cellpadding="0" cellspacing="3">
+						   <tr>
+                            <td colspan="5" style="height:10px;"></td>
+                        </tr>
+						 <tr>
+                            <td colspan="5" style="height:10px;"></td>
+                        </tr>
+						   
+                    <tr >
+                    <td width="150" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="80" align="center"><input name="reset" type="reset" style="width: 100px;" value="Update"/>
+                    </td>
+                    <td width="80" align="center"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                     <td width="80" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                  </tr>
+                    <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>
+					
+                    </table></div>  -->     
+					
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+                
+            </p>
+            <p>
+            1. Can update the values using update button.</p>
+            <p>2. Can delete an entry using delete button.</p>
+            <p>3. Here UOM stands for unit of measurement. <br />
+            </p>
+        </div>
+    </body>
+</html>

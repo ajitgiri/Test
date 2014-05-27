@@ -1,0 +1,379 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add PO Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+		
+		 <script>
+            $(document).ready(function() {
+				$('#table_id1').hide();
+				$('#table_id2').hide();
+       });
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+				
+			$("#add_id1").click(function()
+                {
+                    $("#table_id2").show();
+                });
+            });
+        </script>
+		
+		<script type="text/javascript">
+            $(function() {
+                    $("#sel").change(function() {
+                    var value1 = $("#sel").val();
+                    var vl1 = "Asset";
+                    var vl2 = "Accessory";
+                    if (value1 == vl1) {
+                        
+                        //$("#table_id1").show();
+						                    
+                    window.open("add_po_2.html", "PopupWindow", "width=600,height=600,scrollbars=yes,resizable=yes");
+                
+                    }
+                    if (value1 == vl2) {
+                        
+                     window.open("add_po_2.html", "PopupWindow", "width=600,height=600,scrollbars=yes,resizable=yes");
+                    }
+                });
+            });
+        </script>
+		<script>
+	$(document).ready(function() {
+    $('#selectall').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+</script>
+
+</head>
+<body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div style="margin-left: 250px; margin-top: 50px;">
+                
+				<table width="862" border="0">
+				  <tr>
+				    <td width="161" height="70" >&nbsp;</td>
+				    <td width="225"><div align="right"><strong>Add PO Details </strong></div></td>
+				    <td >&nbsp;</td>
+				    <td>&nbsp;</td>
+			      </tr>
+				  <tr>
+                    <td > PO No : </td>
+				    <td><input type="text" style="width: 150px;" /></td>
+				    <td > PO Date : </td>
+				    <td><input type="text" name="" style="width: 150px;" /></td>
+			      </tr>
+				  <tr>
+                    <td > PO Type : </td>
+				    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">Lease</option>
+                        <option value="USA">Service</option>
+                        <option value="UK">Rate Contract</option>
+                      </select>                    </td>
+				    <td > Bond Type : </td>
+				    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">STP</option>
+                        <option value="USA">Non bonded </option>
+                        <option value="UK">ARE1</option>
+                        <option value="UK">CT3</option>
+                      </select>                    </td>
+			      </tr>
+				  <tr>
+                    <td > Unit Type : </td>
+				    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">STP</option>
+                        <option value="USA">Nonbonded</option>
+                        <option value="UK">SEZ</option>
+                      </select>                    </td>
+				    <td > Unit Number : </td>
+				    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">Unit Name 1</option>
+                        <option value="USA">Unit Name 2</option>
+                        <option value="UK">Unit Name 3</option>
+                        <option value="UK">Unit Name 4</option>
+                      </select>                    </td>
+			      </tr>
+
+                  <tr>
+                    <td > Bond Register : </td>
+                    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">BR Name 1</option>
+                        <option value="USA">BR Name 2</option>
+                        <option value="UK">BR Name 3</option>
+                        <option value="AUS">BR Name 4</option>
+                      </select>                    </td>
+                    <td width="135">&nbsp;</td>
+                    <td width="323">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td >Sources : </td>
+                    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">Overseas </option>
+                        <option value="INDA">Domestic</option>
+                      </select>                    </td>
+                    <td >Inco. Term : </td>
+                    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">CIF </option>
+                        <option value="INDA">FOB</option>
+                      </select>                    </td>
+                  </tr>
+                  <tr>
+                    <td >Currency : </td>
+                    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">Dollar </option>
+                        <option value="INDA">Rupee</option>
+                        <option value="INDA">Euro </option>
+                      </select>                    </td>
+                    <td >Vendor : </td>
+                    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">Vendor 1 </option>
+                        <option value="INDA">Vendor 2</option>
+                        <option value="INDA">Vendor 3</option>
+                      </select>                    </td>
+                  </tr>
+                  <tr>
+                    <td >Remark : </td>
+                    <td><label>
+                      <textarea name="textarea" style="width:150px; resize: none;"></textarea>
+                    </label></td>
+                    <td >Organization Level : </td>
+                    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">Level 1 </option>
+                        <option value="INDA">Level 2</option>
+                        <option value="INDA">Level 3</option>
+                      </select>                    </td>
+                  </tr>
+                  <tr>
+                    <td >Requester : </td>
+                    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">emp-001 </option>
+                        <option value="INDA">emp-002</option>
+                        <option value="INDA">emp-003 </option>
+                      </select>                    </td>
+                    <td >Buyer : </td>
+                    <td><select style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">emp-005 </option>
+                        <option value="INDA">emp-006</option>
+                        <option value="INDA">emp009</option>
+                      </select>                    </td>
+                  </tr>
+                  <tr>
+                    <td>Upload File : </td>
+                    <td><input name="file" type="file"/></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td height="62">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+			  </table>
+				  <table width="1487">
+                  <tr>
+                    <td width="153" height="58" > Select Major Category: </td>
+                    <td width="152" align="right"><div align="left">Select Minor Category: </div></td>
+                    <td width="153"align="right" > <div align="left">Select Sub Category: </div></td>
+                    <td width="152">Type:  </td>
+                    <td width="71">Item Code:</td>
+                    <td width="82">Description:</td>
+                    <td width="46">Make:</td>
+                    <td width="51">Model:</td>
+                    <td width="80">Manufacture Part No.: </td>
+                    <td width="94">UOM:</td>
+                    <td width="86">Quantity:</td>
+                    <td width="315">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td ><select name="select2" style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="IND">Computer Equipments</option>
+                        <option value="USA">Office Equipments</option>
+                        <option value="UK">Furniture</option>
+                    </select></td>
+                    <td><select name="select3" style="width: 150px;">
+                        <option value="0" selected>---Select---</option>
+                        <option value="INDA">Asset Minor Category Name 1</option>
+                        <option value="USA">Asset Minor Category Name 2</option>
+                        <option value="UK">Asset Minor Category Name 3</option>
+                        <option value="AUS">Asset Minor Category Name 4</option>
+                    </select></td>
+                    <td><select name="select" style="width: 150px;">
+                        <option value="0" selected="selected">---Select---</option>
+                        <option value="INDA">Asset Sub Cat. Name1</option>
+                        <option value="USA">Asset Sub Cat. Name2</option>
+                        <option value="UK">Asset Sub Cat. Name3</option>
+                        <option value="AUS">Asset Sub Cat. Name4</option>
+                    </select></td>
+                    <td><select name="select4" style="width: 150px;" id="sel">
+                      <option value="0" selected="selected">---Select---</option>
+                      <option value="Asset">Asset</option>
+                      <option value="Accessory">Accessory</option>
+                      <option>Consumable</option>
+                                        </select>
+                      <label></label></td>
+                    <td>Item002</td>
+                    <td>IT-Software</td>
+                    <td>Sony</td>
+                    <td>LK223</td>
+                    <td>Part no.002</td>
+                    <td>UOM Name 2 </td>
+                    <td><label>
+                      <input type="text" name="textfield" style="width:70px">
+                    </label></td>
+                    <td><label>
+                      <input type="submit" name="Submit" value="Add" style="width:100px">
+                    </label></td>
+                  </tr></table>
+				  <p>&nbsp;</p>
+				  <p>&nbsp;</p>
+				  <table width="1157" border="0">
+                    <tr>
+                      <td width="112" style="background-color: activecaption;"><strong>Major Category</strong></td>
+                      <td width="119" style="background-color: activecaption;"><strong>Minor Category</strong></td>
+                      <td width="121" style="background-color: activecaption;"><strong>Sub Category</strong></td>
+                      <td width="52" style="background-color: activecaption;"><strong>Type</strong></td>
+                      <td width="82" style="background-color: activecaption;"><strong>Item Code</strong></td>
+                      <td width="91" style="background-color: activecaption;"><strong>Description</strong></td>
+                      <td width="61" style="background-color: activecaption;"><strong>Make</strong></td>
+                      <td width="75" style="background-color: activecaption;"><strong>Model</strong></td>
+                      <td width="100" style="background-color: activecaption;"><strong>Manufacture Part No</strong></td>
+                      <td width="81" style="background-color: activecaption;"><strong>UOM</strong></td>
+                      <td width="81" style="background-color: activecaption;"><strong>Quantity</strong></td>
+                      <td width="110" >&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>Computer Equipments</td>
+                      <td>Asset Minor Category Name 1</td>
+                      <td>Asset Sub Cat. Name1</td>
+                      <td>Asset</td>
+                      <td>Item001</td>
+                      <td>IT-Software</td>
+                      <td>HP</td>
+                      <td>LX111</td>
+                      <td>Part no.001 </td>
+                      <td>UOM Name 1 </td>
+                      <td>5</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>Computer Equipments</td>
+                      <td>Asset Minor Category Name 1 </td>
+                      <td>Asset Sub Cat. Name1</td>
+                      <td>Asset</td>
+                      <td>Item002</td>
+                      <td>IT-Software</td>
+                      <td>Sony</td>
+                      <td>LK223</td>
+                      <td>Part no.002</td>
+                      <td>UOM Name 2 </td>
+                      <td>10</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table>
+			    <p>&nbsp;</p>
+				  <table>
+				
+				</table>
+                <table  border="0" cellpadding="0" cellspacing="3">
+                    <tr >
+                      <td width="527" align="right">&nbsp;</td>
+                        <td align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                        <td align="center"><input name="reset" type="reset" style="width: 100px;" value="submit"/>
+                        </td>
+                      <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+</body>
+</html>

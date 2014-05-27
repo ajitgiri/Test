@@ -1,0 +1,248 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RETURN TO INVENTORY </title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+    <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+    <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="../js/jscript.js"></script>
+    <script type="text/javascript" src="../js/EventScript.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+		<script>
+            $(document).ready(function() {
+			    $('#div_id0').hide();
+				$('#div_id1').hide();
+                
+
+            });
+        </script>
+		
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+		<script>
+            $(function() {
+                $("#go_id1").click(function()
+                {
+                    $("#div_id0").show();
+					$("#div_id1").show();
+                }); 
+				   
+            });
+        </script>
+		
+		<script>
+	$(document).ready(function() {
+    $('#selectall').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+</script>
+		
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody"> 
+          <div style="margin-left: 410px; margin-top: 40px;">
+            <table width="351" border="0">
+              <tr>
+                <td height="45" colspan="5" style="font-weight: bold;"><div align="center">Return to Inventory </div></td>
+              </tr>
+            </table>
+          </div>
+		           <div style="margin-left: 310px; margin-top: 5px;">
+                         <table width="596" border="0">
+							<tr>
+							<td width="21">&nbsp;</td>
+							<td width="38">City :</td>
+							<td width="143"> 
+                            <select style="width: 130px;" id="sel" >
+                                <option value="new" selected>--Select-- </option>
+                                <option value="E1">City1</option>
+                                <option value="E2">City2</option>
+                                <option value="E3">City3</option>
+                                <option value="E4">City4</option>
+                                <option value="E5">City5</option>
+                            </select></td>
+							<td width="43">Site :</td>
+							<td width="146"> 
+                            <select style="width: 130px;" id="sel" >
+                                <option value="new" selected>--Select-- </option>
+                                <option value="S1">Site1</option>
+                                <option value="S2">Site2</option>
+                                <option value="S3">Site3</option>
+                                <option value="S4">Site4</option>
+                                <option value="S5">Site5</option>
+                            </select></td>
+							 <td width="179"><input name="submit2" type="submit" style="width: 70px;"  value="GO" id="go_id1"/></td>
+							</tr>
+					 </table>
+		           </div>
+		  
+						<div style="margin-left: 70px; margin-top: 40px;" id="div_id0">
+						  <table width="1260">
+                            <tr>
+                              <td width="45">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td style="font-weight: bold; background-color: activecaption;" align="center">SL No.</td>
+                              <td width="72" align="center" style="font-weight: bold; background-color: activecaption;">Asset Tag</td>
+                              <td width="63" style="font-weight: bold; background-color: activecaption;">Asset SL No.</td>
+                              <td width="66" style="font-weight: bold; background-color: activecaption;">Sub Category</td>
+                              <td width="83" style="font-weight: bold; background-color: activecaption;">Minor Category</td>
+                              <td width="116" style="font-weight: bold; background-color: activecaption;">Major Category</td>
+                              <td width="60" style="font-weight: bold; background-color: activecaption;">Bond Type</td>
+                              <td width="47" style="font-weight: bold; background-color: activecaption;">Unit No.</td>
+                              <td width="67" style="font-weight: bold; background-color: activecaption;">Bond Register No.</td>
+                              <td width="58" style="font-weight: bold; background-color: activecaption;">Owner BU</td>
+                              <td width="62" style="font-weight: bold; background-color: activecaption;">User BU</td>
+                              <td width="141" style="font-weight: bold; background-color: activecaption;">End User</td>
+                              <td width="92" style="font-weight: bold; background-color: activecaption;">Building</td>
+                              <td width="52" style="font-weight: bold; background-color: activecaption;">Floor</td>
+                              <td width="60" style="font-weight: bold; background-color: activecaption;">Space</td>
+                              <td width="104" style="font-weight: bold; background-color: activecaption;"><input name="checkbox" type="checkbox" id="selectall"/>
+                                Select All</td>
+                              <td width="10"></td>
+                            </tr>
+                            <tr>
+                              <td align="center">1</td>
+                              <td align="center">DSK-1012</td>
+                              <td align="center">1024</td>
+                              <td>Desktop</td>
+                              <td>Desktop</td>
+                              <td align="left">Computer Equipment</td>
+                              <td>STP</td>
+                              <td width="47">Unit 1 </td>
+                              <td>BR-1001</td>
+                              <td>BU-1</td>
+                              <td>BU-1</td>
+                              <td>EMP-101(Ashok Kumar)</td>
+                              <td>Building 1 </td>
+                              <td>1st</td>
+                              <td>Space 1 </td>
+                              <td><input name="checkbox2" type="checkbox" class="checkbox1"/></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td align="center">2</td>
+                              <td align="center">LPT-2914</td>
+                              <td align="center">5476</td>
+                              <td>Laptop</td>
+                              <td>Laptop</td>
+                              <td align="left">Computer Equipment</td>
+                              <td>SEZ</td>
+                              <td width="47">Unit 2 </td>
+                              <td>BR-2345</td>
+                              <td>BU-2</td>
+                              <td>BU-2</td>
+                              <td>EMP-987(Kartik Reddy)</td>
+                              <td>Building 2 </td>
+                              <td>2nd</td>
+                              <td>Space 2 </td>
+                              <td><input name="checkbox3" type="checkbox" class="checkbox1"/></td>
+							  <td></td>
+                            </tr>
+                            <tr>
+                              <td align="center">3</td>
+                              <td align="center">CH-2345</td>
+                              <td align="center">7634</td>
+                              <td>Chair</td>
+                              <td>Chair</td>
+                              <td align="left">Furniture Equipment</td>
+                              <td>STP</td>
+                              <td width="47">Unit 3 </td>
+                              <td>BR-3296</td>
+							  <td>BU-3</td>
+							   <td>BU-3</td>
+							    <td>EMP-432(Manoj Dash)</td>
+								 <td>Building 3 </td>
+								  <td>3rd</td>
+								   <td>Space 3 </td>
+								   <td><input name="checkbox4" type="checkbox" class="checkbox1"/></td>
+								   <td></td>
+                            </tr>
+                          </table>
+						  <p>&nbsp;</p>
+          </div>
+			<div align="center" id="div_id1">
+			<table width="631" border="0" class="classtd1">
+                  <tr>
+                    <td colspan="9" style="height: 0px;"></td>
+                  </tr>
+                  <tr>
+                    <td width="83">&nbsp;</td>
+                    <td width="100"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="100" align="right"><input name="reset2" type="reset" style="width: 100px;" value="Return"/></td>
+                    <td width="100" align="right"><input name="reset3" type="reset" style="width: 100px;" value="Cancel"/></td>
+					<td width="226">&nbsp;</td>
+                  </tr>
+              </table>
+			</div>
+        
+		</div>
+         <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+                </p>
+                <p>
+                   1. This is Country Master Where country name is Registering. 
+               </p>
+            </div>
+    </body>
+</html>

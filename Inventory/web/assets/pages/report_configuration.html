@@ -1,0 +1,122 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAX Master</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+      <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+        });
+    </script>
+
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+        <div style="margin-left: 340px; margin-top: 50px;">
+
+           
+                    <table>
+                        <tr>
+                            <td colspan="2" style="font-weight: bold;" align="center">
+                                Report Configuration
+                            </td>
+                        </tr>
+                         <tr>
+                            <td colspan="2" style="font-weight: bold;">
+
+                            </td>
+                        </tr>
+                        <tr>
+                          <td width="161" class="form-row"><label>No. of Records Per Page :</label></td>
+							 <td width="150">
+                                <select style="width: 150px;">
+                                    <option value="0" selected="selected">---All---</option>
+									<option value="N1">20</option>
+                                    <option value="V1">50</option>
+                                    <option value="V2">100</option>
+									<option value="V2">200</option>
+									<option value="V2">500</option>
+                                </select>
+						  </td>
+                      <tr/>
+						 <tr>
+						  <td class="form-row">Export To :&nbsp;&nbsp;&nbsp;<input type="checkbox" name="checkbox42" value="checkbox" /> XL</td>
+				    	   <td><input type="checkbox" name="checkbox42" value="checkbox" /> PDF
+						  <input type="checkbox" name="checkbox42" value="checkbox" /> DOC</td>
+						 </tr>
+  </table>
+</div>
+<table width="703" border="0" class="classtd1">
+        <tr><td width="105" align="left">&nbsp;</td>
+		    <td width="172" align="left">&nbsp;</td>
+			<td width="100" align="left">&nbsp;</td>
+        </tr>
+          <tr>
+            <td width="105" align="left">&nbsp;</td>
+			<td width="172" align="left">&nbsp;</td>
+			<td width="100" align="left"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+            <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+            <td width="100" align="right"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+            <td width="100" align="right"><input name="reset3" type="reset" style="width: 100px;" value="Cancel"/></td>
+          </tr>
+        </table>
+		
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+                
+            </p>
+            <p>
+                1:'Enterprise Setup' <br>
+                2:'Enterprise Setup' 
+                              
+            </p>
+        </div>
+</body>
+</html>

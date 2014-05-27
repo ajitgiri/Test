@@ -1,0 +1,233 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accessories Instalation</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+
+        <script type="text/javascript">
+            $(function() {
+                $("#datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker2").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker3").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker4").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker5").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker6").datepicker({dateFormat: "dd-mm-yy"}).val();
+            });
+        </script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#div_id1').hide();
+                $('#dataTable').hide();
+                $('#dataTableAction').hide();
+            });
+        </script>
+        <script>
+            $(function() {
+                $("#go_id1").click(function()
+                {
+                    $('#div_id1').show();
+                    $("#dataTable").show();
+                    $("#dataTableAction").show();
+                });
+            $("#LPT").click(function(){
+                 window.open("accessories_instalation_LPT.html");
+            });
+           
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+        <div id="cBody"> 
+            <div style="margin-left: 10px; margin-top: 50px;">
+                <div style="margin-left: 330px;">
+                    <table  border="0" cellpadding="0" cellspacing="2">
+                        <tr>
+                            <td  height="60" colspan="6" style="font-weight: bold;"><div align="center">Accessories Instalation</div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="font-weight: bold;"></td>
+                        </tr>
+                        <tr>
+                            <td  >
+                                Select Legal Entity :</td>
+                            <td>
+                                <select id="123" name="select" style="width:152px">
+                                    <option selected="selected">--Select--</option>
+                                    <option class="legal_entity">Legal Entity 1</option>
+                                    <option class="legal_entity">Legal Entity 2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >Select Employee : </td>
+                            <td>
+                                <select id="123" name="select" style="width:152px">
+                                    <option selected="selected">--Select--</option>
+                                    <option class="legal_entity">emp-001(Ajit Kumar)</option>
+                                    <option class="legal_entity">emp-001(Abhishek Paul)</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select Asset Classification : </td>
+                            <td>
+                                <select id="123" name="select" style="width:152px">
+                                    <option selected="selected">--Select--</option>
+                                    <option class="legal_entity">IT Hardware</option>
+                                    <option class="legal_entity">Non IT</option>
+                                    <option class="legal_entity">LAB/Engineering</option>
+                                </select>
+                                <input type="submit" name="Submit2" value="GO" id="go_id1"/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="6" style="font-weight: bold;"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="dataTable" style="margin-top: 10px;margin-left: 10px;">
+                    <table  border="0">
+                        <tr>
+                            <td width="60px;" style="background-color: activecaption;" align="center">Sl.No.</td>
+                            <td width="100px;" style="background-color: activecaption;" align="center">Tag No.</td>
+                            <td width="140px;" style="background-color: activecaption;" align="center">Asset Description</td>
+                            <td width="120px;" style="background-color: activecaption;" align="center">Sub Category</td>
+                            <td width="150px;" style="background-color: activecaption;" align="center">Minor Category</td>
+                            <td width="120px;" style="background-color: activecaption;" align="center">Major Category</td>
+                            <td width="120px;" style="background-color: activecaption;" align="center">Bond Type</td>
+                            <td width="120px;" style="background-color: activecaption;" align="center">Unit No</td>
+                            <td width="100px;" style="background-color: activecaption;" align="center">Bond Register</td>
+                            <td width="100px;" style="background-color: activecaption;" align="center">Building</td>
+                            <td width="100px;" style="background-color: activecaption;" align="center">Floor</td>
+                            <td width="80px;" style="background-color: activecaption;" align="center">Select </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>LPT-2026</td>
+                            <td>Laptop</td>
+                            <td>Laptop</td>
+                            <td>Computer Equipment</td>
+                            <td>IT Hardware</td>
+                            <td>STP</td>
+                            <td>Unit 1</td>
+                            <td>BR-001</td>
+                            <td>Building 1</td>
+                            <td>Floor 1</td>
+                            <td align="center"><input type="radio" name="checkbox3" value="checkbox" id="LPT"  /></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>DSK-2536</td>
+                            <td>Desktop</td>
+                            <td>Desktop</td>
+                            <td>Computer Equipment</td>
+                            <td>IT Hardware</td>
+                            <td>SEZ</td>
+                            <td>Unit 3</td>
+                            <td>BR-003</td>
+                            <td>Building 5</td>
+                            <td>Floor 1</td>
+                            <td align="center"><input type="radio" name="checkbox3" value="checkbox" id="DSK" /></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>SMP-2024</td>
+                            <td>Smart Phone</td>
+                            <td>Phone</td>
+                            <td>Office Equipment</td>
+                            <td>IT Hardware</td>
+                            <td>SEZ</td>
+                            <td>Unit 3</td>
+                            <td>BR-004</td>
+                            <td>Building 2</td>
+                            <td>Floor 5</td>
+                            <td align="center"><input type="radio" name="checkbox3" value="checkbox" id="SMP"  /></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="dataTableAction" style="margin-top:10px;margin-left: 150px;">
+                    </div>
+                <p>&nbsp;</p>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p><b>Note:- </b></p>
+                <p>
+                    1. Legal Entity based on - if multiple legal entity = yes.</p>
+                <p>2. Can edit the values entered, by checking the check box and clicking on update.</p>
+                <p>3. Can also delete a data, by clicking on Delete button Subjected to no transaction data for that record.</p>
+                <p>4. Asset Caretaking and Shred services will display only if Support function is yes </p>
+                <p> 
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

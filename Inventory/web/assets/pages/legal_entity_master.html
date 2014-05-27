@@ -1,0 +1,256 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Legal Entity Master</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+                $("#tableForExistion").hide();
+                //$("#tableForNew").hide();                
+                $("#sel").change(function() {
+                    //  alert("Not-same");
+                    var value1 = $("#sel").val();
+                    var vl1 = "new";
+                    var vl2 = "Entity1";
+                    if (value1 == vl1) {
+                        $("#tableForExistion").hide();
+                        $("#tableForNew").show();
+                    }
+                    if (value1 == vl2) {
+                        $("#tableForNew").hide();
+                        $("#tableForExistion").show();
+                    }
+                });
+
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div   style="margin-left: 340px; margin-top: 50px;">
+                <table width="553">
+                    <tr>
+                        <td colspan="3" style="font-weight: bold; text-align: right;">
+                            Legal Entity Master                        </td>
+                        <td width="160" style="font-weight: bold; text-align: right;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;height:20px;"></td>
+                    </tr>
+
+                    <tr>
+                        <td width="226" ><div align="right">Select Legal Entity :</div></td>
+                        <td width="150"> 
+                            <select style="width: 150px;" id="sel" >
+                                <option value="new" selected>New </option>
+                                <option value="Entity1">Legal Entity 1</option>
+                                <option value="Entity2">Legal Entity 2</option>
+                                <option value="Entity3">Legal Entity 3</option>
+                                <option value="Entity4">Legal Entity 4</option>
+                                <option value="Entity5">Legal Entity 5</option>
+                            </select>                        </td>
+                    </tr>
+                </table>
+                <table id="tableForNew">
+                    <tr >
+                        <td >&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td >&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr >
+                        <td ><label>Legal Entity Name:</label></td><td> <input name="name" type="text"  /></td>
+                        <td ><label>Address Line 1:</label></td><td> <input name="name" type="text"  /></td>
+                    </tr>
+                    <tr>
+                        <td ><label>Address Line 2 :</label></td><td> <input name="name" type="text"  /></td>
+                        <td ><label>Address Line 3 :</label></td>
+                        <td> 
+                            <input name="name" type="text"  />                        </td>
+                    </tr>
+                    <tr>
+                        <td ><label>Address Line 4 :</label></td><td> <input name="name" type="text"  /></td>
+                        <td ><label>City :</label></td>
+                        <td> 
+                            <input name="name" type="text"  />                        </td>
+                    </tr>
+                    <tr>
+                        <td ><label>State :</label></td><td> <input name="name" type="text"  /></td>
+                        <td ><label>Country :</label></td>
+                        <td>
+                            <select style="width: 150px;" >
+                                <option value="0" selected="selected">   ---Select---  </option>
+                                <option value="IND">India</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="AUS">Australia</option>
+                                <option value="DUB">Dubai</option>
+                            </select>                        </td>
+                    </tr>
+                    <tr>
+                        <td >Phone No. :</td><td> <input name="name" type="text"  /></td>
+                        <td ><label>Fax No. :</label></td><td> <input name="name" type="text"  /></td>
+                    </tr>
+
+                    <tr>
+                        <td ><label>PIN/ZIP Code:</label></td><td> <input name="name" type="text"  /></td>
+                        <td></td><td> </td>
+                    </tr>
+                    <tr>
+                        <td ><label>URL :</label></td><td> <input name="name" type="text"  /></td>
+                        <td ><label>Email Id :</label></td><td> <input name="name" type="text"  /></td>
+                    </tr>
+                    <tr>
+                        <td ><label>IP Address :</label></td><td> <input name="name" type="text"  /></td>
+                        <td ><label>Port No. :</label></td><td> <input name="name" type="text"  /></td>
+                    </tr>
+                    <tr>
+                        <td ><label>Service Account :</label></td><td> <input name="name" type="text"  /></td>
+                        <td ><label>Password :</label></td><td> <input name="name" type="password"  /></td>
+                    </tr>
+                    <tr>
+                        <td ><label>Upload Logo :</label></td><td> <input type="file" style="color:#630; background:#ffc none; font-size:80%; font-family:Courier,monospace; font-weight:bold;"></td>
+                        <td > </td><td></td>
+                    </tr>
+                    <tr>
+                        <td align="right">&nbsp;</td>
+                        <td align="right">&nbsp;</td>
+                        <td align="left">&nbsp;</td>
+                        <td align="right">&nbsp;</td>
+                    </tr>
+                </table>
+
+                <table id="tableForExistion">
+                    <tr >
+                        <td >&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td >&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr >
+                        <td ><label>Legal Entity Name:</label></td><td> <input name="name" type="text" value="Legal Entity 1" /></td>
+                        <td ><label>Address Line 1:</label></td><td> <input name="name" type="text"  value="Address Line 1"/></td>
+                    </tr>
+                    <tr>
+                        <td ><label>Address Line 2 :</label></td><td> <input name="name" type="text" value="Address Line 2" /></td>
+                        <td ><label>Address Line 3 :</label></td><td> <input name="name" type="text" value="Address Line 3" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td ><label>Address Line 4 :</label></td><td> <input name="name" type="text" value="Address Line 4" /></td>
+                        <td ><label>City :</label></td><td> <input name="name" type="text" value="City Name 2"  />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td ><label>State :</label></td><td> <input name="name" type="text"  value="State Name 4" /></td>
+                        <td ><label>Country :</label></td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" >   ---Select---  </option>
+                                <option value="IND" selected="selected">India</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="AUS">Australia</option>
+                                <option value="DUB">Dubai</option>
+                            </select>                        </td>
+                    </tr>
+                    <tr>
+                        <td >Phone No. :</td><td> <input name="name" type="text" value="9019474952" /></td>
+                        <td ><label>Fax No. :</label></td><td> <input name="name" type="text" value="+1-212-9876543" /></td>
+                    </tr>
+
+                    <tr>
+                        <td ><label>PIN/ZIP Code:</label></td><td> <input name="name" type="text" value="560083" /></td>
+                        <td></td><td> </td>
+                    </tr>
+                    <tr>
+                        <td ><label>URL :</label></td><td> <input name="name" type="text" value="www.strikedart.com" /></td>
+                        <td ><label>Email Id :</label></td><td> <input name="name" type="text" value="admin@strikedart.com" /></td>
+                    </tr>
+                    <tr>
+                        <td ><label>IP Address :</label></td><td> <input name="name" type="text" value="192.00.105.162" /></td>
+                        <td ><label>Port No. :</label></td><td> <input name="name" type="text" value="5600" /></td>
+                    </tr>
+                    <tr>
+                        <td ><label>Service Account :</label></td><td> <input name="name" type="text" value="strikedart@gmail.com"  /></td>
+                        <td ><label>Password :</label></td><td> <input name="name" type="password" value="560083" /></td>
+                    </tr>
+                    <tr>
+                        <td ><label>Upload Logo :</label></td><td> <input type="file" style="color:#630; background:#ffc none; font-size:80%; font-family:Courier,monospace; font-weight:bold;"></td>
+                        <td > </td><td></td>
+                    </tr>
+                </table>
+                <table style="margin-top:0px">  
+                    <tr >
+                        <td width="148" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                        <td width="100" align="center"><input name="reset" type="reset" style="width: 100px;" value="Update"/>                    </td>
+                        <td width="100" align="center"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                        <td width="100" align="left"><input name="submit2" type="submit" style="width: 100px;"  value="Enable"/></td>
+                        <td width="100" align="left"><input name="submit" type="submit" style="width: 100px;"  value="Disable"/></td>
+                        <td width="302" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>
+                </table> <p>&nbsp;</p>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1:Email Server IP/Host Name : - Will come if "Email Server Across Enterprise= yes" in 'Enterprise Setup'<br>
+                    2:IP Address: and Port No. : - Will comeif "Email Server Across Enterprise= yes" and if "Service Account For Email Required: = no" in 'Enterprise Setup'<br>
+                    3:Must have to validate the File Upload filed carefully with size and other properties.
+
+                </p>
+            </div>
+    </body>
+</html>

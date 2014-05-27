@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+                $("#tableForExistion").hide();
+                $("#tableForNew").hide();
+
+                $("#sel").change(function() {
+                    // alert("Not-same");
+                    var value1 = $("#sel").val();
+                    var vl1 = "new";
+                    var vl2 = "customer1";
+                    if (value1 == vl1) {
+                        $("#tableForExistion").hide();
+                        $("#tableForNew").show();
+                    }
+                    if (value1 == vl2) {
+                        $("#tableForNew").hide();
+                        $("#tableForExistion").show();
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody"> 
+            <div style="margin-left: 320px; margin-top: 50px;">
+              <table width="604" border="0">
+                  <tr>
+                    <td width="112">&nbsp;</td>
+                    <td colspan="3"><div align="center"><strong>Customer Master </strong></div></td>
+                    <td width="54">&nbsp;</td>
+                    <td width="6">&nbsp;</td>
+                    <td width="24">&nbsp;</td>
+                    <td width="8">&nbsp;</td>
+                </tr>
+                  <tr>
+                    <td height="54">Select Customer</td>
+                    <td width="144"><select name="select4" style="width:144px" id="sel">
+                      <option selected="selected">Select</option>
+                      <option value="new">New</option>
+                      <option value="customer1">Customer 1</option>
+                      <option>Customer 2</option>
+                                        </select></td>
+                    <td width="95"><input type="text" value=" Search By ID " style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;width: 90px;">                    </td>
+                    <td width="109"><input type="text" value=" Search By Name " style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;width: 100px;"/>                    </td>
+                    <td><input type="submit" value="Next" style="width: 50px;"/></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+                <table id="tableForNew">
+                    <tr>
+                        <td width="101" height="25">Customer Code </td>
+                        <td width="145"><label><input type="text" name="textfield" /></label></td>
+                        <td width="116">Customer Name  </td>
+                        <td width="144"><input type="text" name="textfield2" /></td>
+                    </tr>
+                    <tr>
+                        <td>Address Line 1 </td>
+                        <td><input type="text" name="textfield3" /></td>
+                        <td>Address Line 2</td>
+                        <td><input type="text" name="textfield4" /></td>
+                    </tr>
+                    <tr>
+                        <td>Address Line 3</td>
+                        <td><input type="text" name="textfield5" /></td>
+                        <td>City</td>
+                        <td><input type="text" name="textfield52" /></td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td><select name="select2" style="width:144px">
+                                <option selected="selected">Select</option>
+                                <option>Karnataka</option>
+                                <option>Chhattisgarh</option>
+                                <option>Andhra Pradesh</option>
+                            </select></td>
+                        <td>Country</td>
+                        <td><select name="select3" style="width:144px">
+                                <option selected="selected">Select</option>
+                                <option>India</option>
+                                <option>Bhutan</option>
+                                <option>China</option>
+                                <option>Brazil</option>
+                                <option>United States</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td height="24">PIN/ZIP Code </td>
+                        <td><input type="text" name="textfield522" /></td>
+                        <td>Mobile No. </td>
+                        <td><input type="text" name="textfield5242" /></td>
+                    </tr>
+                    <tr>
+                        <td height="28">Phone No. </td>
+                        <td><input type="text" name="textfield523" /></td>
+                        <td>Email Id</td>
+                        <td><input type="text" name="textfield524" /></td>
+                    </tr>
+                    <tr>
+                      <td align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                      <td align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                      <td align="left"><input name="reset22" type="reset" style="width: 100px;" value="Delete"/></td>
+                      <td align="right"><div align="left">
+                        <input name="reset2" type="reset" style="width: 100px;" value="Cancel"/>
+                      </div></td>
+                    </tr>
+                </table>
+                <table width="530" id="tableForExistion">
+                    <tr>
+                        <td height="25">Customer Code </td>
+                        <td><label>
+                                <input type="text" name="textfield" value="Customer-001(Ankit)"/>
+                            </label></td>
+                        <td>Customer Name  </td>
+                        <td><input type="text" name="textfield2"  value="Ankit tiwari"/></td>
+                    </tr>
+                    <tr>
+                        <td>Address Line 1 </td>
+
+                        <td><input type="text" name="textfield3"  value="Address Line 1"/></td>
+                        <td>Address Line 2</td>
+                        <td><input type="text" name="textfield4" value="Address Line 2"/></td>
+
+                    </tr>
+                    <tr>
+                        <td>Address Line 3</td>
+                        <td><input type="text" name="textfield5" value="Address Line 3"/></td>
+                        <td>City</td>
+                        <td><input type="text" name="textfield52" value="City Name 2"/></td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td><select name="select2" style="width:144px">
+                                <option >Select</option>
+                                <option>Karnataka</option>
+                                <option selected="selected">Chhattisgarh</option>
+                                <option>Andhra Pradesh</option>
+                            </select></td>
+                        <td>Country</td>
+                        <td><select name="select3" style="width:144px">
+                                <option >Select</option>
+                                <option selected="selected">India</option>
+                                <option>Bhutan</option>
+                                <option>China</option>
+                                <option>Brazil</option>
+                                <option>United States</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td height="24">PIN/ZIP Code </td>
+                        <td><input type="text" name="textfield522" value="756033"/></td>
+                        <td>Mobile No. </td>
+                        <td><input type="text" name="textfield5242" value="04499556633"/></td>
+                    </tr>
+                    <tr>
+                        <td height="28">Phone No. </td>
+                        <td><input type="text" name="textfield523" value="7599556633"/></td>
+                        <td>Email Id</td>
+                        <td><input type="text" name="textfield524" value="ankit.tiwari@ymail.com"/></td>
+                    </tr>
+                    <tr>
+                      <td width="103" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                        <td width="151" align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                        <td width="110" align="left"><input name="reset22" type="reset" style="width: 100px;" value="Delete"/></td>
+                      <td width="146" align="right"><input name="reset2" type="reset" style="width: 100px;" value="Cancel"/></td>
+                    </tr>
+              </table>
+    </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1. Can update the values using update button.</p>
+                <p>2. Can delete an entry using delete button.<br />
+                </p>
+            </div>
+    </body>
+</html>

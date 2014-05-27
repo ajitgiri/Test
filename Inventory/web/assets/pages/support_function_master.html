@@ -1,0 +1,175 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Support Function Master</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+      <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+      </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+        });
+    </script>
+	<script>
+	$(document).ready(function() {
+    $('#selectall').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+</script>
+
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+<div style="margin-left: 340px; margin-top: 50px;">
+<table width="664"  border="0" cellpadding="0" cellspacing="2">
+                <tr>
+                    <td colspan="4" style="font-weight: bold;"><div align="center">Support Function Master</div></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-weight: bold; height: 10px;"></td>
+                </tr>
+                <tr>
+                    <td width="160" style="width: 160px;">&nbsp;</td>
+                    <td width="162" style="width: 160px;">Support Function Code </td>
+                    <td width="161" style="width: 160px;">Support Function Name </td>
+                    <td width="171">&nbsp;</td>
+                </tr>
+                 <tr>
+                    
+                   <td >&nbsp;</td>
+                   <td ><input type="text" name="Input" style="width:150px"/></td>
+                   <td ><label>
+                     <input type="text" name="Input2" style="width:150px"/>
+                   </label></td>
+                   <td><label>
+                     <input type="submit" name="Submit" value="Add">
+                   </label></td>
+                </tr></table>
+				<table width="664">
+                <tr>
+                    <td colspan="4" style="font-weight: bold; height: 30px;"></td>
+                </tr>
+                <tr>
+                    
+                    <td width="160" style="width: 160px; font-weight: bold; background-color: activecaption;">Support Function Code </td>
+                    <td width="160" style="width: 160px;font-weight: bold; background-color: activecaption;">Support Function Name </td>
+                    <td width="178" style="width: 160px;font-weight: bold; background-color: activecaption;">Support Function Head </td>
+                    <td width="145" style="background-color: activecaption;"><input name="checkbox" type="checkbox" id="selectall" />
+                      <strong>Select All </strong></td>
+                </tr>
+                 <tr>
+                    <td>SPF-001</td>
+                    <td ><input name="Input22" type="text" style="width:150px" value="Supp Function Name 1"/></td>
+                    <td ><select name="select3" style="width:150px">
+                      <option>Select</option>
+                      <option selected>EMP-001(Ajit Kumar)</option>
+                      <option>EMP-002(Abhishek Paul)</option>
+                      <option>EMP-003(Satya)</option>
+                                        </select></td>
+                    <td><input type="checkbox" class="checkbox1"/>  </td>
+                </tr>
+                 <tr>
+                    <td>SPF-002</td>
+                    <td ><input name="Input222" type="text" style="width:150px" value="Supp Function Name 2"/></td>
+                    <td ><select name="select4" style="width:150px">
+                      <option>Select</option>
+                      <option>EMP-001(Ajit Kumar)</option>
+                      <option selected>EMP-002(Abhishek Paul)</option>
+                      <option>EMP-003(Satya)</option>
+                                        </select></td>
+                    <td><input type="checkbox" class="checkbox1"/>   </td>
+                </tr>
+                <tr>
+                    <td>SPF-003</td>
+                    <td ><input name="Input223" type="text" style="width:150px" value="Supp Function Name 3"/></td>
+                    <td ><select name="select5" style="width:150px">
+                      <option>Select</option>
+                      <option>EMP-001(Ajit Kumar)</option>
+                      <option>EMP-002(Abhishek Paul)</option>
+                      <option selected>EMP-003(Satya)</option>
+                                        </select></td>
+                    <td><input type="checkbox" class="checkbox1" />   </td>
+                </tr>
+  </table>
+        <table border="0" class="classtd1">
+          <tr>
+            <td colspan="9" style="height: 20px;"></td>
+          </tr>
+          <tr>
+            <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+            <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+            <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Delete"/></td>
+            <td align="left"><input name="reset" type="reset" style="width: 100px;" value="Enable"/></td>
+            <td align="right"><input name="submit" type="submit" style="width: 100px;"  value="Disable"/></td>
+            <td width="100" align="right"><input name="submit2" type="submit" style="width: 100px;"  value="Cancel"/></td>
+            <td width="195" align="right">&nbsp;</td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+</div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+
+            </p>
+            <p>
+                1:'Enterprise Setup'<br>
+                2:'Enterprise Setup'
+
+            </p>
+        </div>
+    </body>
+</html>

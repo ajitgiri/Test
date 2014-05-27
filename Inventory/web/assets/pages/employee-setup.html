@@ -1,0 +1,160 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee SetUp</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#cBody table tr").eq(5).hide();
+                $("#cBody table tr").eq(7).hide();
+                $("#cBody table tr").eq(8).hide();
+            });
+        </script>
+        <script>
+            $(function() {
+                $(".ys").click(function()
+                {
+                    $("#cBody table tr").eq(5).show();
+                });
+                $(".no").click(function()
+                {
+                 $("#cBody table tr").eq(5).hide();
+                    
+                });
+             $(".AuthentReqYs").click(function()
+                {
+                    $("#cBody table tr").eq(7).show();
+                    $("#cBody table tr").eq(8).show();
+                });
+             $(".AuthentReqNo").click(function()
+                {
+                 $("#cBody table tr").eq(7).hide();
+                 $("#cBody table tr").eq(8).hide();
+                });
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+        <div id="cBody">
+            <div style="margin-left: 300px; margin-top: 60px;">
+                <div style="margin-left: 100px;">
+                    <table border="0">
+                        <tr>
+                            <td colspan="3" style="font-weight: bold; text-align: center;"> Employee Setup</td>
+                        </tr>
+                         <tr>
+                            <td colspan="3" height="20px;"> </td>
+                        </tr>
+                        <tr>
+                            <td width="370px;">Employee Designation Applicable:</td>
+                            <td><input type='radio' class='yss' name='HeadofL1' value='Yes' />Yes<input type='radio' name='HeadofL1' value='No'/>No</td>
+                        </tr>
+                        <tr>
+                            <td>Reporting Manager Applicable:</td>
+                            <td><input type='radio' class='yss' name='HeadofL2' value='Yes' />Yes<input type='radio' name='HeadofL2' value='No'/>No</td>
+                        </tr>
+                        <tr>
+                            <td>Employee Mapped to Geographical Hierarchy:</td>
+                            <td><input type='radio' class='ys' name='HeadofL3' value='Yes' />Yes<input type='radio' class="no" name='HeadofL3' value='No'/>No</td>
+                        </tr>
+                        <tr class="EmpMapToGeo">
+                            <td><input type="radio" name="emp" value="state"/>State &nbsp;
+                                <input type="radio" name="emp" value="city"/>City &nbsp;
+                                <input type="radio" name="emp" value="site"/>Site &nbsp;
+                                <input type="radio" name="emp" value="bulding"/>Building &nbsp;
+                                <input type="radio" name="emp" value="floor"/>Floor 
+                            </td>
+                            <td><input type="radio" name="emp" value="space"/>Space</td>
+                        </tr>
+                        
+                        <tr>
+                            <td width="300px;">Authentication required for movement:</td>
+                            <td><input type='radio' class='AuthentReqYs' name='HeadofL4' value='Yes' checked="checked"/>Yes<input type='radio' class="AuthentReqNo" name='HeadofL4' value='No'/>No</td>
+                        </tr>
+                         <tr class="EmpMapToGeo">
+                            <td>Security at Level:
+                                <input type="radio" name="emp" value="state"/>State&nbsp;
+                                <input type="radio" name="emp" value="city"/>City&nbsp;
+                                <input type="radio" name="emp" value="site"/>Site&nbsp;
+                                <input type="radio" name="emp" value="bulding"/>Building
+                            </td>
+                            <td colspan="2">
+                                <input type="radio" name="emp" value="floor"/>Floor &nbsp;
+                                <input type="radio" name="emp" value="space"/>Space
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Employee Photograph Applicable : </td>
+                            <td><input type='radio' class='xx' name='HeadofL4' value='Yes' checked="checked"/>Yes<input type='radio' class="xx" name='HeadofL4' value='No'/>No</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

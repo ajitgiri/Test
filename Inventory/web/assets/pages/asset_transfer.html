@@ -1,0 +1,189 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TRANSFER ASSETS </title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+    <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+    <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="../js/jscript.js"></script>
+    <script type="text/javascript" src="../js/EventScript.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+
+      
+            });
+        </script>
+		 <script type="text/javascript">
+            $(function() {
+                $('#selectAll2').click(function(event) {  //on click 
+                    window.open("asset_transfer2.html");
+                });
+            });
+        </script>      
+		          
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody"> 
+          <div style="margin-left: 410px; margin-top: 40px;">
+            <table width="351" border="0">
+              <tr>
+                <td height="45" colspan="5" style="font-weight: bold;"><div align="center">Transfer Assets</div></td>
+              </tr>
+            </table>
+          </div>
+						 <div style="margin-left: 410px; margin-top: 10px;">
+                         <table width="374" border="0">
+						 <tr>
+						 <td width="191" align="right">Select Legal Entity  :</td>
+						  <td width="150"><select name="select" id="select" style="width: 150px;" >
+                            <option value="new" selected>--Select-- </option>
+                            <option value="Entity1">Legal Entity 1</option>
+                            <option value="Entity2">Legal Entity 2</option>
+                            <option value="Entity3">Legal Entity 3</option>
+                            <option value="Entity4">Legal Entity 4</option>
+                            <option value="Entity5">Legal Entity 5</option>
+                          </select></td>
+						   </tr></table></div>
+						    <div style="margin-left: 310px; margin-top: 5px;">
+                         <table width="650" border="0">
+							<tr>
+							<td width="35">&nbsp;</td>
+							<td width="136">City :</td>
+							<td width="148"> 
+                            <select style="width: 130px;" id="sel" >
+                                <option value="new" selected>--Select-- </option>
+                                <option value="E1">City1</option>
+                                <option value="E2">City2</option>
+                                <option value="E3">City3</option>
+                                <option value="E4">City4</option>
+                                <option value="E5">City5</option>
+                            </select></td>
+							<td width="154">Site :</td>
+							<td width="155"> 
+                            <select style="width: 130px;" id="sel" >
+                                <option value="new" selected>--Select-- </option>
+                                <option value="S1">Site1</option>
+                                <option value="S2">Site2</option>
+                                <option value="S3">Site3</option>
+                                <option value="S4">Site4</option>
+                                <option value="S5">Site5</option>
+                            </select></td>
+							</tr>
+							<tr>
+							<td width="35">&nbsp;</td>
+							<td width="136">Major Category :</td>
+							<td width="148"> 
+                            <select style="width: 130px;" id="sel" >
+                                <option value="new" selected>--Select-- </option>
+                                <option value="M1">Computer Equipment</option>
+                                <option value="M2">furniture Equipment</option>
+                                <option value="M3">Office Equipment</option>
+                            </select></td>
+							<td width="154">Minor Category :</td>
+							<td width="155"><select name="select3" id="select3" style="width: 130px;" >
+                              <option value="new" selected>--Select-- </option>
+                              <option value="Mn1">Desktop</option>
+                              <option value="Mn2">Laptop</option>
+                              <option value="Mn3">Chair</option>
+                              <option value="Mn4">Projector</option>
+                            </select></td>
+							</tr>
+							<tr>
+							<td width="35">&nbsp;</td>
+							<td width="136">Sub Category :</td>
+							<td width="148"><select name="select2" id="select2" style="width: 130px;" >
+                              <option value="new" selected>--Select-- </option>
+                              <option value="Su1">Desktop</option>
+                              <option value="Su2">Laptop</option>
+                              <option value="Su3">Chair</option>
+                              <option value="Su4">Projector</option>
+                            </select></td>
+							<td width="154">Asset Classification : </td>
+							<td width="155"><select name="select3" id="select3" style="width: 130px;" >
+                              <option value="new" selected>--Select-- </option>
+                              <option value="Mnr1">IT-Hardware</option>
+                              <option value="Mnr2">IT-Software</option>
+                              <option value="Mnr3">Non-IT</option>
+                              <option value="Mnr4">Lab/Engineering</option>
+                            </select></td></tr>
+							
+							<tr><td>&nbsp;</td></tr>
+							<tr><td>&nbsp;</td></tr>
+							<tr><td>&nbsp;</td></tr>
+							<tr>
+							<td>&nbsp;</td>
+							<td width="136">&nbsp;</td>
+							  <td width="148" align="center"><input name="submit2" type="submit" style="width: 100px;"  value="Next" id="selectAll2"/></td>
+							  <td width="154">&nbsp;</td>
+							</tr>
+							</table>
+						    </div>
+						
+			<!--<div align="center">
+			<table width="631" border="0" class="classtd1">
+                  <tr>
+                    <td colspan="9" style="height: 0px;"></td>
+                  </tr>
+                  <tr>
+                    <td width="52">&nbsp;</td>
+                    <td width="100"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="100" align="right"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                    <td width="100" align="right"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                    <td width="100" align="right"><input name="reset3" type="reset" style="width: 100px;" value="Cancel"/></td>
+					<td width="153">&nbsp;</td>
+                  </tr>
+              </table>
+			</div>-->
+        
+		</div>
+         <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+                </p>
+                <p>
+                   1. This is Country Master Where country name is Registering. 
+               </p>
+            </div>
+    </body>
+</html>

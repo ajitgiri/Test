@@ -1,0 +1,169 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>approval Time Out</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+      <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    
+	
+	<script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+                $("#table_id1").hide();
+                $("#table_id2").hide();
+
+                $("#sel").change(function() {
+                    //  alert("Not-same");
+                    var value1 = $("#sel").val();
+                    var vl1 = "normal";
+                    var vl2 = "sf";
+                    if (value1 == vl1) {
+                        $("#table_id1").hide();
+                        $("#table_id2").show();
+                    }
+                    if (value1 == vl2) {
+                        $("#table_id2").hide();
+                        $("#table_id1").show();
+                    }
+                });
+                $("#workStatus").change(function() {
+                    var workingStatus = $("#workStatus").val();
+                    //  var workStatusDate=$("#workStatusDate").val();
+                    var status = "working";
+                    if (workingStatus == status) {
+                        // alert("status--if--" + workingStatus)
+                        $(".workStatusDate").hide();
+                    } else {
+                        // alert("status--else--" + workingStatus)
+                        $(".workStatusDate").show();
+                    }
+                });
+            });
+        </script>
+
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+<div style="margin-left: 410px; margin-top: 70px;">
+            <table>
+                <tr>
+                    <td colspan="2" style="font-weight: bold; text-align: center;">
+                        Approval Time Out
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-weight: bold;">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-row">Attribute Type :</td>
+                    <td>
+                        <select style="width: 150px;" id="sel">
+                            <option selected>Select</option>
+                            <option value="normal">Normal</option>
+                            <option value="sf">Support Function</option>
+                        </select>
+                    </td>
+                  <td class="form-row">&nbsp;</td>
+                </tr></table>
+				<p>&nbsp;</p>
+				<table width="341" id="table_id1">
+                <tr >
+                  <td width="153" class="form-row"><label>Approval Time Out:</label></td><td width="147"> <input name="name" type="text" value="24:00" /></td>
+                    <td width="7" class="form-row"></td>
+                    <td width="14"> </td>
+                </tr>
+                 <tr >
+                    <td class="form-row"><label>Email Interval:</label></td><td> <input name="name" type="text"  value="8:00"/></td>
+                    <td class="form-row"></td><td> </td>
+                </tr>
+                
+                <tr>
+                    
+                </tr>
+  </table>
+                <table width="337" id="table_id2">
+                  <tr >
+                    <td width="153" class="form-row"><label>Approval Time Out:</label></td>
+                    <td width="144"><input name="name2" type="text" value="12:00" /></td>
+                    <td width="9" class="form-row"></td>
+                    <td width="11"></td>
+                  </tr>
+                  <tr >
+                    <td class="form-row"><label>Email Interval:</label></td>
+                    <td><input name="name2" type="text"  value="4:00"/></td>
+                    <td class="form-row"></td>
+                    <td></td>
+                  </tr>
+                  <tr> </tr>
+  </table>
+                <table border="0" class="classtd1" style="margin-top:120px">
+                  <tr>
+                    <td colspan="9" style="height: 20px;"></td>
+                  </tr>
+                  <tr>
+                    <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                    <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Delete"/></td>
+                    <td width="42" align="left"><input name="submit2" type="submit" style="width: 100px;"  value="Cancel"/></td>
+                    <td width="59" align="right">&nbsp;</td>
+                    <td width="1" align="right">&nbsp;</td>
+                    <td width="195" align="right">&nbsp;</td>
+                  </tr>
+                </table>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        </div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+
+            </p>
+            <p>
+                1:'In above Text Boxes ,given the example of time interval and mail interval should be like that formate<br>
+
+            </p>
+        </div>

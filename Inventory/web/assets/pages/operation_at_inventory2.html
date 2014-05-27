@@ -1,0 +1,151 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAX Master</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+    <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+        });
+    </script>
+
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+
+        <div style="margin-left: 340px; margin-top: 50px;">
+            <table  border="0" cellpadding="0" cellspacing="2">
+                <tr>
+                    <td colspan="4" style="font-weight: bold;">Operation At Inventory2</td>
+
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-weight: bold;height: 20px;"></td>
+
+                </tr>
+                <tr>
+                    <td style="width: 120px;"><u>Asset Tag</u></td>
+                    <td style="width: 120px;" align="center"><u>Asset Description</u></td>
+                    <td style="width: 120px;" align="center"><u>Asset Specification</u></td>
+					<td style="width: 120px;" align="center"><u>Serial No.</u></td>
+					<td style="width: 120px;" align="center"><u>Make</u></td>
+					<td style="width: 120px;"><u>Model</u></td>
+                </tr>
+
+                <tr>
+                    	 <td>
+                                <select style="width: 150px;">
+                                    <option value="0" selected="selected">---Select---</option>
+									<option value="B1">LPT-2026</option>
+                                    <option value="B2">LPT-2039</option>
+									<option value="B2">LPT-2040</option>
+									<option value="B2">LPT-2045</option>
+                                </select></td>
+                                  <td style="width: 120px;"><input type="textarea" name="textfield22" value="Laptop"/></td>
+								<td>
+                                <select style="width: 150px;">
+                                    <option value="0" selected="selected">---Select---</option>
+									<option value="B1">IT Hardware</option>
+                                    <option value="B2">IT Software</option>
+									<option value="B2">Non IT</option>
+									<option value="B2">LAB/Engineering</option>
+                                </select></td>
+								<td style="width: 120px;"><input type="text" name="textfield22" value="001"/></td>
+					<td style="width: 120px;"><input type="text" name="textfield22" value="Lenovo"/></td>
+					<td style="width: 120px;"><input type="text" name="textfield22" value="lenovo2053"/></td>
+					<td  align="center"><input type="checkbox" name="sample"
+					value="select"></td>
+					</tr>
+					<tr>
+					<td colspan="4" style="font-weight: bold;height: 20px;"></td>
+                    <td colspan="4" style="font-weight: bold;height: 20px;"></td>
+					</tr>
+					 <tr>
+                    <td colspan="2" style="font-weight: bold;" align="right">Add To Inventory :</td>
+					<td>
+                    <select style="width: 150px;">
+                                    <option value="0" selected="selected">---Select---</option>
+									<option value="B1">Building</option>
+                                    <option value="B2">Floor</option>
+									<option value="B1">Space</option>
+					</select>
+								</td>
+								</tr>
+                 <tr>
+                    <td colspan="2" style="font-weight: bold;" align="right">Allocate To Employee :</td>
+					<td>
+                    <select style="width: 150px;">
+                                    <option value="0" selected="selected">---Select---</option>
+									<option value="B1">emp-001</option>
+                                    <option value="B2">emp-002</option>
+									<option value="B1">emp-003</option>
+					</select>
+								</td>
+								</tr>
+                </tr>
+               </tr>			
+				
+                </table>
+
+        </div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+
+            </p>
+
+            <p>
+                1:'Enterprise Setup'<br>
+
+                2:'Enterprise Setup'
+
+            </p>
+        </div>
+    </body>
+</html>

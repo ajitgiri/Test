@@ -1,0 +1,235 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAG Printing Main</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script language="javascript">
+
+            function printtag()
+            {
+
+                document.all.print.style.visibility = "hidden";
+                window.print();
+            }
+            function printtag1() {
+                var code = document.frm.pass.value;
+                //alert(code)
+
+                /*if(window.XMLHttpRequest){
+                 xmlhttp3 = new XMLHttpRequest();
+                 }else if(window.ActiveXObject){
+                 xmlhttp3=new ActiveXObject("Microsoft.XMLHTTP");
+                 }
+                 if (xmlhttp3){
+                 
+                 xmlhttp3.onreadystatechange=dataSet1;
+                 xmlhttp3.open("GET","returndata1.jsp?code="+code+"&from=tag",true);
+                 xmlhttp3.send();
+                 }*/
+            }
+
+            function dataSet1() {
+                var result1 = "";
+                var result_arr1 = "";
+                var subresult_arr1 = "";
+                if (xmlhttp3.readyState == 4) {
+                    if (xmlhttp3.status == 200) {
+                        result1 = xmlhttp3.responseText;
+                        //alert("result--->"+result1+"<-----")
+                        result_arr1 = result1.split("#");
+                        for (var i = 0; i < result_arr1.length - 1; i++) {
+                            if (typeof(result_arr1[i]) != "undefined") {
+                                subresult_arr1 = result_arr1[i].split("@");
+                                if (subresult_arr1.length > 1) {
+                                    if (subresult_arr1[1] == "dont")
+                                    {
+                                    } else
+                                    {
+                                        document.all.print.style.visibility = "hidden";
+                                        window.print();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div style="margin-left: 350px; margin-top: 80px;">
+                <form name="frm">
+                    <table width="80%" class="table" align="center" >
+                        <tr>
+                            <td width="100px;"></td>
+                            <td>Tag Printing Home</td>
+                        </tr>
+                         <tr>
+                            <td height="20px;"></td>
+                            <td></td>
+                        </tr>
+                        <div style = "page-break-after:always">
+
+                            <table align='center' border="0" class="table" width='60%'>
+
+                                <tr height='25'>
+                                    <td class="centertd"  nowrap><font face="Verdana" size="2TPH-11
+                                                                       TPH-11
+                                                                       "><b>Strikedart</b></font></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd" nowrap ><b><font face="Verdana" size="1">SN : IUGG78EFD</font></b></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd"  nowrap ><font face="Free 3 Of 9 Extended" size="7">*LPT-2025*</font></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd" nowrap ><b> <font face="Verdana" size="1">LPT-2025</font></B></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style = "page-break-after:always;margin-left: 350px;" >
+
+                            <table align='center' border="0" class="table" width='60%'>
+
+                                <tr height='25'>
+                                    <td class="centertd"  nowrap><font face="Verdana" size="2TPH-11
+                                                                       TPH-11
+                                                                       "><b>Strikedart</b></font></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd" nowrap ><b><font face="Verdana" size="1">SN : YUGDG8GY</font></b></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd"  nowrap ><font face="Free 3 Of 9 Extended" size="7">*LPT-2026*</font></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd" nowrap ><b> <font face="Verdana" size="1">LPT-2026</font></B></td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <div style = "page-break-after:always;margin-left: 350px;">
+
+                            <table align='center' border="0" class="table" width='60%'>
+
+                                <tr height='25'>
+                                    <td class="centertd"  nowrap><font face="Verdana" size="2TPH-11
+                                                                       TPH-11
+                                                                       "><b>Strikedart</b></font></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd" nowrap ><b><font face="Verdana" size="1">SN : Y7EDT6T6T</font></b></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd"  nowrap ><font face="Free 3 Of 9 Extended" size="7">*LPT-2027*</font></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd" nowrap ><b> <font face="Verdana" size="1">LPT-2027</font></B></td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <div style = "page-break-after:always;margin-left: 350px;">
+
+                            <table align='center' border="0" class="table" width='60%'>
+
+                                <tr height='25'>
+                                    <td class="centertd"  nowrap><font face="Verdana" size="2TPH-11
+                                                                       TPH-11
+                                                                       "><b>Strikedart</b></font></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd" nowrap ><b><font face="Verdana" size="1">SN : YUGEDG866</font></b></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd"  nowrap ><font face="Free 3 Of 9 Extended" size="7">*LPT-2028*</font></td>
+                                </tr>
+                                <tr>
+                                    <td class="centertd" nowrap ><b> <font face="Verdana" size="1">LPT-2028</font></B></td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </table>
+                </form>
+            </div><br><br><br><br>
+            <div style="margin-left: 410px;">
+            <table>
+                <tr>
+                             <td colspan="4" ><input name="submit" type="submit" style="width: 100px;"  value="Back"/>
+                            <input name="submit" type="reset" style="width: 100px;" value="Print"/>
+                            <input name="submit" type="reset" style="width: 100px;" value="Cancel"/></td>
+                        </tr>
+            </table>
+            </div>
+        </div>
+        <br>
+            <div style="color: blueviolet;margin-left: 100px;margin-top: 100px;">
+                <p>
+                    <b>Note:- </b>
+                </p>
+                <p>
+                    1:'This is for selecting all Asset Id from "tag_printing.html" page so all the Assets data's with Bar Codes are displaying'<br>
+                    2:'Enterprise Setup'
+
+                </p>
+            </div>
+        </div>
+    </body>
+
+</html>

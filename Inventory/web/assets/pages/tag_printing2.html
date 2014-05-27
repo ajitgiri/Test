@@ -1,0 +1,120 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAX Master</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+     <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+        });
+    </script>
+
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+ <div id="cBody">
+        <div style="margin-left: 340px; margin-top: 50px;">
+            <table  border="0" cellpadding="0" cellspacing="2">
+                <tr>
+
+                    <td colspan="4" style="font-weight: bold;">BAR Code Generation </td>
+
+                </tr>
+				<tr>
+				<td colspan="1" style="font-weight: bold;height: 20px;"></td>
+				<td colspan="1" style="font-weight: bold;height: 20px;"></td>
+				</tr>
+				 <tr>
+                    <td class="form-row" align="center"><u>BAR Code</u></td> 
+				<tr/>
+				<tr>
+				   <td align="center">WS-00-001</td><br>
+				   </tr>
+				   <tr>
+				   <td align="center">WS-00-002</td><br>
+				   </tr>
+				   <tr>
+				   <td align="center">WS-00-003</td><br>
+				   </tr>
+				   <tr>
+				   <td align="center">WS-00-004</td><br>
+				   </tr>
+				   <tr>
+				   <td align="center">WS-00-005</td>
+				</tr>
+				
+            </table>
+            <table width="640" border="0" class="classtd1">
+          <tr>
+            <td colspan="9" style="height: 20px;"></td>
+          </tr>
+          <tr>
+            <td width="103"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+            <td width="215" align="left"><input name="reset3" type="reset" style="width: 100px;" value="Cancel"/></td>
+            <td width="100" align="left">&nbsp;</td>
+            <td width="100" align="right">&nbsp;</td>
+            <td width="100" align="right">&nbsp;</td>
+          </tr>
+        </table>
+        </div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+
+            </p>
+
+            <p>
+                1:'Enterprise Setup'<br>
+
+                2:'Enterprise Setup'<br>
+
+				3:'When you are clicking GO button then this page will open with BAR Code'
+
+            </p>
+        </div>
+    </body>
+
+</html>

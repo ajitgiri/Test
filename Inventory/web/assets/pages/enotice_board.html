@@ -1,0 +1,203 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E Notice Master</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+         <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+         <script type="text/javascript">
+            $(function() {
+                $(".datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+     <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+<script>
+	$(document).ready(function() {
+    $('#selectall').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+</script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+    <div style="margin-left: 340px; margin-top: 50px;">
+<table  border="0" cellpadding="0" cellspacing="2">
+                <tr>
+                    <td colspan="4" style="font-weight: bold;"><div align="center">E Notice Master</div></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-weight: bold; height: 10px;"></td>
+                </tr>
+                <tr>
+                  <td height="32" style="width: 160px; text-align: center; " >&nbsp;</td>
+                  <td style="width: 180px; ">Select Legal Entity : </td>
+                  <td style="width: 180px;"><select name="select" style="width:100px">
+                    <option selected="selected">Select</option>
+                    <option>Legal Entity 1</option>
+                    <option>Legal Entity 2</option>
+                    <option>Legal Entity 3</option>
+                  </select></td>
+                  <td></td>
+                </tr>
+                <tr>
+                    <td style="width: 160px; text-align: center; " > E Notice </td>
+                    <td style="width: 180px; ">From Date & Time </td>
+                    <td style="width: 180px;">To Date & Time </td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    
+                     <td rowspan="5"><textarea name="textarea" cols="20" rows="8" style="resize: none;"></textarea></td>
+                     <td style="margin-top: 10px;"><input type="text" name="textfield3" style="width:80px" class="datepicker1"/><input type="text" name="" size="7"/>   </td>
+                    <td><input type="text" name="textfield3" style="width:80px" class="datepicker1"/><input type="text" name="" size="7"/> </td>
+                    <td><input type="submit" value="ADD" style="width: 80px;"/> </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-weight: bold; height: 30px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-weight: bold; height: 30px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-weight: bold; height: 30px;"></td>
+                </tr>
+                <tr>
+                    <td height="13" colspan="4" style="font-weight: bold; height: 30px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-weight: bold; height: 30px;"></td>
+                </tr>
+                <tr>
+                    
+                    <td style="width: 160px; font-weight: bold; background-color: activecaption;">E Notice </td>
+                    <td style="width: 160px;font-weight: bold; background-color: activecaption;">From Date & Time </td>
+                    <td style="width: 160px;font-weight: bold; background-color: activecaption;">To Date & Time </td>
+                    <td style="background-color: activecaption;"><input name="checkbox" type="checkbox" id="selectall"/>
+                      <strong>Select All </strong></td>
+                </tr>
+                 <tr>
+                     <td><textarea name="textarea2" cols="20" rows="1" style="resize: none;">eNotice 1</textarea></td>
+                    <td ><span style="margin-top: 10px;">
+                      <input name="textfield32" type="text" class="datepicker1" id="textfield3" style="width:80px" value="11-02-2014"/>
+                      <input name="Input" type="text" value="08:04" size="7"/>
+                    </span></td>
+                    <td ><span style="margin-top: 10px;">
+                      <input name="textfield37" type="text" class="datepicker1" id="textfield36" style="width:80px" value="11-03-2014"/>
+                      <input name="Input6" type="text" value="11:44" size="7"/>
+                    </span></td>
+                    <td><input type="checkbox" class="checkbox1"/>  </td>
+                </tr>
+                  <tr>
+                     <td><textarea name="textarea3" cols="20" rows="1" style="resize: none;">eNotice 2</textarea></td>
+                    <td ><span style="margin-top: 10px;">
+                      <input name="textfield33" type="text" class="datepicker1" id="textfield32" style="width:80px" value="11-02-2012"/>
+                      <input name="Input2" type="text" value="05:04" size="7"/>
+                    </span></td>
+                    <td ><span style="margin-top: 10px;">
+                      <input name="textfield36" type="text" class="datepicker1" id="textfield35" style="width:80px" value="11-03-2012"/>
+                      <input name="Input5" type="text" value="22:04" size="7"/>
+                    </span></td>
+                    <td><input type="checkbox" class="checkbox1" />  </td>
+                </tr>
+                 <tr>
+                     <td><textarea name="textarea4" cols="20" rows="1" style="resize: none;">eNotice 3</textarea></td>
+                    <td ><span style="margin-top: 10px;">
+                      <input name="textfield34" type="text"class="datepicker1" id="textfield33" style="width:80px" value="12-02-2014"/>
+                      <input name="Input3" type="text" value="08:33" size="7"/>
+                    </span></td>
+                    <td ><span style="margin-top: 10px;">
+                      <input name="textfield35" type="text" class="datepicker1" id="textfield34" style="width:80px" value="11-03-2014"/>
+                      <input name="Input4" type="text" value="14:00" size="7"/>
+                    </span></td>
+                    <td><input type="checkbox" class="checkbox1" />  </td>
+                </tr>
+            </table>
+        <table border="0">
+              <tr>
+                <td colspan="9" style="height: 20px;"></td>
+              </tr>
+              <tr>
+                <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                <td width="100" align="left"><input name="submit2" type="submit" style="width: 100px;"  value="Delete"/></td>
+                <td width="78" align="right"><input name="submit32" type="submit" style="width: 100px;"  value="Enable"/></td>
+                <td width="23" align="left"><input name="submit33" type="submit" style="width: 100px;"  value="Disable"/></td>
+                <td width="100" align="right"><input name="submit3" type="submit" style="width: 100px;"  value="Cancel"/></td>
+                <td width="84" align="right">&nbsp;</td>
+              </tr>
+            </table>
+        <p>&nbsp;</p>
+        </div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+
+            </p>
+            <p>
+                1:'Enterprise Setup'<br>
+                2:'Enterprise Setup'
+
+            </p>
+        </div>
+    </body>
+</html>

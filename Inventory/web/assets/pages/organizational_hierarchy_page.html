@@ -1,0 +1,218 @@
+<html>
+    <head>
+        <title>Organization Hierarchy</title>
+        <!--Ajit Start-->
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+         <script type="text/javascript" src="../js/lib/html5shiv.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+       
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+				
+             
+        $("#tableArea").hide();
+
+                //  $(".manyToOne").hide();
+                $("#sub").click(function() {
+                    var noOfLevel = $("#nolevel").val();
+                    if (noOfLevel != '') {
+                        // $("#tableArea").empty();
+                        $("#tableArea").show();
+                     //   $("#tableArea addLevelsTable notApplRow").hide();
+                        for (var i = 1; i <= noOfLevel; i++) {
+                            newRow = "<tr>" +
+                                    "<td>Level" + '\t' + i + '\t' + "<input type='text' size='10'/></td>" +
+                                    "<td><input type='radio' name='storeT' value='select'/>Select</td>" +
+                                    "<td><input type='radio' name='usageT' value='select'/>Select</td>" +
+                                    "<td><input type='radio' name='EmployeeM' value='select'>Select</td>" +
+                                    "<td><input type='radio' name='SharedS' value='select'>Select</td>" +
+                                    "<td align='center'><input type='radio' class='yss' name='HeadofL" + i + "' value='Yes'>Yes<input type='radio' name='HeadofL" + i + "' value='No'>No</td>" +
+                                    "<td align='center'><input type='radio' class='yss' name='SPOC" + i + "' value='Yes'>Yes<input type='radio' name='SPOC" + i + "' value='No'>No</td>" +
+                                    "<td align='center'><input type='radio' class='yss' name='AssetM" + i + "' value='Yes'>Yes<input type='radio' name='AssetM" + i + "' value='No'>No</td>" +
+                                    "<td align='center'><input type='radio' class='yss' name='ValidityP" + i + "' value='Yes'>Yes<input type='radio' name='ValidityP" + i + "' value='No'>No</td>" +
+                                    "<td><input type='radio' class='yss' name='DepreciationC" + i + "' value='Yes'>Yes<input type='radio' name='DepreciationC" + i + "' value='No'>No</td>" +
+                                    "<td align='left'><input class='checkbox1' type='checkbox'></td>";
+
+                            $("#addLevelsTable tr:last").after(newRow);
+                            if(i==noOfLevel){
+                                 newRow = "<tr>" +
+                                    "<td></td>" +
+                                    "<td><input type='radio' name='storeT' value='select'/>Not Applicable</td>" +
+                                    "<td></td>" +
+                                    "<td></td>" +
+                                    "<td></td>" +
+                                    "<td align='center'></td>" +
+                                    "<td align='center'></td>" +
+                                    "<td align='center'></td>" +
+                                    "<td align='center'></td>" +
+                                    "<td><input type='radio' name='storeT' value='select'/>Not Applicable</td>" +
+                                    "<td align='left'></td>";
+
+                            $("#addLevelsTable tr:last").after(newRow);
+                            }
+
+                        }
+                     //   $("#tableArea addLevelsTable notApplRow").show();
+                    }
+                });
+				$(".yss").on("click",function(){
+					alert();
+				});
+                $('#selectAll').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+                $('#tableArea addLevelsTable .yss').click(function(event) {
+                    alert("yes");
+                });
+
+            });
+
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+        <div id="cBody">
+            <div style="margin-left: 0px; margin-top: 50px;">
+                <div style="margin-left: 450px;">
+                    <form>
+                        <table border="0">
+                            <tr>
+                                <td colspan="5" style="font-weight: bold; width: 100px;">
+                                    <div align="center">Organization Hierarchy
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="font-weight: bold;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="font-weight: bold;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                                <td>No. of Levels:
+                                    <input type="text" id="nolevel" name="" maxlength="2" class="text-input required"/></td>
+                                <td><input type="button" value="Go" id="sub"/> </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div id="tableArea">
+                    <table id="addLevelsTable">
+
+                        <tr>
+                            <td width="190px" align="center" style="background-color: activecaption;">Levels</td>
+                            <td width="100px" align="center" style="background-color: activecaption;">Ownership Tracking</td>
+                            <td width="100px" align="center" style="background-color: activecaption;">Usage Tracking</td>
+                            <td width="100px" align="center" style="background-color: activecaption;">Employee Mapping</td>
+                            <td width="100px" align="center" style="background-color: activecaption;">Support Function at Level</td>
+                            <td width="150px" align="center" style="background-color: activecaption;">Head of Levels Applicable</td>
+                            <td width="120px" align="center" style="background-color: activecaption;">SPOC Applicable</td>
+                            <td width="170px" align="center" style="background-color: activecaption;">Asset Manager Applicable</td>
+                            <td width="170px" align="center" style="background-color: activecaption;">Validity Period Applicable</td>
+                            <td width="120px" align="center" style="background-color: activecaption;">Depreciation Computation</td>
+                            <td width="120px" align="center" style="background-color: activecaption;">Select ALL<input type="checkbox" id="selectAll"></td>
+                        </tr>
+                       
+                    </table>
+                    <table border="0" class="manyToOne">
+
+                        <tr >
+                            <td width="120px" ></td>
+                            <td width="100px" ></td>
+                            <td width="100px" ></td>
+                            <td width="90px" ></td>
+                            <td width="90px" ></td>
+                            <td width="110px" ><input type="checkbox">Many heads &nbsp;&nbsp;&nbsp;&nbsp; to 1 level </td>
+                            <td width="110px" ><input type="checkbox">Many heads &nbsp;&nbsp;&nbsp;&nbsp;  to 1 level</td>
+                            <td width="110px" ><input type="checkbox">Many heads &nbsp;&nbsp;&nbsp;&nbsp;  to 1 level</td>
+                            <td width="100px" ></td>
+                            <td width="100px" ></td>
+                            <td width="100px" ></td>
+                        </tr>
+                        <tr >
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="checkbox">1 head to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;many levels </td>
+                            <td><input type="checkbox">1 head to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;many levels</td>
+                            <td><input type="checkbox">1 head to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;many levels</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <table border="0">
+                        <tr>
+                            <td colspan="10" style="height: 20px;"></td>
+                        </tr>
+                        <tr>
+                            <td width="160px" ></td>
+                            <td width="100px" ></td>
+                            <td align="right" width="100px"><input type="submit"  value="Back" style="width: 100px;"/></td>
+                            <td align="left" width="80px"><input type="reset" value="Update" style="width: 100px;"/></td>
+                            <td align="left"><input type="reset" value="Delete" style="width: 100px;"/></td>
+                            <td align="right"><input type="submit"  value="Enable" style="width: 100px;"/></td>
+                            <td align="right"><input type="submit"  value="Disable" style="width: 100px;"/></td>
+                            <td align="right"><input type="submit"  value="Cencel" style="width: 100px;"/></td>
+                            <td ></td>
+                            <td ></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div style="color: blueviolet;margin-top: 60px;">
+                Notes:-<br>
+                1: This Above table and no of rows will generate According to the No Of Legal Entities: will entered by User.<br>
+                2: Support function at level can't be lower then Employee mapping Level but it can be in same level.
+            </div>
+        </div>
+    </body>
+</html>

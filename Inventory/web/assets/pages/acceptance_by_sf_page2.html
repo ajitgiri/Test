@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Acceptance by SF page 2</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+         <script type="text/javascript">
+            $(function() {
+                $(".datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+		
+    <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+			$("#next_id4").click(function()
+                {
+                    window.open("acceptance_by_sf_page3.html");
+                });
+        });
+    </script>
+	
+	<script>
+            $(document).ready(function() {
+			    
+				$("#table_id1").hide();
+				$("#table_id2").hide();
+				$("#table_id3").hide();
+				
+            });
+	</script>	
+    <script type="text/javascript">
+        $(function() {
+            
+			$("#sel").change(function() {
+                    var value1 = $("#sel").val();
+                    var vl1 = "accept ownership";
+                    var vl2 = "transfer ownership";
+					var vl3 = "add to inventory";
+                    if (value1 == vl1) {
+                        $("#table_id1").show();
+						$("#table_id2").hide();
+						$("#table_id3").hide();
+                    }
+					if (value1 == vl2) {
+					    $("#table_id2").show();
+						$("#table_id1").hide();
+						$("#table_id3").hide();
+						$(".td_class1").hide();
+				    }
+					if (value1 == vl3) {
+					    $("#table_id3").show();
+						$("#table_id1").hide();
+						$("#table_id2").hide();
+				    }	
+               });
+			   
+			   $("#sel1").change(function() {
+                    var value0 = $("#sel1").val();
+                    var v1 = "permanent";
+                    var v2 = "temporary";
+                    if (value0 == v1) {
+                        $(".td_class1").hide();
+                    }
+					if (value0 == v2) {
+                        $(".td_class1").show();
+                    }
+				});
+        });
+    </script>
+
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+<div style="margin-left: 150px; margin-top: 70px;">
+
+            <table width="504" border="0" cellspacing="2" cellpadding="0">
+                <tr>
+                    <td height="61" colspan="4"><div align="right"><strong>Acceptance</strong><strong></strong></div></td>
+                </tr>
+                <tr>
+                    <td width="239">&nbsp;</td>
+                    <td width="142">&nbsp;</td>
+                    <td width="53">&nbsp;</td>
+                    <td width="60">&nbsp;</td>
+                </tr>
+            </table>
+			
+			
+            <table width="1151" border="0">
+              <tr>
+                <td width="37">&nbsp;</td>
+                <td width="64">&nbsp;</td>
+                <td width="103">&nbsp;</td>
+                <td width="73">&nbsp;</td>
+                <td width="57">&nbsp;</td>
+                <td width="81">&nbsp;</td>
+                <td width="109">&nbsp;</td>
+                <td width="91">&nbsp;</td>
+                <td width="83" class="table_class1">&nbsp;</td>
+                <td width="65" class="table_class1">&nbsp;</td>
+                <td width="104" class="table_class1">&nbsp;</td>
+                <td width="76" class="table_class1">&nbsp;</td>
+                <td width="75">&nbsp;</td>
+                <td width="75">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold; background-color: activecaption;">S.No.</td>
+                <td style="font-weight: bold; background-color: activecaption;">Asset Tag </td>
+                <td style="font-weight: bold; background-color: activecaption;">Asset Description </td>
+                <td style="font-weight: bold; background-color: activecaption;">SL. No. </td>
+                <td style="font-weight: bold; background-color: activecaption;">Part No. </td>
+                <td style="font-weight: bold; background-color: activecaption;">Sub Category </td>
+                <td style="font-weight: bold; background-color: activecaption;">Minor Category </td>
+                <td style="font-weight: bold; background-color: activecaption;">Major Category </td>
+                <td class="table_class1" style="font-weight: bold; background-color: activecaption;">Bond Type </td>
+                <td class="table_class1" style="font-weight: bold; background-color: activecaption;">Unit No. </td>
+                <td class="table_class1" style="font-weight: bold; background-color: activecaption;">Bond Register </td>
+                <td class="table_class1" style="font-weight: bold; background-color: activecaption;">Owner BU </td>
+                <td style="font-weight: bold; background-color: activecaption;">User BU </td>
+                <td style="font-weight: bold; background-color: activecaption;">Select </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>DSK001</td>
+                <td>Desktop</td>
+                <td>231313135</td>
+                <td>D77787</td>
+                <td>Desktop</td>
+                <td>Computer Equipments </td>
+                <td>IT Hardware </td>
+                <td class="table_class1">STP</td>
+                <td class="table_class1">Unit 1 </td>
+                <td class="table_class1">BR-No-001</td>
+                <td class="table_class1">BU-1</td>
+                <td>UBU-1</td>
+                <td><label>
+                  <input type="checkbox" name="checkbox" value="checkbox" />
+                </label></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>DSK004</td>
+                <td>Desktop</td>
+                <td>536363435</td>
+                <td>L89898</td>
+                <td>Desktop</td>
+                <td>Computer Equipments </td>
+                <td>IT Hardware </td>
+                <td class="table_class1">SEZ</td>
+                <td class="table_class1">Unit 2 </td>
+                <td class="table_class1">BR-No-002</td>
+                <td class="table_class1">BU-2</td>
+                <td>UBU-2</td>
+                <td><input type="checkbox" name="checkbox2" value="checkbox" /></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>DSK005</td>
+                <td>Desktop</td>
+                <td>564324435</td>
+                <td>M89558</td>
+                <td>Desktop</td>
+                <td>Computer Equipments </td>
+                <td>IT Hardware </td>
+                <td class="table_class1">SEZ</td>
+                <td class="table_class1">Unit 3 </td>
+                <td class="table_class1">BR-No-003</td>
+                <td class="table_class1">BU-3</td>
+                <td>UBU-3</td>
+                <td><input type="checkbox" name="checkbox2" value="checkbox" /></td>
+              </tr>
+  </table>
+            <table width="1151" border="0">
+              <tr>
+                <td width="142">&nbsp;</td>
+                <td width="564">&nbsp;</td>
+                <td width="272">&nbsp;</td>
+                <td width="145">&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+            <table width="1190" border="0">
+              <tr>
+                <td width="34">&nbsp;</td>
+                <td width="139">&nbsp;</td>
+                <td width="119">Transaction Type </td>
+                <td width="175"><label>
+                  <select name="select" style="width:170px" id="sel">
+                    <option selected="selected">Select</option>
+                    <option value="accept ownership">Accept Ownership</option>
+                    <option value="transfer ownership">Transfer Ownership</option>
+                    <option value="add to inventory">Add to Inventory</option>
+                  </select>
+                </label></td>
+                <td width="86">&nbsp;</td>
+                <td width="85">&nbsp;</td>
+                <td width="97">&nbsp;</td>
+                <td width="97">&nbsp;</td>
+                <td width="79">&nbsp;</td>
+                <td width="69">&nbsp;</td>
+                <td width="54">&nbsp;</td>
+                <td width="106">&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+            <table width="1178" border="0" id="table_id1">
+              <tr>
+                <td width="94">Cost Center </td>
+                <td width="180"><select name="select2" style="width:170px">
+                    <option selected="selected">Select</option>
+                    <option>CC 1</option>
+                    <option>CC 2</option>
+                    <option>CC 3</option>
+                </select></td>
+                <td width="95">Building</td>
+                <td width="781"><select name="select3" style="width:170px">
+                    <option selected="selected">Select</option>
+                    <option>Building 1</option>
+                    <option>Building 2</option>
+                    <option>Building 3</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td>Floor</td>
+                <td><select name="select4" style="width:170px">
+                    <option selected="selected">Select</option>
+                    <option>Floor 1</option>
+                    <option>Floor 2</option>
+                    <option>Floor 3</option>
+                </select></td>
+                <td>Space Type </td>
+                <td><select name="select7" style="width:170px">
+                    <option selected="selected">Select</option>
+                    <option>Space Type 1</option>
+                    <option>Space Type 2</option>
+                    <option>Space Type 3</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td>Space</td>
+                <td><select name="select5" style="width:170px">
+                    <option selected="selected">Select</option>
+                    <option>Space 1</option>
+                    <option>Space 2</option>
+                    <option>Space 3</option>
+                </select></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><label>
+                  <input type="submit" name="Submit" value="Accept Ownership" />
+                </label></td>
+              </tr>
+            </table>
+            <table width="1178" border="0" id="table_id2">
+              <tr>
+                <td width="94">Transfer Ownership to </td>
+                <td width="180"><select name="select8" style="width:170px">
+                    <option selected="selected">Select</option>
+                    <option>emp001(Ram Kapoor)</option>
+                    <option>emp002(Raj Kapoor)</option>
+                </select></td>
+                <td width="95"><input name="text" type="text" style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;width: 100px;" value=" Search "/></td>
+                <td width="781">&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Transfer Type </td>
+                <td><select name="select8" style="width:170px" id="sel1">
+                    <option selected="selected">Select</option>
+                    <option value="permanent">Permanent</option>
+                    <option value="temporary">Temporary</option>
+                </select></td>
+                <td class="td_class1">Till Date </td>
+                <td class="td_class1"><label>
+                  <input type="text" name="textfield" style="width:170px" class="datepicker1"/>
+                </label></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><label>
+                  <input type="submit" name="Submit3" value="Transfer Ownership" />
+                </label></td>
+              </tr>
+            </table>
+            <table width="1178" border="0" id="table_id3">
+              <tr>
+                <td width="95">Building</td>
+                <td width="179"><select name="select6" style="width:170px">
+                    <option selected="selected">Select</option>
+                    <option>Building 1</option>
+                    <option>Building 2</option>
+                    <option>Building 3</option>
+                </select></td>
+                <td width="95">Floor</td>
+                <td width="781"><select name="select6" style="width:170px">
+                    <option selected="selected">Select</option>
+                    <option>Floor 1</option>
+                    <option>Floor 2</option>
+                    <option>Floor 3</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td>Space Type </td>
+                <td><select name="select6" style="width:170px">
+                    <option selected="selected">Select</option>
+                    <option>Space Type 1</option>
+                    <option>Space Type 2</option>
+                    <option>Space Type 3</option>
+                </select></td>
+                <td>Space</td>
+                <td><select name="select6" style="width:170px">
+                    <option selected="selected">Select</option>
+                    <option>Space 1</option>
+                    <option>Space 2</option>
+                    <option>Space 3</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><label>
+                  <input type="submit" name="Submit2" value="Add to Inventory" />
+                </label></td>
+              </tr>
+            </table>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+</div>
+        
+</body>
+</html>

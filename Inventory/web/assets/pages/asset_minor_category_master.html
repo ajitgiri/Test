@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody"> 
+            <div style="margin-left: 10px; margin-top: 50px;">
+
+                <table width="1464"  border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <td colspan="2"><strong></strong></td>
+                        <td width="150">&nbsp;</td>
+                        <td width="145">&nbsp;</td>
+                        <td colspan="2"><strong>Asset Minor Category</strong></td>
+                        <td width="130">&nbsp;</td>
+                        <td width="115">&nbsp;</td>
+                        <td width="111">&nbsp;</td>
+                        <td width="114">&nbsp;</td>
+                        <td width="114">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="113">&nbsp;</td>
+                        <td width="143">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td width="150">&nbsp;</td>
+                        <td width="155">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Major Category </td>
+                        <td>Minor Category Code</td>
+                        <td><label>Minor Category Name </label></td>
+                        <td>Life of Asset (in months) </td>
+                        <td>Asset Prefix </td>
+                        <td>Accessory Prefix </td>
+                        <td>Asset Classification </td>
+                        <td>Support Function </td>
+                        <td><label>Shared Asset  </label></td>
+                        <td><p>Authentication for Movement </p>                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="47"><select name="select" style="width:120px">
+                          <option selected="selected">Select</option>
+                          <option>Computer Equipment</option>
+                          <option>Office Equipment</option>
+                          <option>Furnitures</option>
+                        </select></td>
+                        <td><input type="text" name="textfield423" /></td>
+                        <td><label>
+                                <input type="text" name="textfield42" />
+                            </label></td>
+                        <td><input type="text" name="textfield422" /></td>
+                        <td><input type="text" name="textfield424" /></td>
+                        <td><input type="text" name="textfield425" /></td>
+                        <td><select name="select3" style="width:100px">
+                                <option selected="selected">Select</option>
+                                <option>IT Hardware</option>
+                                <option>IT Software</option>
+                                <option>NON-IT </option>
+                                <option>LAB/Engineering</option>
+                            </select></td>
+                        <td><select name="select2" style="width:100px">
+                                <option selected="selected">Select</option>
+                                <option>IT</option>
+                                <option>Admin</option>
+                                <option>Facility</option>
+                            </select></td>
+                        <td><select name="select4" style="width:100px">
+                                <option selected="selected">Select</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select></td>
+                        <td><input type="radio" name="xx"/>Yes<input type="radio" name="xx"/>No</td>
+                        <td><input type="submit" name="Submit" value="Add" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><label></label></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: activecaption;">Major Category</td>
+                        <td style="background-color: activecaption;">Minor Category Code</td>
+                        <td style="background-color: activecaption;">Minor Category Name</td>
+                        <td style="background-color: activecaption;">Life of Asset (in months)</td>
+                        <td style="background-color: activecaption;" align="center">Asset Prefix</td>
+                        <td style="background-color: activecaption;" align="center">Accessory Prefix</td>
+                        <td style="background-color: activecaption;">Asset Classification</td>
+                        <td style="background-color: activecaption;">Support Function</td>
+                        <td style="background-color: activecaption;">Shared Asset</td>
+                        <td style="background-color: activecaption;">Authentication For Movement</td>
+                        <td style="background-color: activecaption;">
+                            <input type="checkbox" name="checkbox44" value="checkbox" id="selectall"/>
+                            Select All </td>
+                    </tr>
+                    <tr>
+                        <td><span class="style3">Computer Equipment</span></td>
+                        <td><span class="style3">MIN - CAT - 001 </span></td>
+                        <td><label>
+                                <input type="text" name="textfield426"  value="Desktop"/>
+                            </label></td>
+                        <td><input name="textfield4222" type="text" value="35" /></td>
+                        <td><span class="style3">DSK</span></td>
+                        <td><span class="style3">DSKA</span></td>
+                        <td><select name="select5" style="width:100px">
+                                <option>Select</option>
+                                <option selected="selected">IT Hardware</option>
+                                <option>IT Software</option>
+                                <option>NON-IT </option>
+                                <option>LAB/Engineering</option>
+                            </select></td>
+                        <td><select name="select8" style="width:100px">
+                                <option>Select</option>
+                                <option selected="selected">IT</option>
+                                <option>Admin</option>
+                                <option>Facility</option>
+                            </select></td>
+                        <td><select name="select11" style="width:100px">
+                                <option>Select</option>
+                                <option>Yes</option>
+                                <option selected="selected">No</option>
+                            </select></td>
+                        <td><input type="radio" name="xx" checked="checked"/>Yes<input type="radio" name="xx"/>No</td>
+                        <td><input type="checkbox" name="checkbox4" value="checkbox" class="checkbox1"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="style3">Office Equipment</span></td>
+                        <td><span class="style3">MIN - CAT - 002</span></td>
+                        <td><input type="text" name="textfield427" value="Laptop"/></td>
+                        <td><input name="textfield4223" type="text" value="24" /></td>
+                        <td><span class="style3">LPT</span></td>
+                        <td><span class="style3">LPTA</span></td>
+                        <td><select name="select6" style="width:100px">
+                                <option>Select</option>
+                                <option>IT Hardware</option>
+                                <option selected="selected">IT Software</option>
+                                <option>NON-IT </option>
+                                <option>LAB/Engineering</option>
+                            </select></td>
+                        <td><select name="select9" style="width:100px">
+                                <option>Select</option>
+                                <option>IT</option>
+                                <option selected="selected">Admin</option>
+                                <option>Facility</option>
+                            </select></td>
+                        <td><select name="select12" style="width:100px">
+                                <option>Select</option>
+                                <option selected="selected">Yes</option>
+                                <option>No</option>
+                            </select></td>
+                        <td><input type="radio" name="xx2"/>Yes<input type="radio" name="xx2" checked="checked"/>No</td>
+                        <td><input type="checkbox" name="checkbox42" value="checkbox" class="checkbox1"/></td>
+                    </tr>
+                    <tr>
+                        <td>Furnitures</td>
+                        <td><span class="style3">MIN - CAT - 003</span></td>
+                        <td><input type="text" name="textfield428" value="Projector"/></td>
+                        <td><input name="textfield4224" type="text" value="12" /></td>
+                        <td><span class="style3">PROJ</span></td>
+                        <td><span class="style3">PROJA</span></td>
+                        <td><select name="select7" style="width:100px">
+                                <option>Select</option>
+                                <option>IT Hardware</option>
+                                <option>IT Software</option>
+                                <option selected="selected">NON-IT </option>
+                                <option>LAB/Engineering</option>
+                            </select></td>
+                        <td><select name="select10" style="width:100px">
+                                <option>Select</option>
+                                <option>IT</option>
+                                <option>Admin</option>
+                                <option selected="selected">Facility</option>
+                            </select></td>
+                        <td><select name="select13" style="width:100px">
+                                <option>Select</option>
+                                <option selected="selected">Yes</option>
+                                <option>No</option>
+                            </select></td>
+                        <td><input type="radio" name="xx3" checked="checked"/>Yes<input type="radio" name="xx3"/>No</td>
+                        <td><input type="checkbox" name="checkbox43" value="checkbox" class="checkbox1" /></td>
+                    </tr>
+                </table>
+                <table width="1465" border="0" class="classtd1">
+                    <tr>
+                        <td colspan="9" style="height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td width="366"><div align="right">
+                                <input name="submit2" type="submit" style="width: 100px;"  value="Back"/>
+                            </div></td>
+                        <td width="185" align="center"><input name="reset2" type="reset" style="width: 100px;" value="Update"/></td>
+                      <td width="185" align="center"><input name="submit" type="submit" style="width: 100px;"  value="Delete"/></td>
+                        <td width="185" align="left"><input name="reset4" type="reset" style="width: 100px;" value="Disable"/></td>
+                        <td width="185" align="left"><input name="reset3" type="reset" style="width: 100px;" value="Enable"/></td>
+                        <td width="185" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                        <td width="144" align="right">&nbsp;</td>
+                    </tr>
+                </table>
+                <p>&nbsp;</p>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1. Can update the values using update button.</p>
+                <p>2. Can delete an entry using delete button.<br />
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

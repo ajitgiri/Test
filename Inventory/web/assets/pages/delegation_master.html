@@ -1,0 +1,222 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delegation Master</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+        <script type="text/javascript">
+            $(function() {
+                $("#datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker2").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker3").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div style="margin-left: 90px; margin-top: 50px;">
+                <table  border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <td colspan="7" style="font-weight: bold;" align="center">Delegation Master</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="font-weight: bold; height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td > Role Of Employee  </td>
+                        <td >  </td>
+                        <td >  </td>
+                        <td style="text-align: center;">  Delegation To </td>
+                        <td >  </td>
+                        <td >  </td>
+                        <td>Start Date</td>
+                        <td>Start Time</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="IND">Employee-001</option>
+                                <option value="USA">Employee-002</option>
+                                <option value="UK">Employee-003</option>
+                            </select>
+                        </td>
+
+                        <td style="width: 80px;" colspan="1" >
+                            <input type="text" value=" Search by Emp ID "  style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px; " size="18" />
+                        </td>
+                        <td style="width: 80px;" colspan="1" align="left" >
+                            <input type="text" value=" Search by Emp Name " style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;" size="22"/>
+                        </td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="INDA">Employee-010</option>
+                                <option value="USA">Employee-011</option>
+                                <option value="UK">Employee-012</option>
+                                <option value="AUS">Employee-013</option>
+                            </select>
+                        </td>
+                        <td style="width: 100px;" colspan="1" >
+                            <input type="text" value=" Search by Emp ID "  style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px; " size="18" />
+                        </td>
+                        <td style="width: 100px;" colspan="1" >
+                            <input type="text" value=" Search by Emp Name " style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;" size="22"/>
+                        </td>
+                        <td><input type="text" name="textfield3" style="width:100px" id="datepicker1" size="10"/></td>
+                        <td><input type="text" name="" size="7"/></td>
+                        <td><input type="submit" value="ADD" style="width: 80px;"/></td>
+                    </tr>
+                </table>
+                <div style="margin-top: 50px;">
+                    <table width="1000"  border="0" cellpadding="0" cellspacing="1" style="margin-left:0px">
+                        <tr>
+                            <td colspan="7" style="height:20px;"></td>
+                        </tr>
+                        <tr>
+                            <td width="133" style="width: 50px; background-color: activecaption; text-align: left;">Role Of Employee</td>
+                            <td width="256" style="width: 80px; background-color: activecaption; text-align: left;">Delegation To</td>
+                            <td width="83" style="width: 80px; background-color: activecaption;"></td>
+                            <td width="130" style="width: 80px; background-color: activecaption;"></td>
+                            <td width="147" style="width: 80px; background-color: activecaption; text-align: left;">Start Date</td>
+                            <td width="212" style="width: 50px; background-color: activecaption; text-align: left;">Start Time</td>
+                            <td width="121" style="width: 80px; background-color: activecaption;"><input type="checkbox" name="checkbox4" value="checkbox" id="selectall">Select All</td>
+                        </tr>
+                        <tr>
+                            <td>Employee-001</td>
+                            <td>
+                                <select style="width: 150px;">
+                                    <option value="0" selected="selected">---Select---</option>
+                                    <option value="INDA">Employee-001</option>
+                                    <option value="USA">Employee-002</option>
+                                    <option value="UK">Employee-003</option>
+                                    <option value="AUS">Employee-004</option>
+                                </select></td>
+                            <td style="width: 80px;" colspan="1" >
+                                <input type="text" value=" Search by Emp ID "  style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px; " size="18" />                            </td>
+                            <td style="width: 80px;" colspan="1" align="left" >
+                                <input type="text" value=" Search by Emp Name " style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;" size="22"/>                    </td>
+                            <td><input name="textfield3" type="text" id="datepicker2" style="width:100px" value="10-05-2014" size="10"/></td>
+                            <td><input type="text" name="text1" value="2:30:45" /></td>
+                            <td><input type="checkbox" class="checkbox1"/> </td>
+                        </tr>
+                        <tr>
+                            <td>Employee-002</td>
+                            <td>
+                                <select style="width: 150px;">
+                                    <option value="0" selected="selected">---Select---</option>
+                                    <option value="INDA">Employee-011</option>
+                                    <option value="USA">Employee-012</option>
+                                    <option value="UK">Employee-013</option>
+                                    <option value="AUS">Employee-014</option>
+                                </select></td>
+                            <td style="width: 80px;" colspan="1" >
+                                <input type="text" value=" Search by Emp ID "  style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px; " size="18" />                            </td>
+                            <td style="width: 80px;" colspan="1" align="left" >
+                                <input type="text" value=" Search by Emp Name " style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;" size="22"/>                    </td>
+                            <td><input type="text" name="textfield3" style="width:100px" id="datepicker3" size="10"/></td>
+                            <td><input type="text" name="text1" value="3:30:45" /></td>
+                            <td><input type="checkbox" class="checkbox1"/> </td>
+                        </tr>
+                        <tr>
+
+                        </tr>
+                    </table>
+                    <table width="1089" border="0" class="classtd1">
+                        <tr>
+                            <td colspan="9" style="height: 20px;"></td>
+                        </tr>
+                        <tr>
+                            <td width="381" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                            <td width="100" align="right"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                            <td width="1" align="left">&nbsp;</td>
+                            <td width="100" align="left"><input name="submit2" type="submit" style="width: 100px;"  value="Delete"/></td>
+                            <td width="100" align="right"><input name="submit3" type="submit" style="width: 100px;"  value="Enable"/></td>
+                            <td width="100" align="left"><input name="submit32" type="submit" style="width: 100px;"  value="Disable"/></td>
+                            <td width="277" align="right"><div align="left">
+                                    <input name="submit33" type="submit" style="width: 100px;"  value="Cancel"/>
+                                </div></td>
+                        </tr>
+                    </table>
+                    <p>&nbsp;</p>
+                </div>
+                <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                    <p>
+                        <b>Note:- </b>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

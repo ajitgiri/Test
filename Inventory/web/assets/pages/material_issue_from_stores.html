@@ -1,0 +1,137 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAX Master</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div style="margin-left: 340px; margin-top: 50px;">
+                <table  border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+
+                        <td colspan="4" style="font-weight: bold;">Material Issue From Stores </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="1" style="font-weight: bold;height: 20px;"></td>
+                        <td colspan="1" style="font-weight: bold;height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-row" align="right"><label>Select GRN No. :</label></td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="B1">243682</option>
+                                <option value="B2">268151 </option>
+                                <option value="B3">654321</option>
+                                <option value="B4">435627</option>
+                            </select>
+                        </td>	
+                    <tr/>
+                    <tr>
+                        <td class="form-row" align="right"><label>Select Asset Tag :</label></td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="B1">Tag-001</option>
+                                <option value="B2">Tag-002 </option>
+                                <option value="B3">Tag-003</option>
+                                <option value="B4">Tag-004</option>
+                            </select>
+                        </td>
+                    <tr>
+                    <tr>
+                        <td class="form-row" align="right"><label>Select PR Request :</label></td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="B1">PR-001</option>
+                                <option value="B2">PR-002 </option>
+                                <option value="B3">PR-003</option>
+                                <option value="B4">PR-004</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" style="font-weight: bold;height: 20px;"></td>
+                        <td colspan="1" style="font-weight: bold;height: 20px;"></td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="1" style="font-weight: bold;height: 20px;"></td>
+                        <td><input type="submit" name="Submit2" value="Go" /></td>
+                    </tr>            
+
+                </table>
+
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+
+                <p>
+                    1:'Enterprise Setup'<br>
+
+                    2:'Enterprise Setup'<br>
+
+                    3:'Select GRN No. (or) Asset Tag (or) PR Request'
+                </p>
+            </div>
+    </body>
+
+</html>

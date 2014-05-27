@@ -1,0 +1,228 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Approve Material Request</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+         <script type="text/javascript">
+            $(function() {
+                $(".datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+		<script>
+            $(document).ready(function() {
+			    $('.table_class').hide();
+				$('#td_id1').hide();
+				$('#td_id2').hide();
+				
+				$("#Submit_id1").click(function () {                    
+                    window.open("grn2_master.html", "PopupWindow", "width=600,height=600,scrollbars=yes,resizable=yes");
+                });
+		
+            });
+		</script>
+      <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+      </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+			
+			
+			$("#next_id1").click(function(){
+				$("#table_id1").show();
+				});
+        
+			$("#add_id1").click(function(){
+				 $("#table_id2").show();
+				 $("#table_id3").show();
+				});
+               
+			 $("#sel1").change(function() {
+                    var value1 = $("#sel1").val();
+                    var vl1 = "select";
+                    var vl2 = "permanent";
+					var vl3 = "temporary";
+					if (value1 == vl1) {
+                        $("#td_id1").hide();
+						$("#td_id2").hide();
+                    }
+					if (value1 == vl2) {
+					   $("#td_id1").hide();
+						$("#td_id2").hide();
+				    }
+					if (value1 == vl3) {
+					   $("#td_id1").show();
+						$("#td_id2").show();
+				    }      
+               });
+		});
+    </script>
+<script>
+	$(document).ready(function() {
+    $('#selectall').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+</script>
+
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+<div style="margin-left: 300px; margin-top: 50px;">
+    <div>
+          <table width="500" border="0" cellspacing="2" cellpadding="0">
+            <tr>
+              <td colspan="2" align="center"><div align="right"><strong> Approve Material Request </strong><strong></strong></div></td>
+            <tr>
+              <td>&nbsp;</td>
+              <td width="179">&nbsp;</td>
+              <td width="128">&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="93">&nbsp;</td>
+              <td>Select Legal Entity : </td>
+              <td><select name="select2" style="width:120px" id="select">
+                  <option selected="selected">Select</option>
+                  <option>Legal Entity 1</option>
+                  <option>Legal Entity 2</option>
+                  <option>Legal Entity 3</option>
+              </select></td>
+              <td width="90">&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="center"></td>
+              <td>Select Cost Center  : </td>
+              <td><select name="select3" style="width:120px" id="sel">
+                <option selected="selected">Select</option>
+                <option>Cost Center 1</option>
+                <option>Cost Center 2</option>
+                <option>Cost Center 3</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>Select Requester : </td>
+              <td><select name="select" style="width:120px" id="select2">
+                <option selected="selected">Select</option>
+                <option>emp-001(Ravi Kumar)</option>
+                <option>emp-002(Mohani Kumar)</option>
+                            </select></td>
+              <td><input name="text" type="text" style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;width: 90px;" value=" Search "  /></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td><label>
+                <input type="submit" name="Submit2" value="Next" id="next_id1">
+              </label></td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+    </div>
+</div>
+	<div style="margin-left:100px">
+	
+	  <table width="751" border="0" id="table_id1" class="table_class">
+        <tr>
+          <td width="158" height="28">&nbsp;</td>
+          <td width="42">S.no.</td>
+          <td width="99">MR ID </td>
+          <td width="174">Requested By </td>
+          <td width="126">Cost Center </td>
+          <td width="128">Requested Date </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>1</td>
+          <td><a href="approve_mr2.html">MR-ID-001</a></td>
+          <td>emp-001(Ravi Kumar) </td>
+          <td>Cost Center 1 </td>
+          <td>03/05/2014</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>2</td>
+          <td><a href="">MR-ID-002</a></td>
+          <td>emp-002(Mohan Kumar) </td>
+          <td>Cost Center 2 </td>
+          <td>04/05/2014</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>3</td>
+          <td><a href="">MR-ID-003</a></td>
+          <td>emp-003(Raj Kumar)</td>
+          <td>Cost Center 3 </td>
+          <td>05/05/2014</td>
+        </tr>
+      </table>
+	  </div>
+    </div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

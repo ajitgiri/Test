@@ -1,0 +1,254 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAX Master</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div style="margin-left: 340px; margin-top: 50px;">
+                <table  border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;" align="center">PO Details</td>
+                    </tr>
+                    <tr>
+                        <td width="111">&nbsp;</td>
+                        <td width="150">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td > PO No : </td>
+                        <td><input type="text" style="width: 150px;" /></td>
+                        <td width="94" > PO Date : </td>
+
+                        <td width="150"><input type="text" name="" style="width: 150px;" /></td>
+                    </tr>
+                    <tr>
+                        <td > PO Type : </td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+
+                                <option value="INDA">Lease</option>
+                                <option value="USA">Service</option>
+                                <option value="UK">Rate Contract</option>
+                            </select>                        </td>
+                        <td > Bond Type : </td>
+
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="INDA">STP</option>
+                                <option value="USA">Non bonded </option>
+                                <option value="UK">ARE1</option>
+                                <option value="UK">CT3</option>
+                            </select>                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td > Unit Type : </td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="INDA">STP</option>
+                                <option value="USA">CTP</option>
+                                <option value="UK"> SE2</option>
+                            </select>                        </td>
+                        <td > Unit Number : </td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="INDA">Unit Name 1</option>
+
+                                <option value="USA">Unit Name 2</option>
+                                <option value="UK">Unit Name 3</option>
+                                <option value="UK">Unit Name 4</option>
+                            </select>                        </td>
+                    </tr>
+                    <tr>
+                        <td > Bond Register : </td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="INDA">BR Name 1</option>
+                                <option value="USA">BR Name 2</option>
+
+                                <option value="UK">BR Name 3</option>
+                                <option value="AUS">BR Name 4</option>
+                            </select>                        </td>
+                        <td style="width: 150px;"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td >Sources : </td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="INDA">Overseas </option>
+
+                                <option value="INDA">Domestic</option>
+                            </select>                        </td>
+                        <td >Inco. Term : </td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+
+                                <option value="INDA">CIF </option>
+                                <option value="INDA">FOB</option>
+                            </select>                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td >Currency : </td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="INDA">Dollar </option>
+                                <option value="INDA">Rupee</option>
+
+                                <option value="INDA">Euro </option>
+                            </select>                        </td>
+                        <td >Vendor : </td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+
+                                <option value="INDA">Vendor 1 </option>
+                                <option value="INDA">Vendor 2</option>
+                                <option value="INDA">Vendor 3</option>
+                            </select>                        </td>
+                    </tr>
+                    <tr>
+                        <td >Remark : </td>
+                        <td><label>
+                                <textarea name="textarea" style="width:150px"></textarea>
+                            </label></td>
+                        </td>
+                        <td >Organization Level : </td>
+                        <td width="235">
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="INDA">Level 1 </option>
+
+                                <option value="INDA">Level 2</option>
+                                <option value="INDA">Level 3</option>
+                            </select>                      </td>
+                    </tr>
+                    <tr>
+                        <td >Requester : </td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="INDA">emp-001 </option>
+                                <option value="INDA">emp-002</option>
+                                <option value="INDA">emp-003 </option>
+                            </select>                        </td>
+                        <td >Buyer : </td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="INDA">emp-005 </option>
+                                <option value="INDA">emp-006</option>
+
+                                <option value="INDA">emp009</option>
+                            </select>                        </td>
+                    </tr>
+                    <tr>
+                        <td >Upload File : </td>   
+                        <td colspan="2"><input type="file"/>  </td>
+
+                        <td>                    </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>
+                </table>
+                <table  border="0" cellpadding="0" cellspacing="3">
+                    <tr >
+                        <td width="150" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                        <td width="80" align="center"><input name="reset" type="reset" style="width: 100px;" value="Update"/>
+                        </td>
+                        <td width="80" align="center"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                        <td width="80" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+
+            <p>
+                <b>Note:- </b>
+            </p>
+            <p>
+                1:'Unit Type, Unit Number, Bond Register } These are ALL optional'<br>
+                2:'Enterprise Setup'
+
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Enter Prise Setup </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div   style="margin-left: 340px;margin-top: 70px;">
+                <table id="EPST1">
+                    <tr>
+                        <td colspan="2" style="font-weight: bold;float: right;">
+                            Enterprise Setup
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 20px;">
+                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 250px;">Multiple Legal Entities:</td>
+                        <td width="120px" ><input type="radio" name="sex1"  value="Yes" id="y" >Yes &nbsp;
+                            <input type="radio" name="sex1"  value="No"  id="n" /> No </td>
+                    </tr>
+                </table>
+                <table id="EPSY1" >
+                    <tr>
+                        <td width="250px" >No. of Legal Entities:</td>
+                        <td width="120px"><input name="name" type="text" class="text-input required" maxlength="3"  /></td>
+                    </tr> 
+                    <tr>
+                        <td> Email Server Across Enterprise:</td>
+                        <td >
+                            <input type="radio" name="act" value="Yes" >Yes &nbsp;
+                            <input type="radio" name="act" value="No"/> No
+                        </td>
+                    </tr>
+                </table>
+                <table id="EPSY2">
+                    <tr>
+                        <td width="250px" >Service Account For Email Required: </td>
+                        <td width="120px">
+                            <input type="radio" name="sex" value="Yes" >Yes &nbsp;
+                            <input type="radio" name="sex"  > No
+                        </td>
+                    </tr>
+                </table>
+                <table style="margin-left: 100px">
+                    <tr>
+                        <td class="form-row" colspan="2" style="text-align: right;"> <input type="image" src="../images/formBack/btn_sign_up_off.png"  alt="Submit" class="btn-submit img-swap" /> &nbsp;&nbsp;&nbsp;</td>
+                        <td class="form-row" colspan="2">&nbsp;&nbsp;&nbsp; <input type="image" src="../images/formBack/btn_sign_up_off.png"  alt="ReSet" class="btn-submit img-swap" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="footer">
+            Contact Us
+        </div>
+    </body>
+</html>

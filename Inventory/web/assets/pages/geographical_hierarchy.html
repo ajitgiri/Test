@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <title>Geographical Hierarchy</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+    <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="../js/jscript.js"></script>
+    <script type="text/javascript" src="../js/EventScript.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+    <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#geoReportTable").hide();
+            $('#selectall').click(function(event) {  //on click 
+                if (this.checked) { // check select status
+                    $('.checkbox1').each(function() { //loop through each checkbox
+                        this.checked = true;  //select all checkboxes with class "checkbox1"               
+                    });
+                } else {
+                    $('.checkbox1').each(function() { //loop through each checkbox
+                        this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                    });
+                }
+            });
+
+            $('#goId').click(function() {
+                $("#geoReportTable").show();
+            });
+
+        });
+    </script>
+
+
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+        <!--Ajit Start-->
+        <div style="margin-left: 100px; margin-top: 50px;">
+            <div style="margin-left: 300px">
+                <table >
+                    <tr>
+                        <td height="41" colspan="5" style="font-weight: bold;"><div align="center">Geographical Hierarchy</div></td>
+                    </tr>
+                    <tr>
+                        <td >No. of Levels :<input type="text" name="" maxlength="2" class="text-input required" />
+                            <input type="submit" id="goId" value="Go"/> </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="geoReportTable" style="margin-top: 20px;">
+                <table  border="0" cellpadding="0" cellspacing="2" >
+                    <tr>
+                        <td width="141" align="center" style="background-color: activecaption;">Levels</td>
+                        <td width="122" align="center" style="background-color: activecaption;">Off-Line Audit for Shared Asset at Level</td>
+                        <td width="122" align="center" style="background-color: activecaption;">Off-Line Audit for Non-Shared Asset at Level</td>
+                        <td width="164" align="center" style="background-color: activecaption;">Unit-Bond Register at Level</td>
+                        <td width="165" align="center" style="background-color: activecaption;">Depreciation Computation at Level</td>
+                        <td width="117" align="center" style="background-color: activecaption;">Store at Level</td>
+                        <td width="122" align="center" style="background-color: activecaption;">Wi-Fi Audit at Level</td>
+                        <td width="117" align="center" style="background-color: activecaption;">Select All <input type="checkbox" name="checkbox4" value="checkbox" id="selectall"></td>
+                    </tr>
+                    <tr>
+                        <td  align="center">Level 1 <input type="text" name="ss"  style="width:80px"/></td>
+                        <td  align="center"><input type="radio" name="sample2" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample3" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample4" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample5" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample6" value="select"></td>
+                        <td  align="center"></td>
+                        <td  align="right"><label>
+                                <input type="checkbox" name="checkbox" class="checkbox1" value="checkbox"> &nbsp;&nbsp;&nbsp;
+                            </label></td>
+                    </tr>
+                    <tr>
+                        <td  align="center">Level 2 <input type="text" name="ss"  style="width:80px"/></td>
+                        <td  align="center"><input type="radio" name="sample2" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample3" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample4" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample5" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample6" value="select"></td>
+                        <td  align="center"></td>
+                        <td  align="right"><input type="checkbox" name="checkbox2" value="checkbox" class="checkbox1"> &nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td  align="center">Level 3<input type="text" name="ss" style="width:80px"/></td>
+                        <td  align="center"><input type="radio" name="sample2" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample3" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample4" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample5" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample6" value="select"></td>
+                        <td  align="center"></td>
+                        <td  align="right"><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"> &nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td  align="center">Level 4 <input type="text" name="ss" style="width:80px"/></td>
+                        <td  align="center"><input type="radio" name="sample2" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample3" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample4" value="select"></td>
+                         <td  align="center"><input type="radio" name="sample5" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample6" value="select"></td>
+                        <td  align="center"></td>
+                        <td  align="right"><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"> &nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td  align="center">Level 5 <input type="text" name="ss" style="width:80px"/></td>
+                        <td  align="center"><input type="radio" name="sample2" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample3" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample4" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample5" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample6" value="select"></td>
+                        <td  align="center"></td>
+                        <td  align="right"><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"> &nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td  align="right">Not Applicable :</td>
+                        <td  align="center"><input type="radio" name="sample2" value="select"></td>
+                        <td  align="center"><input type="radio" name="sample3" value="select"></td>
+                        <td  align="center"></td>
+                        <td  align="center"></td>
+                        <td  align="center"></td>
+                        <td  align="center"><input type="radio" name="sample1" value="select"></td>
+                        <td  align="center"></td>
+                    </tr>
+                </table> 
+
+                <table border="0">
+                    <tr>
+                        <td colspan="9" style="height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td width="156"></td>
+                        <td width="82"></td>
+                        <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                        <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                        <td width="100" align="left"><input name="submit2" type="submit" style="width: 100px;"  value="Delete"/></td>
+                        <td width="100" align="right"><input name="submit3" type="submit" style="width: 100px;"  value="Cancel"/></td>
+                        <td width="84" align="right">&nbsp;</td>
+                    </tr>
+                </table></div>
+
+            <p>&nbsp;</p>
+        </div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+
+            </p>
+            <p>
+                This above table and no of rows will generate According<br>
+                to the No Of Levels :: will entered by User.
+
+            </p>
+        </div>
+    </div>
+</body>
+
+
+</html>

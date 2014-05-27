@@ -1,0 +1,283 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UN_INSTALLATION </title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+    <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+    <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="../js/jscript.js"></script>
+    <script type="text/javascript" src="../js/EventScript.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+		<script>
+            $(document).ready(function() {
+			    $('#div_id0').hide();
+				//$('#div_id1').hide();
+                
+
+            });
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+
+      
+            });
+        </script>
+		 <script type="text/javascript">
+            $(function() {
+                $('#selectAll2').click(function(event) {  //on click 
+                    window.open("re_installation2.html");
+                });
+            });
+        </script>  
+		<script>
+            $(function() {
+                $("#go_id1").click(function()
+                {
+                    $("#div_id0").show();
+					//$("#div_id1").show();
+                }); 
+				   
+            });
+        </script>
+		
+		 <script type="text/javascript">
+            $(function() {
+                $('#select1').click(function(event) {  //on click 
+                    window.open("un_install2.html");
+                });
+            });
+        </script>      
+		          
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody"> 
+          <div style="margin-left: 410px; margin-top: 40px;">
+            <table width="351" border="0">
+              <tr>
+                <td height="45" colspan="5" style="font-weight: bold;"><div align="center">Un-Installation</div></td>
+              </tr>
+            </table>
+          </div>
+						    <div style="margin-left: 310px; margin-top: 5px;">
+                         <table width="699" border="0">
+							<tr>
+							<td width="21">&nbsp;</td>
+							<td width="148" align="left">Select Legal Entity  :</td>
+						  <td width="150"><select name="select" id="select" style="width: 150px;" >
+                            <option value="new" selected>--Select-- </option>
+                            <option value="Entity1">Legal Entity 1</option>
+                            <option value="Entity2">Legal Entity 2</option>
+                            <option value="Entity3">Legal Entity 3</option>
+                            <option value="Entity4">Legal Entity 4</option>
+                            <option value="Entity5">Legal Entity 5</option>
+                          </select></td>
+							<td width="93">&nbsp;</td>
+							<td width="85">&nbsp;</td>
+							<td width="54"> : </td>
+							<td width="118">&nbsp;</td>
+							</tr>
+							<tr>
+							<td width="21">&nbsp;</td>
+							<td width="148">Select Employee :</td>
+							<td width="150"><select name="select2" id="sel" style="width: 150px;" >
+                              <option value="new" selected>--Select-- </option>
+                              <option value="E1">Ajit Kumar</option>
+                              <option value="E2">Asutosh padhy</option>
+                              <option value="E3">Kamal Nayak</option>
+                              <option value="E4">Siba Prakash</option>
+                              <option value="E5">Joyti</option>
+                            </select></td>
+							<td><input name="text" type="text" style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;width: 90px;" value=" --Search-- "  /></td>
+							<td>&nbsp;</td>
+							</tr>
+							<tr><td>&nbsp;</td>
+							<td width="148">Asset Classification : </td>
+							<td width="150"><select name="select4" id="select4" style="width: 150px;" >
+                              <option value="new" selected>--Select-- </option>
+                              <option value="S1">IT-Hardware</option>
+                              <option value="S2">IT-Software</option>
+                              <option value="S3">Non-IT</option>
+                              <option value="S4">LAB/Engineering</option>
+                            </select></td>
+							<td align="center"><input name="submit2" type="submit" style="width: 70px;"  value="GO" id="go_id1"/></td>
+						   <td>&nbsp;</td></tr>
+							</table>
+						    </div>
+					<div style="margin-left: 70px; margin-top: 40px;" id="div_id0">
+						  <table width="1260">
+                            <tr>
+                              <td width="24">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td style="font-weight: bold; background-color: activecaption;" align="center">SL No.</td>
+                              <td width="71" align="center" style="font-weight: bold; background-color: activecaption;">Asset Tag</td>
+                              <td width="81" style="font-weight: bold; background-color: activecaption;">Asset Description</td>
+                              <td width="66" style="font-weight: bold; background-color: activecaption;">Sub Category</td>
+                              <td width="85" style="font-weight: bold; background-color: activecaption;">Minor Category</td>
+                              <td width="112" style="font-weight: bold; background-color: activecaption;">Major Category</td>
+                              <td width="56" style="font-weight: bold; background-color: activecaption;">Bond Type</td>
+                              <td width="44" style="font-weight: bold; background-color: activecaption;">Unit No.</td>
+                              <td width="76" style="font-weight: bold; background-color: activecaption;">Bond Register No.</td>
+                              <td width="58" style="font-weight: bold; background-color: activecaption;">Owner BU</td>
+                              <td width="77" style="font-weight: bold; background-color: activecaption;">User BU</td>
+                              <td width="124" style="font-weight: bold; background-color: activecaption;">End User</td>
+                              <td width="85" style="font-weight: bold; background-color: activecaption;">Building</td>
+                              <td width="51" style="font-weight: bold; background-color: activecaption;">Floor</td>
+                              <td width="55" style="font-weight: bold; background-color: activecaption;">Space</td>
+                              <td width="86" style="font-weight: bold; background-color: activecaption;">Select</td>
+                              <td width="37"></td>
+                            </tr>
+                            <tr>
+                              <td align="center">1</td>
+                              <td align="center">DSK-1012</td>
+                              <td align="center">Desktop</td>
+                              <td>Desktop</td>
+                              <td>Desktop</td>
+                              <td align="left">Computer Equipment</td>
+                              <td>STP</td>
+                              <td width="44">Unit 1 </td>
+                              <td>BR-1001</td>
+                              <td>BU-1</td>
+                              <td>BU-1</td>
+                              <td>EMP-101(Ashok Kumar)</td>
+                              <td>Building 1 </td>
+                              <td>1st</td>
+                              <td>Space 1 </td>
+                              <td align="center"><input name="red1" type="radio" class="r1"/></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td align="center">2</td>
+                              <td align="center">LPT-2914</td>
+                              <td align="center">Laptop</td>
+                              <td>Laptop</td>
+                              <td>Laptop</td>
+                              <td align="left">Computer Equipment</td>
+                              <td>SEZ</td>
+                              <td width="44">Unit 2 </td>
+                              <td>BR-2345</td>
+                              <td>BU-2</td>
+                              <td>BU-2</td>
+                              <td>EMP-987(Kartik Reddy)</td>
+                              <td>Building 2 </td>
+                              <td>2nd</td>
+                              <td>Space 2 </td>
+                              <td align="center"><input name="red1" type="radio" class="r1"/></td>
+							  <td></td>
+                            </tr>
+                            <tr>
+                              <td align="center">3</td>
+                              <td align="center">SMP-2345</td>
+                              <td align="center">Smart Phone </td>
+                              <td>Chair</td>
+                              <td>Smart Phone </td>
+                              <td align="left">Computer Equipment</td>
+                              <td>STP</td>
+                              <td width="44">Unit 3 </td>
+                              <td>BR-3296</td>
+							  <td>BU-3</td>
+							   <td>BU-3</td>
+							    <td>EMP-432(Manoj Dash)</td>
+								 <td>Building 3 </td>
+								  <td>3rd</td>
+								   <td>Space 3 </td>
+								   <td align="center"><input name="red1" type="radio" class="r1"/></td>
+								   <td></td>
+                            </tr>
+							<tr><td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td></tr>
+							<tr><td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td></tr>
+							<tr><td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td><input name="reset2" type="reset" style="width: 100px;" value="Select Software" id="select1"/></td>
+							<td>&nbsp;</td></tr>
+                          </table>
+						  <p>&nbsp;</p>
+          </div>	
+			<!--<div align="center">
+			<table width="631" border="0" class="classtd1">
+                  <tr>
+                    <td colspan="9" style="height: 0px;"></td>
+                  </tr>
+                  <tr>
+                    <td width="52">&nbsp;</td>
+                    <td width="100"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="100" align="right"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                    <td width="100" align="right"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                    <td width="100" align="right"><input name="reset3" type="reset" style="width: 100px;" value="Cancel"/></td>
+					<td width="153">&nbsp;</td>
+                  </tr>
+              </table>
+			</div>-->
+        
+		</div>
+         <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+                </p>
+                <p>
+                   1. This is Country Master Where country name is Registering. 
+               </p>
+            </div>
+    </body>
+</html>

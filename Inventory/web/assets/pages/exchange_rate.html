@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            <!--
+            .style3 {font-size: 14px}
+            -->
+        </style>
+
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+
+        <script type="text/javascript">
+            $(function() {
+                $("#datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val();
+            });
+        </script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+<script>
+	$(document).ready(function() {
+    $('#selectall').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+</script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+        <div id="cBody">
+    <div style="margin-left: 200px; margin-top: 50px;">
+
+<table width="643" border="0" cellspacing="2" cellpadding="0">
+<tr>
+                        <td colspan="4"><div align="center"><strong>Exchange Rate  </strong><strong></strong></div></td>
+    </tr>
+                    <tr>
+                        <td width="125">&nbsp;</td>
+                        <td width="201">&nbsp;</td>
+                        <td width="205">&nbsp;</td>
+                        <td width="102">&nbsp;</td>
+      </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Select Legal Entity </td>
+                        <td><select name="select" style="width:100px">
+                            <option selected="selected">Select</option>
+                            <option>Legal Entity 1</option>
+                            <option>Legal Entity 2</option>
+                            <option>Legal Entity 3</option>
+                                                </select></td>
+                        <td>&nbsp;</td>
+</tr>
+                    <tr>
+                        <td height="47">&nbsp;</td>
+                        <td height="47">Select Currency </td>
+                        <td><select name="select5" style="width:100px">
+                            <option selected="selected">Select</option>
+                            <option>Dollar</option>
+                            <option>Pound</option>
+                            <option>Euro</option>
+                            <option>Rupee</option>
+                        </select></td>
+                        <td><label>
+                          <input type="submit" name="Submit" value="GO" />
+                        </label></td>
+</tr>
+                    <tr>
+                        <td>&nbsp;</td>
+
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td>As Per Exchange Rate Type 1: </td>
+                        <td>As Per Exchange Rate Type 2: </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td><label>
+                                <input type="text" name="textfield3" style="width:80px" id="datepicker1"/>
+                            </label></td>
+                        <td><input type="text" name="textfield2" style="width:180px"/></td>
+                        <td><label>
+                                <input type="text" name="textfield" style="width:180px"/>
+                            </label></td>
+                        <td><input type="submit" name="Submit2" value="Add" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: activecaption;">Date</td>
+                        <td style="background-color: activecaption;">As Per Exchange Rate Type 1 </td>
+                        <td style="background-color: activecaption;">As Per Exchange Rate Type 2</td>
+                        <td style="background-color: activecaption;">
+                          <input type="checkbox" name="checkbox" value="checkbox" id="selectall"/>
+                        Select All </td>
+      </tr>
+                    <tr>
+                        <td>11-04-2014</td>
+                        <td>50 rupee </td>
+                        <td>80 rupee  </td>
+                        <td><u>
+                          <input type="checkbox" name="checkbox2" value="checkbox" class="checkbox1"/>
+                        </u></td>
+      </tr>
+                    <tr>
+                        <td>13-04-2014</td>
+                        <td>10 Dollar </td>
+                        <td>20 Dollar </td>
+                        <td><u>
+                          <input type="checkbox" name="checkbox22" value="checkbox" class="checkbox1"/>
+                        </u></td>
+      </tr>
+      </table>
+            <table border="0" class="classtd1">
+              <tr>
+                <td colspan="9" style="height: 20px;"></td>
+              </tr>
+              <tr>
+                <td align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                <td align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                <td align="left"><input name="submit2" type="submit" style="width: 100px;"  value="Delete"/></td>
+                <td align="right"><input name="submit3" type="submit" style="width: 100px;"  value="Enable"/></td>
+                <td width="100" align="left"><input name="submit32" type="submit" style="width: 100px;"  value="Disable"/></td>
+                <td width="100" align="right"><input name="submit33" type="submit" style="width: 100px;"  value="Cancel"/></td>
+                <td width="195" align="right">&nbsp;</td>
+              </tr>
+            </table>
+            <p>&nbsp;</p>
+    </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p><br />
+                </p>
+            </div>
+    </body>
+</html>

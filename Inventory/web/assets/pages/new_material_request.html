@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="file:///C|/Users/AbhiSshek/Desktop/office/assets/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="file:///C|/Users/AbhiSshek/Desktop/office/assets/css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="file:///C|/Users/AbhiSshek/Desktop/office/assets/js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="file:///C|/Users/AbhiSshek/Desktop/office/assets/js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="file:///C|/Users/AbhiSshek/Desktop/office/assets/js/jscript.js"></script>
+        <script type="text/javascript" src="file:///C|/Users/AbhiSshek/Desktop/office/assets/js/EventScript.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="file:///C|/Users/AbhiSshek/Desktop/office/assets/js/validation.js"></script>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+
+        <script type="text/javascript">
+$(function() {
+    $("#datepicker1").datepicker({dateFormat: "yy-mm-dd"}).val();
+    $("#datepicker3").datepicker({dateFormat: "yy-mm-dd"}).val();
+    $("#datepicker2").datepicker({dateFormat: "yy-mm-dd"}).val()
+});
+        </script>   
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+			$("#table_id").hide();
+        
+                $("#sel").change(function() {
+                    //  alert("Not-same");
+                    var value1 = $("#sel").val();
+                    var vl1 = "new";
+                    var vl2 = "employee1";
+                    if (value1 == vl1) {
+                        $("#table_id").show();
+                    }
+                    if (value1 == vl2) {
+                        $("#table_id").hide();
+                    }
+                });
+				});
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div style="margin-left: 200px; margin-top: 50px;">
+
+                <table width="3335" border="0" cellspacing="2" cellpadding="0">
+                    <tr>
+                        <td colspan="2" align="center"><strong>New Material Request </strong></td>
+                        <td width="173">&nbsp;</td>
+                        <td width="120">&nbsp;</td>
+                        <td width="349">&nbsp;</td>
+                        <td width="175">&nbsp;</td>
+                        <td width="128">&nbsp;</td>
+                        <td width="128">&nbsp;</td>
+                        <td width="128">&nbsp;</td>
+                        <td width="133">&nbsp;</td>
+                        <td width="133">&nbsp;</td>
+                        <td width="128">&nbsp;</td>
+                        <td width="143">&nbsp;</td>
+                        <td width="344">&nbsp;</td>
+                        <td width="13">&nbsp;</td>
+                        <td width="981">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="101">&nbsp;</td>
+                        <td width="124">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Requested By : </td>
+                        <td><select name="select3" style="width:120px">
+                                <option selected="selected">Select</option>
+                                <option>Employee - 001</option>
+                                <option>Employee - 002</option>
+                                <option>Employee - 003</option>
+                            </select></td>
+                        <td>for Organizational Level : </td>
+                        <td><select name="select14" style="width:120px">
+                          <option selected="selected">Select</option>
+                          <option>BU</option>
+                          <option>SBU</option>
+                          <option>CC</option>
+                        </select></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="25">Classification :</td>
+                        <td><select name="select15" style="width:120px">
+                          <option selected="selected">Select</option>
+                          <option>Classification 1</option>
+                          <option>Classification 2</option>
+                        </select></td>
+                        <td>Required by Date : </td>
+                        <td><input type="text" name="textfield4" style="width:120px" id="datepicker3"/></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+			         <tr>
+                        <td>Usage Type : </td>
+
+                        <td><select name="select16" style="width:120px" id="sel">
+                          <option selected="selected">Select</option>
+                          <option value="employee1">Permanent</option>
+                          <option value="new">Temporary</option>
+                        </select></td>
+			         </tr>
+						 </table>
+						<table id="table_id">
+                        <td width="106">Usage End Date :</td>
+                        <td width="120"><input type="text" name="textfield42" style="width:120px" id="datepicker1"/></td>
+                        <td width="6">&nbsp;</td>
+                        <td width="10"><label></label></td>
+					  </tr>
+			  </table>
+                        <table width="347">
+                        <tr>
+                            <td width="32">&nbsp;</td>
+							<td width="32">&nbsp;</td>
+							<td width="187">&nbsp;</td>
+                            <td width="46"><label>
+                            <input type="submit" name="Submit" value="Go" />
+                          </label></td>
+                            <td width="9">&nbsp;</td>
+                            <td width="13">&nbsp;</td>
+                        </tr>
+			  </table>
+                        
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p></div>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1.  <br />
+                </p>
+            </div>
+    </body>
+</html>

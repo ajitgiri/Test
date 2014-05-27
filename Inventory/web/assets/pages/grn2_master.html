@@ -1,0 +1,214 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grn Master 2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+
+      <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            
+			$("#unit_table").hide();
+        
+                $("#sel").change(function() {
+                    //  alert("Not-same");
+                    var value1 = $("#sel").val();
+                    var vl1 = "new";
+                    var vl2 = "employee1";
+                    if (value1 == vl1) {
+                        $("#unit_table").hide();
+                    }
+                    if (value1 == vl2) {
+                        $("#unit_table").show();
+                    }
+                });
+				$("#next_id1").click(function()
+                {
+                    window.close();
+                })
+				});
+    </script>
+<script type="text/javascript">
+            $(function() {
+                $("#datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker2").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+
+
+    <div id="cBody">
+        <div style="margin-left: 340px; margin-top: 50px;">
+          <table width="823" border="0">
+                <tr>
+                  <td width="54">&nbsp;</td>
+                  <td width="112">&nbsp;</td>
+                  <td width="133">&nbsp;</td>
+                  <td width="112">&nbsp;</td>
+                  <td width="125">&nbsp;</td>
+                  <td width="105">&nbsp;</td>
+                  <td width="152">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td width="112">Major Category </td>
+                  <td width="133"><select name="select7" style="width:120px">
+                      <option selected>Select</option>
+                      <option>Computer Equipments</option>
+                      <option>Office Equipments</option>
+                  </select></td>
+                  <td width="112">Major Category </td>
+                  <td width="125"><select name="select7" style="width:120px">
+                      <option selected>Select</option>
+                      <option>Computer Equipments</option>
+                      <option>Office Equipments</option>
+                  </select></td>
+                  <td width="105">Major Category </td>
+                  <td width="152"><select name="select7" style="width:120px">
+                      <option selected>Select</option>
+                      <option>Computer Equipments</option>
+                      <option>Office Equipments</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Minor Category </td>
+                  <td><select name="select7" style="width:120px">
+                      <option selected>Select</option>
+                      <option>Laptop</option>
+                      <option>Desktop</option>
+                  </select></td>
+                  <td>Minor Category </td>
+                  <td><select name="select7" style="width:120px">
+                      <option selected>Select</option>
+                      <option>Laptop</option>
+                      <option>Desktop</option>
+                  </select></td>
+                  <td>Minor Category </td>
+                  <td><select name="select7" style="width:120px">
+                      <option selected>Select</option>
+                      <option>Laptop</option>
+                      <option>Desktop</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Sub Category </td>
+                  <td><select name="select" style="width:120px">
+                    <option selected>Select</option>
+                    <option>Sub Cat. 1</option>
+                    <option>Sub Cat. 2</option>
+                    <option>Sub Cat. 3</option>
+                                    </select></td>
+                  <td>Sub Category </td>
+                  <td><select name="select2" style="width:120px">
+                    <option selected>Select</option>
+                    <option>Sub Cat. 1</option>
+                    <option>Sub Cat. 2</option>
+                    <option>Sub Cat. 3</option>
+                  </select></td>
+                  <td>Sub Category </td>
+                  <td><select name="select3" style="width:120px">
+                    <option selected>Select</option>
+                    <option>Sub Cat. 1</option>
+                    <option>Sub Cat. 2</option>
+                    <option>Sub Cat. 3</option>
+                  </select></td>
+                </tr>
+          </table>
+          </td>
+                      </table>
+                      <table width="824" border="0">
+                        <tr>
+                          <td width="50" style="background-color: activecaption;">S.NO</td>
+                          <td width="244" style="background-color: activecaption;"><div align="center">S.NO</div></td>
+                          <td width="244" style="background-color: activecaption;"><div align="center">S.NO</div></td>
+                          <td width="258" style="background-color: activecaption;"><div align="center">S.NO</div></td>
+                        </tr>
+                        <tr>
+                          <td><div align="center">1</div></td>
+                          <td><label>
+                            <input type="text" name="textfield" style="width:244px">
+                          </label></td>
+                          <td><input type="text" name="textfield4" style="width:244px"></td>
+                          <td><input type="text" name="textfield7" style="width:244px"></td>
+                        </tr>
+                        <tr>
+                          <td><div align="center">2</div></td>
+                          <td><input type="text" name="textfield2" style="width:244px"></td>
+                          <td><input type="text" name="textfield5" style="width:244px"></td>
+                          <td><input type="text" name="textfield8" style="width:244px"></td>
+                        </tr>
+                        <tr>
+                          <td><div align="center">3</div></td>
+                          <td><input type="text" name="textfield3" style="width:244px"></td>
+                          <td><input type="text" name="textfield6" style="width:244px"></td>
+                          <td><input type="text" name="textfield9" style="width:244px"></td>
+                        </tr>
+                      </table>
+          <p>&nbsp;</p>
+                      <table width="533">
+		  <tr>
+		  <td width="23">&nbsp;</td>
+		  <td width="207">&nbsp;</td>
+		  <td width="97">&nbsp;</td>
+		  <td width="186"><input name="submit2" type="submit" style="width: 100px;"  value="Next" id="next_id1"/></td>
+		  </tr>
+		  </table>
+</div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+                
+            </p>
+            <p><br />
+          </p>
+    </div>
+</body>
+</html>

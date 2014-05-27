@@ -1,0 +1,209 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shift master</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+
+            });
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $("#datepicker").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#strtTm").focusin(function(){
+                    $("#strtTm").val('');
+                    $("#strtTm").removeAttr('id');
+                });
+             $("#endTm").focusin(function(){
+                     $("#endTm").val('');
+                });
+            });
+        </script>
+        <style type="text/css">
+            #strtTm{
+                font-family:Helvetica, sans-serif;
+                color: #D6D6D0;
+                font-size: 10px;
+                width: 90px;
+                height: 16px;
+            }
+        </style>
+            
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div style="margin-left: 100px; margin-top: 50px;">
+                <div style="margin-left: 250px;">
+                    <table  border="0" cellpadding="0" cellspacing="2">
+                        <tr>
+                            <td colspan="5" style="text-align: center;"><strong>Shift Master</strong></td>
+                        </tr>
+                        <tr>
+                            <td><label>Shift Code : </label></td>
+                            <td>Shift Name : </td>
+                            <td>Start Time : </td>
+                            <td>End Time : </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"/></td>
+                            <td><input type="text"/></td>
+                            <td><input name="text" type="text" value="HH:MM" id="strtTm" size="10" /></td>
+                            <td><input name="text" type="text" value="HH:MM" id="endTm" style="font-family:Helvetica, sans-serif;color: #D6D6D0;font-size: 10px;width: 90px;height: 16px;"/></td>
+                            <td><input type="submit" name="Submit" value="Add" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="margin-left: 300px;">
+                    <table>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: activecaption;">Shift Code : </td>
+                            <td style="background-color: activecaption;">Shift Name : </td>
+                            <td style="background-color: activecaption;">Start Time : </td>
+                            <td style="background-color: activecaption;">End Time : </td>
+                            <td style="background-color: activecaption;"><input type="checkbox" name="checkbox4" value="checkbox" id="selectall"/>
+                        <u>Select All </u></td>
+                        </tr>
+                        <tr>
+                            <td>SHIFT-001</td>
+                            <td><input name="text" type="text" style="width:80px" value="Night Sift"/> </td>
+                            <td>
+                                <input name="strtdate" type="text" style="width:80px"  value="22:00"/>
+                            </td>
+                            <td>
+                                <input name="strtdate" type="text" style="width:80px"  value="6:00"/>
+                            </td>
+                            <td><input type="checkbox" name="checkbox" value="checkbox" class="checkbox1"/></td>
+                        </tr>
+                        <tr>
+                            <td>SHIFT-002</td>
+                            <td><input name="text" type="text" style="width:80px" value="Morning Sift"/> </td>
+                            <td>
+                                <input name="strtdate" type="text" style="width:80px" id="datepicker" value="6:00"/>
+                            </td>
+                            <td>
+                                <input name="strtdate" type="text" style="width:80px" id="datepicker" value="14:00"/>
+                            </td>
+                            <td><input type="checkbox" name="checkbox" value="checkbox" class="checkbox1"/></td>
+                        </tr>
+                        <tr>
+                            <td>SHIFT-003</td>
+                            <td><input name="text" type="text" style="width:80px" value="Afternoon Sift"/> </td>
+                            <td>
+                                <input name="strtdate" type="text" style="width:80px" id="datepicker" value="14:00"/>
+                            </td>
+                            <td>
+                                <input name="strtdate" type="text" style="width:80px" id="datepicker" value="22:00"/>
+                            </td>
+                            <td><input type="checkbox" name="checkbox" value="checkbox" class="checkbox1"/></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <table border="0" class="classtd1">
+                    <tr>
+                        <td colspan="9" style="height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td width="88"></td>
+                        <td width="224"></td>
+                        <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                        <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                        <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                        <td width="100" align="right"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                        <td width="10" align="right">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1. Select Legal Entity, State, City and Site from drop down.</p>
+                <p>2. Can update the values using update button.</p>
+                <p>3. Can delete an entry using delete button.<br />
+                </p>
+            </div>
+    </body>
+</html>

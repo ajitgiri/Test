@@ -1,0 +1,200 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Row Master</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+
+        <script type="text/javascript">
+            $(function() {
+                $("#datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker2").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker3").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker4").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker5").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker6").datepicker({dateFormat: "dd-mm-yy"}).val();
+            });
+        </script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#div_id1').hide();
+                $('#dataTable').hide();
+                $('#dataTableAction').hide();
+            });
+        </script>
+        <script>
+            $(function() {
+                $("#go_id1").click(function()
+                {
+                    $('#div_id1').show();
+                    $("#dataTable").show();
+                    $("#dataTableAction").show();
+                });
+
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+        <div id="cBody"> 
+            <div style="margin-left: 10px; margin-top: 50px;">
+                <div style="margin-left: 330px;">
+                    <table  border="0" cellpadding="0" cellspacing="2">
+                        <tr>
+                            <td width="364" height="60" colspan="6" style="font-weight: bold;"><div align="center">Row Master</div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="font-weight: bold;"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><div align="center">Select Legal Entity :
+                                    <select id="123" name="select" style="width:152px">
+                                        <option selected="selected">Select</option>
+                                        <option class="legal_entity">Legal Entity 1</option>
+                                        <option class="legal_entity">Legal Entity 2</option>
+                                    </select>
+                                    <input type="submit" name="Submit2" value="GO" id="go_id1"/>
+                                </div>                          <label>
+                                </label></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="div_id1" style="margin-top: 10px;margin-left: 330px;">
+                    <table border="0">
+                        <tr>
+                            <td width="148"><div align="left">Row Code </div></td>
+                            <td width="145">Row Name</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="textfield" /></td>
+                            <td><input type="text" name="textfield2" /></td>
+                           
+                            <td><input type="submit" name="Submit" value="Add"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+                 <div id="dataTable" style="margin-top: 10px;margin-left: 330px;">
+                    <table  border="0">
+                        <tr>
+                            <td width="80px;" style="background-color: activecaption;" align="center">Row Code</td>
+                            <td style="background-color: activecaption;" align="center">Row Name</td>
+                            <td width="110px;" style="background-color: activecaption;" align="center">Select All<input type="checkbox" name="checkbox22" value="checkbox" id="selectall"/> </td>
+                        </tr>
+                        <tr>
+                            <td>ROW - 001</td>
+                            <td><input type="text" value="ROW Name 1"/> </td>
+                            <td align="center"><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"  /></td>
+                        </tr>
+                        <tr>
+                            <td>ROW - 002</td>
+                            <td><input type="text" value="ROW Name 2"/> </td>
+                            <td align="center"><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"  /></td>
+                        </tr>
+                        <tr>
+                            <td>ROW - 003</td>
+                            <td><input type="text" value="ROW Name 3"/> </td>
+                            <td align="center"><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"  /></td>
+                        </tr>
+                    </table>
+                 </div>
+                <div id="dataTableAction" style="margin-top:10px;margin-left: 200px;">
+                    <table border="0" class="classtd1">
+                        <tr>
+                            <td colspan="11" style="height: 20px;"></td>
+                        </tr>
+                        <tr>
+                            <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                            <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                            <td width="100" align="left"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                            <td width="100" align="left"><input name="reset22" type="reset" style="width: 100px;" value="Enable"/></td>
+                            <td width="100" align="right"><input name="reset23" type="reset" style="width: 100px;" value="Disable"/></td>
+                            <td width="100" align="right"><input name="reset24" type="reset" style="width: 100px;" value="Cancel"/></td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                    <p>
+                        <b>Note:- </b>
+                    </p>
+                    <p>
+                        1. Legal Entity based on - if multiple legal entity = yes.</p>
+                    <p>2. Can edit the values entered, by checking the check box and clicking on update.</p>
+                    <p>3. Can also delete a data, by clicking on Delete button Subjected to no transaction data for that record.</p>
+                    <p>4. Asset Caretaking and Shred services will display only if Support function is yes </p>
+                    <p> 
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title></title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script>
+            $(document).ready(function() {
+                $('#div_id1').hide();
+				$('#div_id2').hide();
+
+            });
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+		<script>
+		$(function(){
+		$("#go_id1").click(function()
+                {
+                  $("#div_id1").show();
+                });
+		$("#preview_id1").click(function()
+                {
+                  $("#div_id2").show();
+                });
+			});
+    </script>
+		
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+        <div id="cBody"> 
+            <div style="margin-left: 340px; margin-top: 50px;">
+              <table border="0"  cellpadding="1" cellspacing="2">
+                <tr>
+                  <td height="48" colspan="2" style="font-weight: bold;">&nbsp;</td>
+				  <td colspan="2" style="font-weight: bold;"> Comma Separated Configuration </td>
+                </tr>
+                <tr>
+                  <td width="133">Select Legal Entity: </td>
+                  <td width="88"><label>
+                    <select name="select" style="width: 80px;">
+                      <option selected="selected">Select</option>
+                      <option>Legal Entity 1</option>
+                      <option>Legal Entity 2</option>
+                    </select>
+                  </label></td>
+                  <td width="155"><label>
+                  <input type="submit" name="Submit3" value="Go" id="go_id1" />
+                  </label></td>
+                  <td width="142">&nbsp;</td>
+                </tr>
+              </table>
+              <div id="div_id1">
+			  <table>
+                    <tr>
+                      <td>5th Comma : </td>
+                      <td><input name="textfield42" type="text" style="width: 80px;"/></td>
+                      <td>digits after 4th comma </td>
+                      <td><input type="submit" name="Submit" value="Add" /></td>
+                    </tr>
+                    <tr>
+                      <td>4th Comma : </td>
+                      <td><input name="textfield4" type="text" style="width: 80px;" value="2"/></td>
+                      <td>digits after 3rd comma </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>3rd Comma : </td>
+                      <td><input name="textfield3" type="text" style="width: 80px;" value="2"/></td>
+                      <td>digits after 2nd comma </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>2nd Comma : </td>
+                      <td><input name="textfield2" type="text" style="width: 80px;" value="2"/></td>
+                      <td>digits after 1st comma </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>1st  Comma : </td>
+                      <td><label>
+                        <input name="textfield" type="text" style="width: 80px;" value="3"/>
+                      </label></td>
+                      <td>digits from right </td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><input type="submit" name="Submit2" value="Preview" id="preview_id1"/></td>
+                        <td>&nbsp;</td>
+                    </tr>
+				</table>
+					
+                    
+              </div>
+				<div id="div_id2">
+				  <table width="234" border="0">
+                    <tr>
+                      <td width="116" height="35">Preview Value : </td>
+                      <td width="68">1,00,00,00,000</td>
+                    </tr>
+                  </table>
+				</div>
+				<div style="margin-top:100px;">
+				  <table border="0" style="height:100px">
+                        <tr>
+                            <td colspan="9" style="height: 20px;"></td>
+                        </tr>
+                        <tr>
+                            <td width="92"></td>
+                            <td width="53"></td>
+                          <td width="100" align="right"><input type="submit"  value="Back" style="width: 100px;"/></td>
+                          <td width="100" align="left"><input type="reset" value="Cancel" style="width: 100px;"/></td>
+                            <td width="100" align="left"><input type="reset" value="Update" style="width: 100px;"/></td>
+                            <td width="100" align="right"><input type="submit"  value="Delete" style="width: 100px;"/></td>
+                            <td width="177" align="right">&nbsp;</td>
+                        </tr>
+  </table></div>
+	</div>
+				
+
+                <br /><br />
+    </body>
+                </html>

@@ -1,0 +1,324 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>EDIT MRN</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+         <script type="text/javascript">
+            $(function() {
+                $(".datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val();
+				$(".datepicker2").datepicker({dateFormat: "dd-mm-yy"}).val();
+				$(".datepicker3").datepicker({dateFormat: "dd-mm-yy"}).val();
+				$(".datepicker4").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+        
+		
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+		
+		
+		
+        <script>
+            $(document).ready(function() {
+			    $('#div_id0').hide();
+				$('#div_id1').hide();
+                
+
+            });
+        </script>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+		
+		 <script>
+            $(function() {
+                $("#go_id1").click(function()
+                {
+                    $("#div_id0").show();
+                }); 
+				
+				 $("#click_id1").click(function()
+                {
+                    $("#div_id1").show();
+					 $("#div_id0").hide();
+                });   
+            });
+        </script>
+		<script>
+	$(document).ready(function() {
+    $('#selectall').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+</script>
+		
+
+</head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div style="margin-left: 340px; margin-top: 50px;">
+                <table  border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;" align="center">Edit MRN </td>
+                    </tr>
+                    <tr>
+                        <td width="96">&nbsp;</td>
+                        <td width="73">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" >&nbsp;</td>
+                      <td width="80" >Start Date </td>
+                      <td width="211">End Date </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" >MRNs between Dates : </td>
+                      <td ><label>
+                        <input type="text" name="textfield" style="width:80px" class="datepicker1">
+                      </label></td>
+                      <td><input type="text" name="textfield2" style="width:80px" class="datepicker1">
+                        <label>
+                        <input type="submit" name="Submit" value="GO" id="go_id1" style="width:60px">
+                        </label></td>
+                    </tr></table>
+					<div id="div_id0">
+					<table width="483" border="0">
+                      <tr>
+                        <td width="114">&nbsp;</td>
+                        <td width="109">&nbsp;</td>
+                        <td width="133">&nbsp;</td>
+                        <td width="71">&nbsp;</td>
+                        <td width="34">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="28" width="145" style="font-weight: bold; background-color: activecaption;"><strong>MRN No. </strong></td>
+                        <td height="28" width="145" style="font-weight: bold; background-color: activecaption;"><strong>MRN Date </strong></td>
+                        <td height="28" width="145" style="font-weight: bold; background-color: activecaption;"><strong>Vendor</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td id="click_id1"><a href="#">MRN_No_1</a></td>
+                        <td>24/04/2014</td>
+                        <td>Vendor1</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">MRN_No_2</a></td>
+                        <td>28/04/2014</td>
+                        <td>Vendor2</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+              </table></div>
+					<div id="div_id1">
+					<table>
+                    <tr>
+                        <td width="144" > MRN No : </td>
+                      <td width="150">MRN_No_1</td>
+                        <td width="134" > MRN Date : </td>
+
+                        <td width="150"><input name="text" type="text" class="datepicker1" style="width: 140px;" value="24/05/2014"/></td>
+                    </tr>
+                   
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td > Invoice No. : </td>
+                        <td><input name="name3" type="text" value="101"  /></td>
+                        <td > Invoice Date : </td>
+                        <td><span style="width: 150px;">
+                          <input type="text" name="textfield322" style="width:140px" class="datepicker2" value="09/01/2014"/>
+                        </span></td>
+                    </tr>
+                    <tr>
+                        <td > PO No. : </td>
+                        <td>
+                            <input name="name" type="text"  value="202" /></td>
+							<td>PO Date :</td>
+                        <td style="width: 150px;"><input type="text" name="textfield32" style="width:140px" class="datepicker3" value="12/01/2013"/></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td >Delivery Note No : </td>
+                        <td><input name="name2" type="text" value="501" /></td>
+                        <td >Delivery Note Date  : </td>
+                        <td><input type="text" name="textfield323" style="width:140px" class="datepicker4" value="30/04/2014"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-row"><label>City :</label></td>
+
+                    <td><select name="select3" style="width: 140px;">
+                      <option value="0" selected="selected">---Select---</option>
+                      <option value="N1">City Name1</option>
+                      <option value="V1">City Name2</option>
+                      <option value="V2">City Name3</option>
+                    </select></td>
+                        <td class="form-row"><label>&nbsp;Site :</label></td>
+                    <td><select name="select" style="width: 140px;">
+                      <option value="0" selected="selected">---Select---</option>
+                      <option value="N1">site1</option>
+                      <option value="V1">site2</option>
+                      <option value="V2">site3</option>
+                    </select></td>
+                    </tr>
+                    <tr>
+                        <td >Vendor : </td>
+                        <td><label>
+                          <select name="select5" style="width: 140px;">
+                            <option value="0" selected="selected">---Select---</option>
+                            <option value="N1">Vendor1</option>
+                            <option value="V1">Vendor2</option>
+                            <option value="V2">Vendor3</option>
+                          </select>
+                        </label></td>
+                        <td >Remark : </td>
+                        <td width="150"><span style="height:20px;">
+                          <textarea name="textarea" style="width:140px; resize: none;">Sample Remark !!!!!!!</textarea>
+                        </span></td>
+                    </tr>
+                    <tr>
+                        <td >Requester : </td>
+                        <td><select name="select4" style="width: 140px;">
+                      <option value="0" selected="selected">---Select---</option>
+                      <option value="N1">Ajit Kumar</option>
+                      <option value="V1">Abhishek Kumar</option>
+                      <option value="V2">Rajib Kumar</option>
+                    </select></td>
+                        <td >Buyer : </td>
+                        <td><select name="select2" style="width: 140px;">
+                      <option value="0" selected="selected">---Select---</option>
+                      <option value="N1">Rakesh Kumar</option>
+                      <option value="V1">Ranjit Dash</option>
+                      <option value="V2">Manoj Kumar</option>
+                    </select></td>
+                    </tr>
+                    <tr>                    </tr>
+                    <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>
+                </table>
+				<table width="590" >
+				<tr>
+                            <td colspan="2" style="font-weight: bold;"></td>
+                  </tr>
+
+                <tr>
+                    <td width="145" style="font-weight: bold; background-color: activecaption;">Material Description</td>
+                    <td width="136" style="font-weight: bold; background-color: activecaption;">Packaging Type </td>
+                    <td width="161" style="font-weight: bold; background-color: activecaption;">Packaging Quantity</td>
+					<td width="128" style="background-color: activecaption;"><strong>
+                      <input name="checkbox" type="checkbox" id="selectall"/>
+                  Select All </strong></td>
+                </tr>
+                <tr>
+                    <td><span style="height:20px;">
+                          <textarea name="textarea" style="width:140px; resize: none;">Laptop,Projector !!</textarea>
+                        </span></td>
+                    <td align="left"><input name="name3" type="text" value="Box"  /></td>
+                    <td align="left"><input name="name32" type="text" value="300"  /></td>
+                    <td><input type="checkbox" class="checkbox1"/></td>
+		       </tr>
+				 <tr>
+                    <td><span style="height:20px;">
+                          <textarea name="textarea" style="width:140px; resize: none;">Switches,Projector !!</textarea>
+                        </span></td>
+                    <td align="left"><input name="name3" type="text" value="Box"  /></td>
+                    <td align="left"><input name="name3" type="text" value="200"  /></td>
+					<td><input type="checkbox" class="checkbox1"/></td>
+				  <tr><td>&nbsp;</td></tr>
+            </table>
+        
+                <table  border="0" cellpadding="0" cellspacing="3">
+                    <tr >
+                        <td width="150" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                        <td width="80" align="center"><input name="reset" type="reset" style="width: 100px;" value="Update"/>
+                        </td>
+                        <td width="80" align="center"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                        <td width="80" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+
+            <p>
+                <b>Note:- </b>
+            </p>
+            <p>
+                1:'Unit Type, Unit Number, Bond Register } These are ALL optional'<br>
+             
+
+            </p>
+        </div>
+
+    </body>
+</html>

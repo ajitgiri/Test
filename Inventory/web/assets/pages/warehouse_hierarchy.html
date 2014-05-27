@@ -1,0 +1,174 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WareHouse Hierarchy</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#whdiv1').hide();
+				$('#whdiv2').hide();
+
+            });
+        </script>
+
+
+
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+				
+                $("#radioid1").click(function()
+                {
+                  $("#whdiv1").show();
+                });
+				$("#go").click(function()
+                {
+                  $("#whdiv2").show();
+                });
+								
+            $("#radioid2").click(function()
+                {
+                  $("#whdiv1").hide();
+				  $("#whdiv2").hide();
+                });
+            });
+        </script>
+
+
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <br><br>
+            <center>
+                <br><br>
+                <table border="0" >
+                    <tr>
+                        <td colspan="3" style="font-weight: bold;">
+                            <div align="center">Warehouse Hierarchy                </div></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 20px;">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Warehouse/Stores  Hierarchy Applicable : </td>
+                        <td>
+                            <input type="radio" name="sample" value="select" id="radioid1">Yes &nbsp; 
+                            <input type="radio" name="sample" value="select" id="radioid2">No                 </td>
+                        <td></td>
+                    </tr>
+                </table >
+                <div id="whdiv1">
+                    <table >
+                        <tr>
+                            <td class="classtd1"> No. of Levels at Warehouse/Store Hierarchy :</td>
+                            <td class="classtd1">
+                                <input type="text" name="" maxlength="2" size="12" style="width:30px"/>                 </td>
+                            <td>                 </td>
+                            <td class="classtd1">
+                                <input type="submit" value="Go" id="go"/>                 </td>
+                        </tr></table></div>
+						<div id="whdiv2">
+						<table width="516">
+                        <tr>
+                          <td width="325" align="right" class="classtd1">&nbsp;</td>
+                          <td width="147"  align="left" class="classtd1">&nbsp;</td>
+                          <td width="28"  align="center" class="classtd1"></td>
+                        </tr>
+                        <tr>
+                          <td align="right" class="classtd1">Level 1: </td>
+                          <td  align="left" class="classtd1"><input type="text" name="Input3" maxlength="2" size="12" style="width:100px"/></td>
+                          </tr>
+                        <tr>
+                            <td align="right" class="classtd1">Level 2: </td>
+                            <td  align="left" class="classtd1"><input type="text" name="Input3" maxlength="2" size="12" style="width:100px"/></td>
+                            <td  align="center" class="classtd1"></td>
+                        </tr>
+                        <tr>
+                            <td align="right" class="classtd1">Level 3: </td>
+                            <td  align="left" class="classtd1"><input type="text" name="Input4" maxlength="2" size="12" style="width:100px"/></td>
+                            <td  align="center" class="classtd1"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="classtd1">
+                                &nbsp; <div align="center">Dimension of Volume in Cubic Feet at Lowest  Level</div></td>
+                        </tr>
+                        <tr>                        </tr>
+                    </table>
+                    <table border="0" class="classtd1">
+                        <tr>
+                            <td colspan="9" style="height: 20px;"></td>
+                        </tr>
+                        <tr>
+                            <td width="184"></td>
+                            <td width="86"></td>
+                            <td width="100" align="right"><input type="submit"  value="Back" style="width: 100px;"/></td>
+                          <td width="102" align="left"><input name="reset2" type="reset" style="width: 100px;" value="Update"/></td>
+                          <td width="100" align="left"><input name="reset3" type="reset" style="width: 100px;" value="Delete"/></td>
+                            <td width="100" align="right"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                            <td width="118" align="right">&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p><br>
+                    <br>
+                    <br>
+                </p>
+                <div style="color: blueviolet;">
+                    This Above table and no of rows will generate According<br>
+                    to the No Of Levels :: will entered by User.
+
+                    Any Unique Asset id Y/ N
+                </div>
+            </center>
+
+    </body>
+</html>

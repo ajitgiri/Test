@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>EnterPrise Mentor Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div   style="margin-left: 340px; margin-top: 50px;">
+
+                <table border="0">
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;" align="center">
+                            Enterprise Master
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="font-weight: bold;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-row"><label>Enterprise Name:</label></td><td> <input name="name" type="text"  /></td>
+                        <td class="form-row"><label>&nbsp;&nbsp;Address Line 1:</label></td><td> <input name="name" type="text"  /></td>
+                    </tr>
+                    <tr >
+                        <td class="form-row"><label>Address Line 2  &nbsp;:</label></td><td> <input name="name" type="text"  /></td>
+                        <td class="form-row"><label>&nbsp;&nbsp;Address Line 3:</label></td><td> <input name="name" type="text"  /></td>
+                    </tr>
+                    <tr>
+                        <td class="form-row"><label>Address Line 4 &nbsp;:</label></td><td> <input name="name" type="text"  /></td>
+                        <td class="form-row"><label>&nbsp;&nbsp;City:</label></td>
+                        <td> 
+                            <input name="name" type="text"  />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-row"><label>State :</label></td><td> <input name="name" type="text"  /></td>
+                        <td class="form-row"><label>&nbsp;&nbsp;Country :</label></td>
+                        <td>
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="IND">India</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="AUS">Australia</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-row">PIN/ZIP Code:</td><td> <input name="name" type="text"  /></td>
+                        <td class="form-row"></td><td> </td>
+                    </tr>
+                    <tr>
+                        <td class="form-row">Email Server IP/Host Name :</td><td> <input name="name" type="text"  /></td>
+                        <td class="form-row"><label>&nbsp;&nbsp;Port No. :</label></td><td> <input name="name" type="text"  /></td>
+                    </tr>
+                    <tr>
+                        <td class="form-row">Service Account :</td><td> <input name="name" type="text"  /></td>
+                        <td class="form-row"><label>&nbsp;&nbsp;Password :</label></td><td> <input name="name" type="password"  /></td>
+                    </tr>
+
+                    <tr>
+                        <td class="form-row" colspan="2" style="text-align: right;"> <input type="submit" value="Update" style="width: 100px;"/> &nbsp;&nbsp;&nbsp;</td>
+                        <td class="form-row" colspan="2">&nbsp;&nbsp;&nbsp; <input type="reset" value="Clear" style="width: 100px;" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+
+                </p>
+                <p>
+                    1:Email Server IP/Host Name : - Will come if "Email Server Across Enterprise= yes" in 'Enterprise Setup'<br>
+                    2:Service Account : - Will come if "Service Account For Email Required: = no" in 'Enterprise Setup' <br>
+                    3:Should have to check the order of data like "Email Server IP/Host Name :" will followed by "Port No." <br>
+                    4:Should have to check the order of data like "Service Account :" will followed by "Password :"
+
+
+                </p>
+            </div>
+    </body>
+</html>

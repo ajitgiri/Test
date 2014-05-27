@@ -1,0 +1,239 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accessories Instalation LPT</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+
+        <script type="text/javascript">
+            $(function() {
+                $("#datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker2").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker3").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker4").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker5").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker6").datepicker({dateFormat: "dd-mm-yy"}).val();
+            });
+        </script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#div_id1').hide();
+                $('#dataTable').hide();
+                $('#dataTableAction').hide();
+            });
+        </script>
+        <script>
+            $(function() {
+                $("#go_id1").click(function()
+                {
+                    $('#div_id1').show();
+                    $("#dataTable").show();
+                    $("#dataTableAction").show();
+                });
+
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+        <div id="cBody"> 
+            <div style="margin-left: 10px; margin-top: 50px;">
+                <div style="margin-left: 330px;">
+                    <table  border="0" cellpadding="0" cellspacing="2">
+                        <tr>
+                            <td  height="60" colspan="6" style="font-weight: bold;"><div align="center">Accessories Instalation for Laptop</div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="font-weight: bold;"></td>
+                        </tr>
+                   <!--     <tr id="trId1">
+                            <td>Select Major Category : </td>
+                            <td>
+                                <select id="123" name="select" style="width:152px">
+                                    <option selected="selected">--Select--</option>
+                                    <option class="legal_entity">IT Hardware</option>
+                                    <option class="legal_entity">Non IT</option>
+                                    <option class="legal_entity">LAB/Engineering</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select Minor Category : </td>
+                            <td>
+                                <select id="123" name="select" style="width:152px">
+                                    <option selected="selected">--Select--</option>
+                                    <option class="legal_entity">Computer Equipment</option>
+                                    <option class="legal_entity">Office Equipment</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select Sub Category : </td>
+                            <td>
+                                <select id="123" name="select" style="width:152px">
+                                    <option selected="selected">--Select--</option>
+                                    <option class="legal_entity">Laptop</option>
+                                    <option class="legal_entity">Phone</option>
+                                </select>
+                                <input type="submit" name="Submit2" value="GO" id="go_id1"/>
+                            </td>
+                        </tr> -->
+                        <tr>
+                            <td colspan="6" style="font-weight: bold;"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="dataTable1" style="margin-top: 10px;margin-left: 220px;">
+                    <table  border="0">
+                        <tr>
+                            <td width="80px;" style="background-color: activecaption;" align="center">Sl. No.</td>
+                            <td style="background-color: activecaption;" align="center">Tag No</td>
+                            <td style="background-color: activecaption;" align="center">Material Description</td>
+                            <td style="background-color: activecaption;" align="center">Make</td>
+                            <td style="background-color: activecaption;" align="center">Model</td>
+                            <td width="110px;" style="background-color: activecaption;" align="center">Select All<input type="checkbox" name="checkbox22" value="checkbox" id="selectall"/> </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MS-2022</td>
+                            <td>Mouse </td>
+                            <td>Moser Baer</td>
+                            <td>MB-360</td>
+                            <td align="center"><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"  /></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MS-2024</td>
+                            <td>Mouse </td>
+                            <td>Moser Baer</td>
+                            <td>MB-360</td>
+                            <td align="center"><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"  /></td>
+                        </tr>
+                         <tr>
+                            <td>3</td>
+                            <td>LT-2022</td>
+                            <td>Mouse </td>
+                            <td>Logi Tech</td>
+                            <td>LG-272</td>
+                            <td align="center"><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"  /></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>LT-2044</td>
+                            <td>Mouse </td>
+                            <td>Logi Tech</td>
+                            <td>LG-272</td>
+                            <td align="center"><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"  /></td>
+                        </tr>
+                         <tr>
+                            <td>5</td>
+                            <td>FT-1204 </td>
+                            <td>Laptop Bag</td>
+                            <td>Fast Track</td>
+                            <td>Fastrack 16 inch Slip Cases</td>
+                            <td align="center"><input type="checkbox" name="checkbox3" value="checkbox" class="checkbox1"  /></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="dataTableAction" style="margin-top:10px;margin-left: 130px;">
+                    <table border="0" class="classtd1">
+                        <tr>
+                            <td colspan="11" style="height: 20px;"></td>
+                        </tr>
+                        <tr>
+                            <td width="0"></td>
+                            <td width="50"></td>
+                            <td width="100" align="right"></td>
+                            <td width="100" align="left"></td>
+                            <td width="100" align="left"><input name="reset2" type="reset" style="width: 100px;" value="Request"/></td>
+                            <td width="100" align="left"></td>
+                            <td width="100" align="right"></td>
+                            <td width="100" align="right"></td>
+                        </tr>
+                    </table></div>
+                <p>&nbsp;</p>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+                </p>
+                <p>
+                   1.Here we are tracking all the assets individually  </p>
+                <p>2. Can edit the values entered, by checking the check box and clicking on update.</p>
+                <p>3. Can also delete a data, by clicking on Delete button Subjected to no transaction data for that record.</p>
+                <p>4. Asset Caretaking and Shred services will display only if Support function is yes </p>
+                <p> 
+
+
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Designation Master</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#div_id1').hide();
+
+
+            });
+        </script>
+        <script>
+            $(function() {
+                $("#go_id1").click(function()
+                {
+                    $("#div_id1").show();
+                });
+
+            });
+        </script>
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+        <div id="cBody">
+            <div style="margin-left: 340px; margin-top: 60px;">
+                <div style="margin-left: 130px;">
+                    <table>
+                        <tr>
+                            <td colspan="3" style="font-weight: bold; text-align: center;"> Designation Master</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" > </td>
+                        </tr>
+                        <tr>
+                            <td>Designation Code</td>
+                            <td>Designation Name</td>
+                            <td></td>
+                        </tr>
+                         <tr>
+                             <td><input type="text" name="desigCode"/></td>
+                            <td><input type="text" name="designame"/></td>
+                            <td><input type="submit" name="Submit" value="Add"/></td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="margin-left: 110px;margin-top: 20px;">
+                    <table>
+                        <tr>
+                            <td width="120px;" style="background-color: activecaption;">Designation Code</td>
+                            <td width="150px;" style="background-color: activecaption;">Designation Name</td>
+                            <td width="100px;" style="background-color: activecaption;">Select All <input type="checkbox" name="checkbox4" value="checkbox" id="selectall"/> </td>
+                        </tr>
+                        <tr>
+                            <td>DEG-001</td>
+                            <td>Project Manager</td>
+                            <td align="center"><input type="checkbox" name="checkbox" class="checkbox1" /></td>
+                        </tr>
+                        <tr>
+                            <td>DEG-002</td>
+                            <td>Chief Operating Officer</td>
+                            <td align="center"><input type="checkbox" name="checkbox" class="checkbox1" /></td>
+                        </tr>
+                        <tr>
+                            <td>DEG-003</td>
+                            <td>Vice President</td>
+                            <td align="center"><input type="checkbox" name="checkbox" class="checkbox1" /></td>
+                        </tr>
+                    </table>
+                </div>
+                 <div>
+                    <table border="0" class="classtd1" style="margin-top:10px;margin-left: 0px; ">
+                        <tr>
+                            <td colspan="5" style="height: 10px;"></td>
+                        </tr>
+                        <tr>
+                            <td width="100" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                            <td width="100" align="left"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                            <td width="100" align="left"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                            <td width="100" align="left"><input name="reset22" type="reset" style="width: 100px;" value="Enable"/></td>
+                            <td width="100" align="right"><input name="reset23" type="reset" style="width: 100px;" value="Disable"/></td>
+                            <td width="100" align="right"><input name="reset24" type="reset" style="width: 100px;" value="Cancel"/></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,250 @@
+
+<html>
+    <title>Allocation Type</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+    <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+    <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="../js/jscript.js"></script>
+    <script type="text/javascript" src="../js/EventScript.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+    <style type="text/css">
+        #container{bockground-color:blue;
+                   /*height:100%;*/
+        }
+        #header{
+            height:10%;
+        }
+        #cBody{
+            height:470px;
+        }
+        #hMenu{
+            height:3%;
+        }
+
+        #hImg{
+            height:6%;
+        }
+        #footer{
+            background-color: #339;
+            height:5%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#hMenu").load("Home.html");
+            $("#cBody #thrdDv table tr").eq(1).hide();
+            $("#cBody #thrdDv table tr").eq(2).hide();
+//            $("#cBody table tr").eq(13).hide();
+//            $("#cBody table tr").eq(10).hide();
+//            $("#cBody table tr").eq(11).hide();
+//            $("#cBody table tr").eq(12).hide();
+//            
+            $("#InventMngSepFrStorYes").click(function()
+            {
+//                $("#cBody table tr").eq(9).show();
+//                $("#cBody table tr").eq(10).show();
+//                $("#cBody table tr").eq(11).show();
+//                $("#cBody table tr").eq(12).show();
+            });
+            $("#InventMngSepFrStorNo").click(function()
+            {
+//                $("#cBody table tr").eq(9).hide();
+//                $("#cBody table tr").eq(10).hide();
+//                $("#cBody table tr").eq(11).hide();
+//                $("#cBody table tr").eq(12).hide();
+            });
+            $("#IsEmpAccessExtndYes").click(function()
+            {
+                $("#cBody #thrdDv table tr").eq(1).show();
+                $("#cBody #thrdDv table tr").eq(2).show();
+            });
+            $("#IsEmpAccessExtndNo").click(function()
+            {
+                $("#cBody #thrdDv table tr").eq(1).hide();
+                $("#cBody #thrdDv table tr").eq(2).hide();
+            });
+            $("#AckFromEmpIsReqNo").click(function()
+            {
+                $("#cBody #thrdDv table tr").eq(2).hide();
+            });
+        $("#AckFromEmpIsReqYes").click(function()
+            {
+                $("#cBody #thrdDv table tr").eq(2).show();
+            });
+        
+
+        });
+    </script>
+
+</head>
+<body id="container">
+    <div id="header">
+        <div id="hImg">
+            <img src="../images/source_header.jpg" width="1300" height="70" /> 
+        </div>
+        <div id="hMenu">
+
+        </div>
+    </div>
+    <div id="cBody">
+        <div  style="margin-left: 300px; margin-top: 80px;">
+            <div id="scndDiv" style="margin-top: 0px;">
+                <table border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <td  colspan="5" style="font-weight: bold;">
+                            <div align="center">Allocation Type    </div></td>
+                    </tr>
+                    <tr>
+                        <td  colspan="5" height="20px;"></td>
+                    </tr>
+                    <tr>
+                        <td width="259" height="25" ></td>
+                        <td width="95"><div align="center">IT Hardware</div></td>
+                        <td width="82"><div align="center">IT Software</div></td>
+                        <td width="70"><div align="center">Non IT</div></td>
+                        <td width="129"><div align="center">LAB/Engineering</div></td>
+                    </tr>
+                    <tr>
+                        <td>From stores to directly Employee :<br></td>
+                        <td><div align="center">
+                                <input type="radio" name="sample" value="select">                    
+                                <br>
+                            </div></td>
+                        <td><div align="center">
+                                <input type="radio" name="sample1" value="select">                      
+                                <br>
+                            </div></td>
+                        <td><div align="center">
+                                <input type="radio" name="sample2" value="select">                      
+                                <br>
+                            </div></td>
+                        <td><div align="center">
+                                <input type="radio" name="sample3" value="select">                      
+                                <br>
+                            </div></td>
+                    </tr>
+                    <tr>
+                        <td height="24">From stores to SF/SPOC/Asset Manager :</td>
+                        <td><div align="center">
+                                <input type="radio" name="sample" value="select">                    
+                                <br>
+                            </div></td>
+                        <td><div align="center">
+                                <input type="radio" name="sample1" value="select">                      
+                                <br>
+                            </div></td>
+                        <td><div align="center">
+                                <input type="radio" name="sample2" value="select">                      
+                                <br>
+                            </div></td>
+                        <td><div align="center">
+                                <input type="radio" name="sample3" value="select">                      
+                                <br>
+                            </div></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="thrdDv" style="margin-top: 20px;">
+                <table border="0">
+                    <tr>
+                        <td width="300px;">Is Employee access extended : </td>
+                        <td colspan="2"><input type="radio" name="sampler2" value="select" id="IsEmpAccessExtndYes">Yes
+                            <input type="radio" name="sampler2" value="select" id="IsEmpAccessExtndNo">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Acknowledgment from Employee is required : </td>
+                        <td colspan="2">
+                            <input type="radio" name="sampler3" value="select"  id="AckFromEmpIsReqYes">Yes
+                            <input type="radio" name="sampler3" value="select"  id="AckFromEmpIsReqNo">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Usage Tracking Confirmation : <input type="checkbox" name="sampler3" value="select" ></td>
+                        <td>Space Assigned Confirmation : <input type="checkbox" name="sampler3" value="select"></td>
+                    </tr>
+
+                    <tr id="ifYs">
+                        <td>Inventory Managed Physically at Stores : </td>
+                        <td colspan="2">
+                            <input type="radio" name="sampler4" value="select" id="InventMngSepFrStorYes">Yes
+                            <input type="radio" name="sampler4" value="select" id="InventMngSepFrStorNo">No
+                        </td>
+                    </tr>
+                    <tr id="ifYs">
+                        <td colspan="2">Inventory Managed by : </td>
+                    </tr>
+                    <tr>
+                        <td align="right">IT Hardware&nbsp;:&nbsp; </td>
+                        <td colspan="2">
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="SupportFunction">Support Function</option>
+                                <option value="SPOC">SPOC</option>
+                                <option value="store">Store</option>
+                                <option value="AssetManager">Asset Manager</option>
+                            </select>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">IT Software &nbsp;:&nbsp;</td>
+                        <td colspan="2">
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="SupportFunction">Support Function</option>
+                                <option value="SPOC">SPOC</option>
+                                <option value="store">Store</option>
+                                <option value="AssetManager">Asset Manager</option>
+                            </select>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">NON-IT &nbsp;:&nbsp; </td>
+                        <td colspan="2">
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="SupportFunction">Support Function</option>
+                                <option value="SPOC">SPOC</option>
+                                <option value="store">Store</option>
+                                <option value="AssetManager">Asset Manager</option>
+                            </select>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">LAB/Engineering &nbsp;:&nbsp; </td>
+                        <td colspan="2">
+                            <select style="width: 150px;">
+                                <option value="0" selected="selected">---Select---</option>
+                                <option value="SupportFunction">Support Function</option>
+                                <option value="SPOC">SPOC</option>
+                                 <option value="Store">Store</option>
+                                <option value="AssetManager">Asset Manager</option>
+                            </select>  
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin-left: 0px;">
+                <table border="0" class="classtd1">
+                    <tr>
+                        <td colspan="9" style="height: 20px;"></td>
+                    </tr>
+                    <tr>
+                        <td width="70"></td>
+                        <td width="100" align="right"><input type="submit"  value="Back" style="width: 100px;"/></td>
+                        <td width="103" align="left"><input type="reset" value="Cancel" style="width: 100px;"/></td>
+                        <td width="113" align="left"><input type="reset" value="Update" style="width: 100px;"/></td>
+                        <td width="100" align="right">&nbsp;</td>
+                        <td width="85" align="right">&nbsp;</td>
+                                                <td width="151"></td>
+
+                    </tr>
+                </table>
+            </div>		
+        </div>
+    </div>
+</body>
+</html>

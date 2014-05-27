@@ -1,0 +1,239 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>ADD MRN</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <!--<script type="text/javascript" src="file:///C|/Users/Abhishek Paul/Desktop/office/StrikDart/Inventory/web/assets/js/validation.js"></script>-->
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+        
+         <script type="text/javascript">
+            $(function() {
+                $("#datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker2").datepicker({dateFormat: "dd-mm-yy"}).val();
+				$("#datepicker3").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#div_id1').hide();
+                $('#div_id2').hide();
+
+            });
+        </script>
+
+
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+		<script>
+	$(document).ready(function() {
+    $('#selectall').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+</script>
+        
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div   style="margin-left: 340px; margin-top: 50px;">
+
+            <table>
+                <tr>
+                    <td colspan="2" style="font-weight: bold;" align="center">
+                          ADD MRN                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-weight: bold;">                    </td>
+                </tr>
+
+                <tr>
+                    <td class="form-row"><label>Invoice No.  &nbsp;:</label></td>
+                    <td><input name="name3" type="text"  /></td>
+                    <td class="form-row"><label>&nbsp;&nbsp;Invoice Date :</label></td>
+                    <td><input type="text" name="textfield322" style="width:140px" id="datepicker1"/></td>
+                </tr>
+				 <tr>
+                    <td class="form-row"><label>PO No.  &nbsp;:</label></td><td> <input name="name" type="text"  /></td>
+                    <td class="form-row"><label>&nbsp;&nbsp;PO Date :</label></td><td><input type="text" name="textfield32" style="width:140px" id="datepicker2"/></td>
+                </tr>
+
+                <tr>
+                    <td class="form-row"><label>Delivery Note No &nbsp;:</label></td><td><input name="name2" type="text"  /></td>
+                    <td class="form-row"><label>&nbsp;&nbsp;Delivery Note Date :</label></td><td><input type="text" name="textfield323" style="width:140px" id="datepicker3"/></td>
+                </tr>
+                <tr>
+                    <td class="form-row"><label>City :</label></td>
+
+                    <td><select name="select3" style="width: 140px;">
+                      <option value="0" selected="selected">---Select---</option>
+                      <option value="N1">City Name1</option>
+                      <option value="V1">City Name2</option>
+                      <option value="V2">City Name3</option>
+                    </select></td>
+                    <td class="form-row"><label>&nbsp;Site :</label></td>
+                    <td><select name="select" style="width: 140px;">
+                      <option value="0" selected="selected">---Select---</option>
+                      <option value="N1">site1</option>
+                      <option value="V1">site2</option>
+                      <option value="V2">site3</option>
+                    </select></td>
+                </tr>  
+				 <tr>
+                    <td class="form-row"><label>Requester :</label></td>
+
+                    <td><select name="select4" style="width: 140px;">
+                      <option value="0" selected="selected">---Select---</option>
+                      <option value="N1">Ajit Kumar</option>
+                      <option value="V1">Abhishek Kumar</option>
+                      <option value="V2">Rajib Kumar</option>
+                    </select></td>
+                    <td class="form-row"><label>&nbsp;Buyer :</label></td>
+                    <td><select name="select2" style="width: 140px;">
+                      <option value="0" selected="selected">---Select---</option>
+                      <option value="N1">Rakesh Kumar</option>
+                      <option value="V1">Ranjit Dash</option>
+                      <option value="V2">Manoj Kumar</option>
+                    </select></td>
+                </tr> 
+				 <tr>
+                    <td class="form-row"><label>Vendor :</label></td>
+
+                    <td><select name="select5" style="width: 140px;">
+                      <option value="0" selected="selected">---Select---</option>
+                      <option value="N1">Vendor1</option>
+                      <option value="V1">Vendor2</option>
+                      <option value="V2">Vendor3</option>
+                    </select></td>
+                    <td class="form-row"><label>&nbsp;Remark :</label></td>
+                    <td><label>
+                      <textarea name="textarea" style="width:140px"></textarea>
+                   </label></td>
+				 </tr> 
+			  </table>
+				 <table width="595">
+                   <tr>
+                     <td width="141" class="form-row"><label>&nbsp;</label></td>
+                     <td width="133"><label>Material Description</label></td>
+                     <td width="66" class="form-row"><label>Packaging Type</label></td>
+                     <td>Packaging Quantity </td>
+                   </tr>
+                   <tr>
+                     <td>&nbsp;</td>
+                     <td><textarea name="textarea4" style="width:140px">Laptop,Projector !!</textarea></td>
+                     <td><input name="name32" type="text"  style="width:130px" value="Box" /></td>
+                     <td width="131" align="right"><input name="name33" type="text"  style="width:130px" value="300" /></td>
+                     <td width="100"><input name="submit2" type="submit" style="width: 60px;"  value="ADD"/></td>
+                   </tr>
+                 </table>
+			    <table width="590" >
+				<tr>
+                            <td colspan="2" style="font-weight: bold;">                  </td>
+                  </tr>
+
+                <tr>
+                    <td width="145" style="font-weight: bold; background-color: activecaption;">Material Description</td>
+                    <td width="136" style="font-weight: bold; background-color: activecaption;">Packaging Type </td>
+                    <td width="161" style="font-weight: bold; background-color: activecaption;">Packaging Quantity</td>
+					<td width="128" style="background-color: activecaption;"><strong>
+                      <input name="checkbox" type="checkbox" id="selectall"/>
+                  Select All </strong></td>
+                </tr>
+                <tr>
+                    <td>Laptop,Projector !!</td>
+                    <td align="center">Box</td>
+                    <td align="left"><input name="name33" type="text"  style="width:130px" value="300" /></td>
+					<td><input type="checkbox" class="checkbox1"/></td>
+		       </tr>
+				 <tr>
+                    <td>Switches,Projector !!</td>
+                    <td align="center">Box</td>
+                    <td align="left"><input name="name33" type="text"  style="width:130px" value="200" /></td>
+					<td><input type="checkbox" class="checkbox1"/></td>
+            </table>
+        </div>
+         <table width="889" style="margin-top:60px" id="tableForNew2">  
+                    <tr >
+                    <td width="566" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="100" align="center"><input name="reset3" type="reset" style="width: 100px;" value="Update"/></td>
+                    <td width="100" align="center"><input name="reset22" type="reset" style="width: 100px;" value="Delete"/></td>
+                     <td width="152" align="left"><input name="reset" type="reset" style="width: 100px;" value="Cancel"/></td>
+                  </tr>
+                    <tr>
+                        <td colspan="5" style="height:20px;"></td>
+                    </tr>
+</table>
+           
+
+        <div style="margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+
+            </p>
+            <p>
+                1:'Enterprise Setup' <br>
+                2:'Enterprise Setup' 
+
+            </p>
+
+</div>
+    </body>
+</html>

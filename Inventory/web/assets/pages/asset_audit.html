@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Asset Audit</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+
+        <script type="text/javascript">
+            $(function() {
+                $("#datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker2").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker3").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker4").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker5").datepicker({dateFormat: "dd-mm-yy"}).val();
+                $("#datepicker6").datepicker({dateFormat: "dd-mm-yy"}).val();
+            });
+        </script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#cBody #div_id12 table tr").eq(2).hide();
+                $("#cBody #div_id12 table tr").eq(3).hide();
+                $("#cBody #div_id12 table tr").eq(4).hide();
+            });
+        </script>
+        <script>
+            $(function() {
+                $("#go_id1").click(function()
+                {
+                    $('#div_id1').show();
+                    $("#dataTable").show();
+                    $("#dataTableAction").show();
+                });
+                $("#triggerBySelect").change(function() {
+                    var value1 = $("#triggerBySelect").val();
+                    var v1 = "Employee";
+                    var v2 = "orgLevel";
+                    var v3 = "geogLevel";
+                    if (value1 == v1) {
+                        $("#cBody #div_id12 table tr").eq(3).hide();
+                        $("#cBody #div_id12 table tr").eq(4).hide();
+                        $("#cBody #div_id12 table tr").eq(2).show();
+                    }
+                    if (value1 == v2) {
+                        $("#cBody #div_id12 table tr").eq(2).hide();
+                        $("#cBody #div_id12 table tr").eq(4).hide();
+                        $("#cBody #div_id12 table tr").eq(3).show();
+                    }
+                    if (value1 == v3) {
+                        $("#cBody #div_id12 table tr").eq(3).hide();
+                        $("#cBody #div_id12 table tr").eq(2).hide();
+                        $("#cBody #div_id12 table tr").eq(4).show();
+                    }
+                });
+
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+        <div id="cBody"> 
+            <div style="margin-left: 10px; margin-top: 50px;">
+                <div style="margin-left: 330px;">
+                    <table  border="0" cellpadding="0" cellspacing="2">
+                        <tr>
+                            <td width="364" height="60" colspan="6" style="font-weight: bold;"><div align="center">Asset Audit</div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="font-weight: bold;"></td>
+                        </tr>
+                        <tr>
+
+                            <td colspan="6">System driven Asset Audit frequency
+                                <select>
+                                    <option selected="selected">Select</option>
+                                    <option>Monthly</option>
+                                    <option>Quarterly</option>
+                                    <option>Half Yearly</option>
+                                    <option>Yearly</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr><td>Trigger on &nbsp;<input type="text" size="5"/>&nbsp; the working days on completion of frequency</td></tr>
+                        <tr><td>Acknowledgement due in next &nbsp;<input type="text" size="5"/>&nbsp; working days from trigger date</td></tr>
+                        <tr>
+                            <td colspan="6" style="font-weight: bold;"></td>
+                        </tr>
+                    </table>
+                </div><br/>
+
+                <div id="div_id12" style="margin-top: 10px;margin-left: 330px;">
+                    <table border="0">
+                        <tr>
+                            <td style="height: 20px;font-weight: bold" colspan="5">Manual Trigger</td>
+                        </tr>
+                        <tr>
+                            <td width="100">Trigger By:</td>
+                            <td width="150">
+                                <select id="triggerBySelect" style="width: 173px;">
+                                    <option value="Employee" selected="selected">--Select--</option>
+                                    <option value="Employee">Employee</option>
+                                    <option value="orgLevel">Organization Level</option>
+                                    <option value="geogLevel">Geographical Level</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr id="empSelect">
+                            <td width="100">Select Employee:</td>
+                            <td width="150">
+                                <select id="triggerBySelect" style="width: 173px;">
+                                    <option value="Employee" selected="selected">--Select--</option>
+                                    <option value="Employee">emp-001(Ajit Kumar)</option>
+                                    <option value="orgLevel">emp-002(Abhishek Paul)</option>
+                                    <option value="geogLevel">emp-003(Debasish)</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr id="empSelect">
+                            <td width="200">Select Organization Level:</td>
+                            <td width="150">
+                                <select id="triggerBySelect" style="width: 173px;">
+                                    <option value="Employee" selected="selected">--Select--</option>
+                                    <option value="Employee">BU</option>
+                                    <option value="orgLevel">SBU</option>
+                                    <option value="geogLevel">Cost Center</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr id="empSelect">
+                            <td width="200">Select Geographical Level:</td>
+                            <td width="150">
+                                <select id="triggerBySelect" style="width: 173px;">
+                                    <option value="Employee" selected="selected">--Select--</option>
+                                    <option value="Employee">State</option>
+                                    <option value="orgLevel">City</option>
+                                    <option value="geogLevel">Site</option>
+                                    <option value="geogLevel">Building</option>
+                                    <option value="geogLevel">Floor</option>
+                                    <option value="geogLevel">Space</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                Due By<input type="text"/>Working
+                            </td>
+                            <td> Days
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" align="center">
+                                <input type="submit" value="GO" style="width: 80px;"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <p>&nbsp;</p>
+            </div>
+            <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                    <b>Note:- </b>
+                </p>
+                <p>
+                    1. Legal Entity based on - if multiple legal entity = yes.</p>
+                <p>2. Can edit the values entered, by checking the check box and clicking on update.</p>
+                <p>3. Can also delete a data, by clicking on Delete button Subjected to no transaction data for that record.</p>
+                <p>4. Asset Caretaking and Shred services will display only if Support function is yes </p>
+                <p> 
+
+
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

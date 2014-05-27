@@ -1,0 +1,165 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Additional Charges</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody"> 
+            <div style="margin-left: 340px; margin-top: 50px;">
+                <table width="581"  border="0" cellpadding="0" cellspacing="2">
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;" align="center">Additional Charges</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="font-weight: bold; height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 200px;"> Additional Charge Code  </td>
+                        <td style="text-align: left;width: 200px;">Additional Charge Name </td>
+                        <td style="width: 200px;">Input Credit </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="textfield3"  id="datepicker1" size="20"/></td>
+                        <td><input type="text" name="" size="20"/></td>
+                        <td >
+                            <input type="radio" name="ss"/>Yes&nbsp;
+                            <input type="radio" name="ss"/>No&nbsp;                        </td>
+                        <td><input type="submit" value="ADD" style="width: 80px;"/></td>
+                        <td width="0"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="height:20px;"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; background-color: activecaption;">Additional Charge Code </td>
+                        <td style="text-align: left; background-color: activecaption;">Additional Charge Name </td>
+                        <td style="text-align: left; background-color: activecaption;">Input Credit</td>
+                        <td style="width: 150px; background-color: activecaption;"><input type="checkbox" name="checkbox4" value="checkbox" id="selectall">
+                            Select All</td>
+                    </tr>
+                    <tr>
+                        <td> CHRG-001 </td>
+                        <td><input type="text" value="Charge Name 1"/> </td>
+                        <td>
+                            <input type="radio" name="ss1"/> 
+                            Yes&nbsp;
+                            <input type="radio" name="ss1" checked/>No&nbsp;                      </td> 
+                        <td><input type="checkbox" class="checkbox1"/> </td>
+                    </tr>
+                    <tr>
+                        <td> CHRG-002 </td>
+                        <td> <input type="text" value="Charge Name 2"/> </td>
+                        <td><input name="ss2" type="radio" checked/>                          
+                            Yes&nbsp;
+                            <input type="radio" name="ss2"/>No&nbsp; </td>
+                        <td><input type="checkbox" class="checkbox1"/> </td>
+                    </tr>
+                    <tr>
+                        <td> CHRG-003 </td>
+                        <td> <input type="text" value="Charge Name 3"/> </td>
+                        <td><input type="radio" name="ss3"/>Yes&nbsp;
+                            <input type="radio" name="ss3" checked/>No&nbsp; </td>
+                        <td><input type="checkbox" class="checkbox1"/> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="font-weight: bold; height: 10px;"></td>
+                    </tr>
+                </table>        
+            </div>
+            <table width="943" border="0" class="classtd1">
+                <tr>
+                    <td colspan="9" style="height: 20px;"></td>
+                </tr>
+                <tr>
+                    <td width="410" align="right"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                    <td width="100" align="right"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                    <td width="1" align="left">&nbsp;</td>
+                    <td width="100" align="left"><input name="submit2" type="submit" style="width: 100px;"  value="Delete"/></td>
+                    <td width="100" align="right"><input name="submit3" type="submit" style="width: 100px;"  value="Enable"/></td>
+                    <td width="100" align="left"><input name="submit32" type="submit" style="width: 100px;"  value="Disable"/></td>
+                    <td width="102" align="right"><input name="submit33" type="submit" style="width: 100px;"  value="Cancel"/>
+                        <div align="left"></div></td>
+                </tr>
+            </table>
+        </div>
+        <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+            <p>
+                <b>Note:- </b>
+
+            </p>
+            <p>
+                1:'Enterprise Setup'<br>
+                2:'Enterprise Setup'
+
+            </p>
+        </div>
+    </body>
+</html>

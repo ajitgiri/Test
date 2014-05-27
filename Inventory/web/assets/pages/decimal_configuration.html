@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+                $(".DecimalPlacesSelectTD").hide();
+
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#selectall').click(function(event) {  //on click 
+                    if (this.checked) { // check select status
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = true;  //select all checkboxes with class "checkbox1"               
+                        });
+                    } else {
+                        $('.checkbox1').each(function() { //loop through each checkbox
+                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                        });
+                    }
+                });
+                $("#DecimalPlacesSelect").change(function() {
+                    var value1 = $("#DecimalPlacesSelect").val();
+                    var value2 = "0";
+                    //alert("---" + value1);
+                    if (value1 == value2) {
+                        $(".DecimalPlacesSelectTD").show();
+                    } else {
+                        $(".DecimalPlacesSelectTD").hide();
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody">
+            <div   style="margin-left: 150px; margin-top: 80px;">
+                <div style="margin-left: 200px;"> 
+                    <form>
+                        <table  border="0"  cellpadding="0" cellspacing="2">
+                            <tr>
+                                <td colspan="4" style="font-weight: bold;">
+                                    <div align="center">Decimal Places Configuration</div></td>
+                            </tr>
+                            <tr >
+                                <td style="height: 20px;"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="0" width="155">Select Legal Entity</td>
+                                <td width="155"><label>Decimal Places</label></td>
+                                <td width="355" class="DecimalPlacesSelectTD">Conditions</td>
+                                <td width="155">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td ><select name="select" style="width:130px">
+                                        <option selected="selected">Select</option>
+                                        <option>Legal Entity 1</option>
+                                        <option>Legal Entity 2</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div align="left">
+                                        <select style="width: 150px;" id="DecimalPlacesSelect">
+                                            <option value="null" selected="selected">---Select---</option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>  
+                                    </div></td>
+                                <td width="355" class="DecimalPlacesSelectTD">
+                                    <input type="radio" name="roundOffNearestValue"/>Round off to nearest value
+                                    <input type="checkbox" name="nearestVal"/>0.5 as next highest value
+                                    <input type="radio" name="roundOffNearestValue"/>Ceiling
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <input type="checkbox" name="nearestVal"/>Include 0.5<br/>
+                                    <input type="radio" name="roundOffNearestValue"/>Flooring
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="nearestVal"/>Include 0.5
+                                </td>
+                                <td><input name="button" type="button" id="sub" value="Add"/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+
+                                </td>
+                            </tr>
+                           
+                        </table>
+                    </form>
+                </div>
+                <div id="tableArea" style="margin-left: 50px;">
+                    <table >
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td width="20">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td width="131" style="background-color: activecaption;">Legal Entity Name</td>
+                            <td width="130" style="background-color: activecaption;">Decimal Places </td>
+                            <td width="355" style="background-color: activecaption;">Conditions</td>
+                            <td width="129" style="background-color: activecaption;"><input type="checkbox" name="checkbox4" value="checkbox" id="selectall"/>
+                                Select All </td>
+                        </tr>
+                        <tr>
+                            <td>Legal Entity 1 </td>
+                            <td>0</td>
+                            <td>
+                                <input type="radio" name="roundOffNearestValue"/>Round off to nearest value
+                                <input type="checkbox" name="nearestVal"/>0.5 as next highest value
+                                <input type="radio" name="roundOffNearestValue"/>Ceiling
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <input type="checkbox" name="nearestVal"/>Include 0.5<br/>
+                                <input type="radio" name="roundOffNearestValue" checked="checked"/>Flooring
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="nearestVal"/>Include 0.5
+                            </td>
+                            <td><input type="checkbox" class="checkbox1"/> </td>
+                        </tr>
+                        <tr>
+                            <td>Legal Entity 2</td>
+                            <td>3</td>
+                            <td></td>
+                            <td><input type="checkbox" class="checkbox1"/> </td>
+                        </tr>
+                        <tr>
+                            <td>Legal Entity 3 : </td>
+                            <td>4</td>
+                            <td></td>
+                            <td><input type="checkbox" class="checkbox1"/> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div align="center" style="margin-left: 70px;">
+                <table  border="0" class="classtd1">
+                    <tr>
+                        <td colspan="9" style="height: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td width="101"><input name="submit" type="submit" style="width: 100px;"  value="Back"/></td>
+                        <td width="100"><input name="reset" type="reset" style="width: 100px;" value="Update"/></td>
+                        <td width="100" align="right"><input name="reset2" type="reset" style="width: 100px;" value="Delete"/></td>
+                        <td width="100"><input name="reset3" type="reset" style="width: 100px;" value="Cancel"/></td>
+                        <td width="1" align="right">&nbsp;</td>
+                        <td width="1" align="left">&nbsp;</td>
+                        <td width="139" align="right">&nbsp;</td>
+                    </tr>
+                </table>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>Notes: Can select decimal point 1/2/3/0. On selecting 0, Radio button will appear with 3 options as Round Off to Nearest Value, Ceiling and Flooring. </p>
+            </div>
+
+    </body>
+</html>

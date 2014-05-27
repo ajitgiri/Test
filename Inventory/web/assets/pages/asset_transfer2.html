@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ASSET TRANSFER2</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/formValidationStyle.css" type="text/css"/>-->
+        <script type="text/javascript" src="../js/lib/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../js/jscript.js"></script>
+        <script type="text/javascript" src="../js/EventScript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/validation.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+		<script type="text/javascript">
+            $(function() {
+                $(".datepicker1").datepicker({dateFormat: "dd-mm-yy"}).val()
+            });
+        </script>
+		
+        <style type="text/css">
+            #container{bockground-color:blue;
+                       /*height:100%;*/
+            }
+            #header{
+                height:10%;
+            }
+            #cBody{
+                height:470px;
+            }
+            #hMenu{
+                height:3%;
+            }
+
+            #hImg{
+                height:6%;
+            }
+            #footer{
+                background-color: #339;
+                height:5%;
+            }
+        </style>
+        </script>
+		
+        <script type="text/javascript">
+            $(function() {
+                $("#hMenu").load("Home.html");
+            });
+        </script>
+		
+		<script>
+	$(document).ready(function() {
+    $('#selectall').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+</script>
+		<script>
+	$( document ).ready(function() {
+    $("#101").hide();
+	$("#102").hide();
+	$("#sel4").change(function() {
+	var value1 = $("#sel4").val();
+	var vl1 = "new1";
+    var vl2 = "new2";
+	 if (value1 == vl1) {
+      $("#101").hide();
+	  $("#102").hide();
+	  }
+	   if (value1 == vl2) {
+          $("#101").show();
+		  $("#102").show();
+		  }
+		  });
+     });
+	</script>
+
+
+    </head>
+    <body id="container">
+        <div id="header">
+            <div id="hImg">
+                <img src="../images/source_header.jpg" width="1300" height="70" /> 
+            </div>
+            <div id="hMenu">
+
+            </div>
+        </div>
+
+
+        <div id="cBody"> 
+          <div style="margin-left: 410px; margin-top: 40px;">
+            <table width="351" border="0">
+              <tr>
+                <td height="45" colspan="5" style="font-weight: bold;"><div align="center">Transfer Assets2 </div></td>
+              </tr>
+            </table>
+          </div>
+						<div style="margin-left: 70px; margin-top: 10px;" id="div_id0">
+						  <table width="1226">
+                            <tr>
+                              <td width="40">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td style="font-weight: bold; background-color: activecaption;" align="center">SL No.</td>
+                              <td width="61" align="center" style="font-weight: bold; background-color: activecaption;">Asset Tag</td>
+                              <td width="51" style="font-weight: bold; background-color: activecaption;">Asset SL No.</td>
+                              <td width="62" style="font-weight: bold; background-color: activecaption;">Sub Category</td>
+                              <td width="71" style="font-weight: bold; background-color: activecaption;">Minor Category</td>
+                              <td width="110" style="font-weight: bold; background-color: activecaption;">Major Category</td>
+							  <td width="100" style="font-weight: bold; background-color: activecaption;">Asset Classification</td>
+                              <td width="48" style="font-weight: bold; background-color: activecaption;">Bond Type</td>
+                              <td width="38" style="font-weight: bold; background-color: activecaption;">Unit No.</td>
+                              <td width="63" style="font-weight: bold; background-color: activecaption;">Bond Register No.</td>
+                              <td width="51" style="font-weight: bold; background-color: activecaption;">Owner BU</td>
+                              <td width="46" style="font-weight: bold; background-color: activecaption;">User BU</td>
+                              <td width="133" style="font-weight: bold; background-color: activecaption;">End User</td>
+                              <td width="63" style="font-weight: bold; background-color: activecaption;">Building</td>
+                              <td width="48" style="font-weight: bold; background-color: activecaption;">Floor</td>
+                              <td width="59" style="font-weight: bold; background-color: activecaption;">Space</td>
+                              <td width="94" style="font-weight: bold; background-color: activecaption;"><input name="checkbox" type="checkbox" id="selectall"/>
+                              Select All</td>
+                              <td width="12"></td>
+                            </tr>
+                            <tr>
+                              <td height="40" align="center">1</td>
+                              <td align="center">DSK-1012</td>
+                              <td align="center">1024</td>
+                              <td>Desktop</td>
+                              <td>Desktop</td>
+                              <td align="left">Computer Equipment</td>
+							  <td>IT-Hardware</td>
+                              <td>STP</td>
+                              <td width="38">Unit 1 </td>
+                              <td>BR-1001</td>
+                              <td>BU-1</td>
+                              <td>BU-1</td>
+                              <td>EMP-101(Ashok Kumar)</td>
+                              <td>Building 1 </td>
+                              <td>1st</td>
+                              <td>Space 1 </td>
+                              <td><input name="checkbox2" type="checkbox" class="checkbox1"/></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td align="center">2</td>
+                              <td align="center">LPT-2914</td>
+                              <td align="center">5476</td>
+                              <td>Laptop</td>
+                              <td>Laptop</td>
+                              <td align="left">Computer Equipment</td>
+							  <td>IT-Hardware</td>
+                              <td>SEZ</td>
+                              <td width="38">Unit 2 </td>
+                              <td>BR-2345</td>
+                              <td>BU-2</td>
+                              <td>BU-2</td>
+                              <td>EMP-987(Kartik Reddy)</td>
+                              <td>Building 2 </td>
+                              <td>2nd</td>
+                              <td>Space 2 </td>
+                              <td><input name="checkbox3" type="checkbox" class="checkbox1"/></td>
+							  <td></td>
+                            </tr>
+                            <tr>
+                              <td align="center">3</td>
+                              <td align="center">CH-2345</td>
+                              <td align="center">7634</td>
+                              <td>Chair</td>
+                              <td>Chair</td>
+                              <td align="left">Furniture Equipment</td>
+							  <td>Non-IT</td>
+                              <td>STP</td>
+                              <td width="38">Unit 3 </td>
+                              <td>BR-3296</td>
+							  <td>BU-3</td>
+							   <td>BU-3</td>
+							    <td>EMP-432(Manoj Dash)</td>
+								 <td>Building 3 </td>
+								  <td>3rd</td>
+								   <td>Space 3 </td>
+								   <td><input name="checkbox4" type="checkbox" class="checkbox1"/></td>
+								   <td></td>
+                            </tr>
+                          </table>
+          </div>
+		   <div style="margin-left: 410px; margin-top: 40px;">
+		   <table width="738" border="0">
+              <tr>
+                <td width="130">&nbsp;</td>
+                <td width="102">Transfer Date :</td>
+                <td width="177"><input type="text" name="textfield2" class="datepicker1"/></td>
+                <td width="52">&nbsp;</td>
+				 <td width="255"></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Transfer Type : </td>
+                <td width="177"><select name="sel4333" id="sel4" style="width:150px">
+                  <option selected="selected">Select</option>
+                  <option value="new2">Returnable</option>
+                  <option value="new1">Non Returnable</option>
+                </select></td>
+                <td id="101">Upto :</td>
+                <td width="255" id="102"><input type="text" name="textfield" class="datepicker1"/></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td width="177">&nbsp;</td>
+                 <td>&nbsp;</td>
+                 <td><label></label></td>
+              </tr>
+			  <tr><td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td width="177">
+			  <td id="101">&nbsp;</td>
+			  <td id="102"><label></label></td>
+			  </tr>
+			  <tr>
+			    <td align="right"><input type="submit" name="Submit32" value="Back" id="Submit3" style="width: 100px;" /></td>
+			    <td><input type="submit" name="Submit3" value="Transfer Asset" id="submit_id1" style="width: 100px;" /></td>
+			  <td><input type="submit" name="Submit3" value="Cancel" id="submit_id1" style="width: 100px;" /></td></tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+		   </div>
+           
+         <div style="color: blueviolet;margin-left: 340px;margin-top: 50px;">
+                <p>
+                <b>Note:- </b></p>
+                <p>
+                   1. This is Country Master Where country name is Registering. 
+               </p>
+    </div>
+    </body>
+</html>
